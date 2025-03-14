@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">@android:color/transparent</color>
+
+    <!-- Light Mode Colors -->
+    <color name="primary_color">#007AFF</color>
+
+    <color name="success_color">#38AD49</color>
+    <color name="error_color">#D53F36</color>
+
+    <color name="body_primary">#FFFFFF</color>
+    <color name="body_background">#131313</color>
+    <color name="body_on_primary">#FFFFFF</color>
+    <color name="body_surfaces_first">#262626</color>
+    <color name="body_surfaces_second">#00254D</color>
+    <color name="body_secondary">#4C4C4C</color>
+    <color name="body_border_divider">#393939</color>
+</resources>

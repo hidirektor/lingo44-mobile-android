@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name" translatable="false">Lingify</string>
+    <string name="developer_name" translatable="false">Halil İbrahim DİREKTÖR</string>
+    <string name="developer_email" translatable="false">hidirektor@gmail.com</string>
+
+    <string name="splash_slogan">Kişisel dil öğrenme eğitmeniniz.</string>
+
+    <string name="welcome_title">Günde 30 dakika ile sınav hazırlığınızı hızlandırın.</string>
+    <string name="welcome_button">Sınava Hazırlan</string>
+    <string name="welcome_login_start">Zaten bir hesabınız mı Var?</string>
+    <string name="welcome_login_end">\u0020<u>Giriş Yapın</u></string>
+</resources>

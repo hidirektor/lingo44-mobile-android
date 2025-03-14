@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="themeBasedImages">
+        <attr name="lingifyLogo" format="reference" />
+        <attr name="lingifyOnboardImage" format="reference" />
+        <attr name="lingifyThemeChangerImage" format="reference" />
+    </declare-styleable>
+</resources>
