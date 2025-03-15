@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.hidirektor.lingify.R;
 import com.hidirektor.lingify.UI.Screens.Authentication.LoginActivity;
-import com.hidirektor.lingify.UI.Screens.Setup.CourseSelectionActivity;
+import com.hidirektor.lingify.UI.Screens.Authentication.RegisterActivity;
 import com.hidirektor.lingify.Utility.Preferences.Theme.ThemeUtil;
 import com.hidirektor.lingify.Utility.SystemDefaults;
 
@@ -35,13 +35,9 @@ public class WelcomeActivity extends AppCompatActivity {
 
         themeChangerButton.setOnClickListener(v -> ThemeUtil.changeTheme(WelcomeActivity.this));
         getReadyButton.setOnClickListener(v -> {
-            Intent intent = new Intent(WelcomeActivity.this, CourseSelectionActivity.class);
+            Intent intent = new Intent(WelcomeActivity.this, RegisterActivity.class);
             startActivity(intent);
         });
-        /*
-        TODO
-        burası register'a atacak register'dan sonra course selection'a gönder
-         */
 
         loginText.setOnClickListener(v -> {
             Intent loginIntent = new Intent(WelcomeActivity.this, LoginActivity.class);
