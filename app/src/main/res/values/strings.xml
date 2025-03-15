@@ -3,6 +3,12 @@
     <string name="developer_name" translatable="false">Halil İbrahim DİREKTÖR</string>
     <string name="developer_email" translatable="false">hidirektor@gmail.com</string>
 
+    <string name="continue_button">İlerle</string>
+    <string name="login_button">Giriş Yap</string>
+    <string name="login_via_google_button">Google ile Giriş Yap</string>
+    <string name="login_via_apple_button">Apple ile Giriş Yap</string>
+    <string name="or_button">ya da</string>
+
     <string name="splash_slogan">Kişisel dil öğrenme eğitmeniniz.</string>
 
     <string name="welcome_title">Günde 30 dakika ile sınav hazırlığınızı hızlandırın.</string>
@@ -28,4 +34,13 @@
     <string name="desc_goethe_family">Aile birleşimi için Almanca öğren.</string>
     <string name="desc_yds">Akademik ve devlet sınavları için İngilizceni geliştir.</string>
     <string name="desc_yks_dil">Türkiye’nin üniversite dil sınavına hazırlan.</string>
+
+    <string name="login_title">Giriş yapın ve kaldığınız yerden çalışmaya devam edin</string>
+    <string name="login_placeholder_email" translatable="false">hidirektor@gmail.com</string>
+    <string name="login_input_title_email">E-Posta Adresiniz</string>
+    <string name="login_input_title_login_via_phone">Telefon Numarası ile Giriş Yap</string>
+
+    <string name="terms_and_conditions">Katılarak, Şartlar ve Gizlilik Politikası\'nı okuduğumu ve kabul ettiğimi beyan ederim.</string>
+    <string name="dont_have_account_start">Henüz bir hesabınız yok mu?</string>
+    <string name="dont_have_account_end">\u0020<u>Üye Ol</u></string>
 </resources>

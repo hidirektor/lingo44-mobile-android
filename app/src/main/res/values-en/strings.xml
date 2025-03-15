@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="continue_button">Continue</string>
+    <string name="login_button">Login</string>
+    <string name="login_via_google_button">Login with Google</string>
+    <string name="login_via_apple_button">Login with Apple</string>
+    <string name="or_button">or</string>
+
     <string name="splash_slogan">Your personal language learning tutor.</string>
 
     <string name="welcome_title">Speed up your exam preparation with 30 minutes a day.</string>
@@ -25,4 +31,12 @@
     <string name="desc_goethe_family">Master German for family reunification.</string>
     <string name="desc_yds">Enhance your English for academic and government exams.</string>
     <string name="desc_yks_dil">Prepare for Turkey’s university language exam.</string>
+
+    <string name="login_title">Log in and continue working where you left off</string>
+    <string name="login_input_title_email">E-Mail</string>
+    <string name="login_input_title_login_via_phone">Log in with Phone Number</string>
+
+    <string name="terms_and_conditions">By joining, I declare that I have read and accept the Terms and Privacy Policy.</string>
+    <string name="dont_have_account_start">Don\'t have an account yet?</string>
+    <string name="dont_have_account_end">\u0020<u>Register</u></string>
 </resources>
