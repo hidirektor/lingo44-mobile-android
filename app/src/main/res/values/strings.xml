@@ -56,4 +56,6 @@
     <string name="register_email_placeholder">hidirektor@gmail.com</string>
     <string name="register_phonenumber_title">Telefon Numarası</string>
     <string name="register_phonenumber_placeholder">542-345-23-00</string>
+    <string name="register_password_title">Şifre</string>
+    <string name="register_password_repeat_title">Tekrar Şifre</string>
 </resources>

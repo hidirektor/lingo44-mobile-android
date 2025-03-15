@@ -37,6 +37,7 @@ android {
 dependencies {
 
     implementation(libs.ccp)
+    implementation(libs.chaosleung.pinview)
 
     implementation(libs.appcompat)
     implementation(libs.material)

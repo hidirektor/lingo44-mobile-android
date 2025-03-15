@@ -78,7 +78,8 @@
                     android:layout_marginBottom="4dp">
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="6dp">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"

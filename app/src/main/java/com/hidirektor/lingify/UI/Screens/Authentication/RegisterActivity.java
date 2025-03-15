@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.chaos.view.PinView;
 import com.google.android.material.textfield.TextInputEditText;
 import com.hbb20.CountryCodePicker;
 import com.hidirektor.lingify.R;
@@ -29,6 +30,9 @@ public class RegisterActivity extends AppCompatActivity {
     private Button registerButton;
     private LinearLayout registerViaGoogleLayout;
     private LinearLayout registerViaAppleLayout;
+
+    private PinView passwordPinView;
+    private PinView confirmPasswordPinView;
 
     private TextView loginText;
 
@@ -63,6 +67,8 @@ public class RegisterActivity extends AppCompatActivity {
         emailInputField = findViewById(R.id.emailInputField);
         countryCodePicker = findViewById(R.id.countryCodePicker);
         phoneNumberInputField = findViewById(R.id.phoneNumberInputField);
+        passwordPinView = findViewById(R.id.passwordPinView);
+        confirmPasswordPinView = findViewById(R.id.confirmPasswordPinView);
 
         registerButton = findViewById(R.id.registerButton);
         registerViaGoogleLayout = findViewById(R.id.registerViaGoogleLayout);
