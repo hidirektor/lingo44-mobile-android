@@ -1,6 +1,7 @@
 package com.hidirektor.lingify.Utility.Models.Course.Adapter;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +18,7 @@ import java.util.List;
 public class CourseAdapter extends BaseAdapter {
     private Context context;
     private List<CourseModel> courseList;
-    private int selectedPosition = -1;  // Başlangıçta hiçbir item seçili değil
+    private int selectedPosition = -1;
 
     public CourseAdapter(Context context, List<CourseModel> courseList) {
         this.context = context;
@@ -56,27 +57,30 @@ public class CourseAdapter extends BaseAdapter {
         }
 
         CourseModel course = courseList.get(position);
-        holder.icon.setImageResource(course.getIconForCurrentTheme());  // Ikonları güncelle
+        holder.icon.setImageResource(course.getIconForCurrentTheme());
         holder.name.setText(course.getName());
         holder.infoDescription.setText(course.getInfoDescription());
 
-        // Item seçildiyse arka planı güncelle
         if (position == selectedPosition) {
             holder.mainItemLayout.setBackgroundResource(R.drawable.background_item_course_active);
         } else {
             holder.mainItemLayout.setBackgroundResource(R.drawable.background_item_course_not_active);
         }
 
-        // Item tıklanma olayı
         holder.mainItemLayout.setOnClickListener(v -> {
             if (selectedPosition == position) {
-                // Eğer aynı item seçiliyse, seçimi kaldır
                 selectedPosition = -1;
             } else {
-                // Yeni bir item seçildi
                 selectedPosition = position;
             }
-            notifyDataSetChanged();  // Listeyi güncelle
+            notifyDataSetChanged();
+        });
+
+        holder.selectIcon.setOnClickListener(v -> {
+            Log.d("Selected Course", course.getName());
+            /*
+            Seçilen course'u kaydedip bir sonraki ekrana geç
+             */
         });
 
         return convertView;
