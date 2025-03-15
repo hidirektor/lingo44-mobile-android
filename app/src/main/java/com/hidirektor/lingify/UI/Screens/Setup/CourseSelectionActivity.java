@@ -1,0 +1,110 @@
+package com.hidirektor.lingify.UI.Screens.Setup;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.ImageView;
+import android.widget.ListView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.hidirektor.lingify.R;
+import com.hidirektor.lingify.UI.Screens.Welcome.WelcomeActivity;
+import com.hidirektor.lingify.Utility.Models.Course.Adapter.CourseAdapter;
+import com.hidirektor.lingify.Utility.Models.Course.CourseModel;
+import com.hidirektor.lingify.Utility.Preferences.Theme.ThemeUtil;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CourseSelectionActivity extends AppCompatActivity {
+
+    private ImageView backButton;
+    private ImageView themeChangerButton;
+    private ListView courseListView;
+    private List<CourseModel> courseList;
+    private CourseAdapter adapter;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_setup_course);
+
+        componentInitialize();
+
+        themeChangerButton.setOnClickListener(v -> {
+            ThemeUtil.changeTheme(CourseSelectionActivity.this);
+            updateCourseIcons();
+        });
+        backButton.setOnClickListener(v -> {
+            Intent intent = new Intent(CourseSelectionActivity.this, WelcomeActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+            finish();
+        });
+    }
+
+    private void componentInitialize() {
+        backButton = findViewById(R.id.backButton);
+        themeChangerButton = findViewById(R.id.themeChangerButton);
+        courseListView = findViewById(R.id.courseListView);
+
+        courseList = new ArrayList<>();
+        courseList.add(new CourseModel(
+                R.drawable.icon_course_ielts,
+                R.drawable.icon_course_ielts,
+                this.getString(R.string.course_ielts_general),
+                this.getString(R.string.desc_ielts_general)
+        ));
+
+        courseList.add(new CourseModel(
+                R.drawable.icon_course_ielts,
+                R.drawable.icon_course_ielts,
+                this.getString(R.string.course_ielts_academic),
+                this.getString(R.string.desc_ielts_academic)
+        ));
+
+        courseList.add(new CourseModel(
+                R.drawable.icon_course_toefl,
+                R.drawable.icon_course_toefl,
+                this.getString(R.string.course_toefl),
+                this.getString(R.string.desc_toefl)
+        ));
+
+        courseList.add(new CourseModel(
+                R.drawable.icon_course_goethe,
+                R.drawable.icon_course_goethe,
+                this.getString(R.string.course_goethe),
+                this.getString(R.string.desc_goethe)
+        ));
+
+        courseList.add(new CourseModel(
+                R.drawable.icon_course_goethe,
+                R.drawable.icon_course_goethe,
+                this.getString(R.string.course_goethe_family),
+                this.getString(R.string.desc_goethe_family)
+        ));
+
+        courseList.add(new CourseModel(
+                R.drawable.icon_course_osym_light,
+                R.drawable.icon_course_osym_dark,
+                this.getString(R.string.course_yds),
+                this.getString(R.string.desc_yds)
+        ));
+
+        courseList.add(new CourseModel(
+                R.drawable.icon_course_osym_light,
+                R.drawable.icon_course_osym_dark,
+                this.getString(R.string.course_yks_dil),
+                this.getString(R.string.desc_yks_dil)
+        ));
+
+        adapter = new CourseAdapter(this, courseList);
+        courseListView.setAdapter(adapter);
+    }
+
+    private void updateCourseIcons() {
+        for (CourseModel course : courseList) {
+            courseListView.invalidateViews();
+        }
+    }
+}

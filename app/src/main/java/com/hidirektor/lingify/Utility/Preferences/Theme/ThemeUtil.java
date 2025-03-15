@@ -2,7 +2,6 @@ package com.hidirektor.lingify.Utility.Preferences.Theme;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.util.Log;
 
 import androidx.appcompat.app.AppCompatDelegate;
 
@@ -23,5 +22,14 @@ public class ThemeUtil {
         SharedPreferences sharedPreferences = context.getSharedPreferences(SystemDefaults.PREFS_NAME, Context.MODE_PRIVATE);
         int themeMode = sharedPreferences.getInt(SystemDefaults.KEY_THEME, AppCompatDelegate.MODE_NIGHT_NO);
         setTheme(context, themeMode);
+    }
+
+    public static void changeTheme(Context context) {
+        int currentMode = AppCompatDelegate.getDefaultNightMode();
+        int newMode = (currentMode == AppCompatDelegate.MODE_NIGHT_NO)
+                ? AppCompatDelegate.MODE_NIGHT_YES
+                : AppCompatDelegate.MODE_NIGHT_NO;
+
+        setTheme(context, newMode);
     }
 }

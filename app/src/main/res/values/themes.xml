@@ -27,6 +27,7 @@
         <item name="lingifyOnboardImage">@drawable/image_welcome_white</item>
         <item name="lingifyThemeChangerImage">@drawable/icon_moon</item>
         <item name="lingifyBackIcon">@drawable/icon_back_light</item>
+        <item name="lingifyNextIcon">@drawable/icon_next_light</item>
         <item name="lingifyGoogleIcon">@drawable/icon_google_light</item>
         <item name="lingifyAppleIcon">@drawable/icon_apple_light</item>
         <item name="lingifyShowPasswordIcon">@drawable/icon_show_password_light</item>

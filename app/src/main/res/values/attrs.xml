@@ -5,6 +5,7 @@
         <attr name="lingifyOnboardImage" format="reference" />
         <attr name="lingifyThemeChangerImage" format="reference" />
         <attr name="lingifyBackIcon" format="reference" />
+        <attr name="lingifyNextIcon" format="reference" />
         <attr name="lingifyGoogleIcon" format="reference" />
         <attr name="lingifyAppleIcon" format="reference" />
         <attr name="lingifyShowPasswordIcon" format="reference" />

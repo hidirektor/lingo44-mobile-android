@@ -29,6 +29,7 @@
 
         <activity android:name=".UI.Screens.Loading.LoadingActivity" />
         <activity android:name=".UI.Screens.Welcome.WelcomeActivity" />
+        <activity android:name=".UI.Screens.Setup.CourseSelectionActivity" />
     </application>
 
 </manifest>

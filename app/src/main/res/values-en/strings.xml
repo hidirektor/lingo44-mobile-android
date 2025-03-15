@@ -6,4 +6,23 @@
     <string name="welcome_button">Start your Preparing</string>
     <string name="welcome_login_start">Already, have an account?</string>
     <string name="welcome_login_end">\u0020<u>Log in</u></string>
+
+    <string name="setup_course_selection_title">Which exam are you preparing for?</string>
+    <!-- Course Titles -->
+    <string name="course_ielts_general">IELTS - General</string>
+    <string name="course_ielts_academic">IELTS - Academic</string>
+    <string name="course_toefl">TOEFL</string>
+    <string name="course_goethe">Goethe Institut</string>
+    <string name="course_goethe_family">Goethe Institut - Family Reunion</string>
+    <string name="course_yds">YDS</string>
+    <string name="course_yks_dil">YKS-Dil</string>
+
+    <!-- Course Descriptions -->
+    <string name="desc_ielts_general">Prepare for everyday English use and immigration.</string>
+    <string name="desc_ielts_academic">Improve your academic English for university entry.</string>
+    <string name="desc_toefl">Boost your English skills for studying abroad.</string>
+    <string name="desc_goethe">Learn German for work and daily life.</string>
+    <string name="desc_goethe_family">Master German for family reunification.</string>
+    <string name="desc_yds">Enhance your English for academic and government exams.</string>
+    <string name="desc_yks_dil">Prepare for Turkey’s university language exam.</string>
 </resources>

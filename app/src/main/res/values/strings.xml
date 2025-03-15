@@ -9,4 +9,23 @@
     <string name="welcome_button">Sınava Hazırlan</string>
     <string name="welcome_login_start">Zaten bir hesabınız mı Var?</string>
     <string name="welcome_login_end">\u0020<u>Giriş Yapın</u></string>
+
+    <string name="setup_course_selection_title">Hangi sınava hazırlanıyorsunuz?</string>
+    <!-- Course Titles -->
+    <string name="course_ielts_general">IELTS - Genel</string>
+    <string name="course_ielts_academic">IELTS - Akademik</string>
+    <string name="course_toefl">TOEFL</string>
+    <string name="course_goethe">Goethe Enstitüsü</string>
+    <string name="course_goethe_family">Goethe Enstitüsü - Aile Birleşimi</string>
+    <string name="course_yds">YDS</string>
+    <string name="course_yks_dil">YKS-Dil</string>
+
+    <!-- Course Descriptions -->
+    <string name="desc_ielts_general">Günlük İngilizce kullanımı ve göçmenlik için hazırlan.</string>
+    <string name="desc_ielts_academic">Üniversite eğitimi için akademik İngilizceni geliştir.</string>
+    <string name="desc_toefl">Yurt dışında eğitim için İngilizceni güçlendir.</string>
+    <string name="desc_goethe">İş ve günlük yaşam için Almanca öğren.</string>
+    <string name="desc_goethe_family">Aile birleşimi için Almanca öğren.</string>
+    <string name="desc_yds">Akademik ve devlet sınavları için İngilizceni geliştir.</string>
+    <string name="desc_yks_dil">Türkiye’nin üniversite dil sınavına hazırlan.</string>
 </resources>
