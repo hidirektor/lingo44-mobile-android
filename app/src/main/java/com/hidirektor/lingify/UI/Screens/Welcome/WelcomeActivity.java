@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.hidirektor.lingify.R;
 import com.hidirektor.lingify.UI.Screens.Authentication.LoginActivity;
 import com.hidirektor.lingify.UI.Screens.Authentication.RegisterActivity;
+import com.hidirektor.lingify.UI.Screens.Setup.CourseSelectionActivity;
 import com.hidirektor.lingify.Utility.Preferences.Theme.ThemeUtil;
 import com.hidirektor.lingify.Utility.SystemDefaults;
 
@@ -18,6 +19,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
     private ImageView themeChangerButton;
     private Button getReadyButton;
+    private Button registerButton;
 
     private TextView loginText;
 
@@ -35,6 +37,10 @@ public class WelcomeActivity extends AppCompatActivity {
 
         themeChangerButton.setOnClickListener(v -> ThemeUtil.changeTheme(WelcomeActivity.this));
         getReadyButton.setOnClickListener(v -> {
+            Intent intent = new Intent(WelcomeActivity.this, CourseSelectionActivity.class);
+            startActivity(intent);
+        });
+        registerButton.setOnClickListener(v -> {
             Intent intent = new Intent(WelcomeActivity.this, RegisterActivity.class);
             startActivity(intent);
         });
@@ -49,6 +55,7 @@ public class WelcomeActivity extends AppCompatActivity {
     private void componentInitialize() {
         themeChangerButton = findViewById(R.id.themeChangerButton);
         getReadyButton = findViewById(R.id.getReadyButton);
+        registerButton = findViewById(R.id.registerButton);
 
         loginText = findViewById(R.id.loginText);
     }
