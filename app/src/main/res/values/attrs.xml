@@ -4,5 +4,11 @@
         <attr name="lingifyLogo" format="reference" />
         <attr name="lingifyOnboardImage" format="reference" />
         <attr name="lingifyThemeChangerImage" format="reference" />
+        <attr name="lingifyBackIcon" format="reference" />
+        <attr name="lingifyGoogleIcon" format="reference" />
+        <attr name="lingifyAppleIcon" format="reference" />
+        <attr name="lingifyShowPasswordIcon" format="reference" />
+        <attr name="lingifyHidePasswordIcon" format="reference" />
+        <attr name="lingifyCloseIcon" format="reference" />
     </declare-styleable>
 </resources>

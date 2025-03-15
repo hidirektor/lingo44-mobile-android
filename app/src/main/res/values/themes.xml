@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Theme.Lingify" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
         <item name="android:icon">@mipmap/ic_launcher</item>
@@ -26,6 +26,12 @@
         <item name="lingifyLogo">@drawable/logo_kusadasi_dil_white</item>
         <item name="lingifyOnboardImage">@drawable/image_welcome_white</item>
         <item name="lingifyThemeChangerImage">@drawable/icon_moon</item>
+        <item name="lingifyBackIcon">@drawable/icon_back_light</item>
+        <item name="lingifyGoogleIcon">@drawable/icon_google_light</item>
+        <item name="lingifyAppleIcon">@drawable/icon_apple_light</item>
+        <item name="lingifyShowPasswordIcon">@drawable/icon_show_password_light</item>
+        <item name="lingifyHidePasswordIcon">@drawable/icon_hide_password_light</item>
+        <item name="lingifyCloseIcon">@drawable/icon_close_light</item>
     </style>
 
     <style name="Theme.RemoveSplashScreenTheme" parent="@style/Theme.Lingify">
