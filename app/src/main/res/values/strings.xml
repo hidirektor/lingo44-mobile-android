@@ -5,6 +5,7 @@
 
     <string name="continue_button">İlerle</string>
     <string name="login_button">Giriş Yap</string>
+    <string name="register_button">Kayıt Ol</string>
     <string name="login_via_google_button">Google ile Giriş Yap</string>
     <string name="login_via_apple_button">Apple ile Giriş Yap</string>
     <string name="or_button">ya da</string>
@@ -45,4 +46,14 @@
     <string name="terms_and_conditions">Katılarak, Şartlar ve Gizlilik Politikası\'nı okuduğumu ve kabul ettiğimi beyan ederim.</string>
     <string name="dont_have_account_start">Henüz bir hesabınız yok mu?</string>
     <string name="dont_have_account_end">\u0020<u>Üye Ol</u></string>
+
+    <string name="register_title">Kayıt olarak özenle hazırlanan sınav kaynaklarına erişin.</string>
+    <string name="register_username_title">Kullanıcı Adı</string>
+    <string name="register_username_placeholder">hidirektor</string>
+    <string name="register_namesurname_title">İsim Soyisim</string>
+    <string name="register_namesurname_placeholder">Halil İbrahim Direktör</string>
+    <string name="register_email_title">E-Posta Adresi</string>
+    <string name="register_email_placeholder">hidirektor@gmail.com</string>
+    <string name="register_phonenumber_title">Telefon Numarası</string>
+    <string name="register_phonenumber_placeholder">542-345-23-00</string>
 </resources>

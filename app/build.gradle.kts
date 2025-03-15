@@ -36,6 +36,8 @@ android {
 
 dependencies {
 
+    implementation(libs.ccp)
+
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.constraintlayout)

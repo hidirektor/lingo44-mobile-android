@@ -2,6 +2,7 @@
 <resources>
     <string name="continue_button">Continue</string>
     <string name="login_button">Login</string>
+    <string name="register_button">Register</string>
     <string name="login_via_google_button">Login with Google</string>
     <string name="login_via_apple_button">Login with Apple</string>
     <string name="or_button">or</string>
@@ -41,4 +42,14 @@
     <string name="terms_and_conditions">By joining, I declare that I have read and accept the Terms and Privacy Policy.</string>
     <string name="dont_have_account_start">Don\'t have an account yet?</string>
     <string name="dont_have_account_end">\u0020<u>Register</u></string>
+
+    <string name="register_title">Register and access carefully prepared exam resources.</string>
+    <string name="register_username_title">Username</string>
+    <string name="register_username_placeholder">hidirektor</string>
+    <string name="register_namesurname_title">Full Name</string>
+    <string name="register_namesurname_placeholder">Halil İbrahim Direktör</string>
+    <string name="register_email_title">E-Mail</string>
+    <string name="register_email_placeholder">hidirektor@gmail.com</string>
+    <string name="register_phonenumber_title">Phone Number</string>
+    <string name="register_phonenumber_placeholder">542-345-23-00</string>
 </resources>
