@@ -1,5 +1,6 @@
 package com.hidirektor.lingify.UI.Screens.Authentication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -34,6 +35,11 @@ public class LoginActivity extends AppCompatActivity {
         componentInitialize();
 
         themeChangerButton.setOnClickListener(v -> ThemeUtil.changeTheme(LoginActivity.this));
+
+        registerText.setOnClickListener(v -> {
+            Intent registerIntent = new Intent(LoginActivity.this, RegisterActivity.class);
+            startActivity(registerIntent);
+        });
     }
 
     private void componentInitialize() {

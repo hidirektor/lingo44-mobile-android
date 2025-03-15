@@ -5,6 +5,8 @@
     <string name="login_via_google_button">Login with Google</string>
     <string name="login_via_apple_button">Login with Apple</string>
     <string name="or_button">or</string>
+    <string name="signup_via_google_button">Sign up with Google</string>
+    <string name="signup_via_apple_button">Sign up with Apple</string>
 
     <string name="splash_slogan">Your personal language learning tutor.</string>
 

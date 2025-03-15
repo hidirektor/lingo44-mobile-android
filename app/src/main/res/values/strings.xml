@@ -8,6 +8,8 @@
     <string name="login_via_google_button">Google ile Giriş Yap</string>
     <string name="login_via_apple_button">Apple ile Giriş Yap</string>
     <string name="or_button">ya da</string>
+    <string name="signup_via_google_button">Google ile Kayıt Ol</string>
+    <string name="signup_via_apple_button">Apple ile Kayıt Ol</string>
 
     <string name="splash_slogan">Kişisel dil öğrenme eğitmeniniz.</string>
 

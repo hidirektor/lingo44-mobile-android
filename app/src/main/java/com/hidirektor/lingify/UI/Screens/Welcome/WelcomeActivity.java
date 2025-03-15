@@ -38,6 +38,10 @@ public class WelcomeActivity extends AppCompatActivity {
             Intent intent = new Intent(WelcomeActivity.this, CourseSelectionActivity.class);
             startActivity(intent);
         });
+        /*
+        TODO
+        burası register'a atacak register'dan sonra course selection'a gönder
+         */
 
         loginText.setOnClickListener(v -> {
             Intent loginIntent = new Intent(WelcomeActivity.this, LoginActivity.class);
