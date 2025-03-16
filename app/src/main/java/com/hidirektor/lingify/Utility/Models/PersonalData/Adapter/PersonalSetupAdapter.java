@@ -35,7 +35,7 @@ public class PersonalSetupAdapter extends ArrayAdapter<PersonalDataModel> {
 
         questionTextView.setText(data.getQuestion());
 
-        AnswerAdapter answerAdapter = new AnswerAdapter(getContext(), data.getAnswerList());
+        AnswerAdapter answerAdapter = new AnswerAdapter(getContext(), data.getAnswerList(), position);
         answerListView.setAdapter(answerAdapter);
 
         setListViewHeightBasedOnChildren(answerListView);

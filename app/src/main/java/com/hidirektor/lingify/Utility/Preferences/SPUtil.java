@@ -31,16 +31,16 @@ public class SPUtil {
         editor.apply();
     }
 
-    public static void saveAnswer(Context context, String selectedAnswer, int position) {
+    public static void saveAnswer(Context context, String selectedAnswer, int questionPosition, int answerPosition) {
         SharedPreferences.Editor editor = getSharedPreferences(context).edit();
         String jsonData = getUserSetupJson(context);
         try {
             JSONObject jsonObject = new JSONObject(jsonData);
             JSONObject firstSetup = jsonObject.getJSONObject("firstSetup");
 
-            if (position == 1) {
+            if (questionPosition == 0) {
                 firstSetup.put("firstAnswer", selectedAnswer);
-            } else if (position == 2) {
+            } else if (questionPosition == 1) {
                 firstSetup.put("secondAnswer", selectedAnswer);
             }
 

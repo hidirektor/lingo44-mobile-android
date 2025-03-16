@@ -1,7 +1,6 @@
 package com.hidirektor.lingify.Utility.Models.PersonalData.Adapter;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.hidirektor.lingify.R;
 import com.hidirektor.lingify.Utility.Models.PersonalData.AnswerModel;
@@ -22,10 +22,14 @@ public class AnswerAdapter extends ArrayAdapter<AnswerModel> {
 
     private Context context;
     private int selectedPosition = -1;
+    private int questionPosition;
 
-    public AnswerAdapter(Context context, LinkedList<AnswerModel> answers) {
+    public AnswerAdapter(Context context, LinkedList<AnswerModel> answers, int questionPosition, @Nullable int userAnswerPosition) {
         super(context, 0, answers);
         this.context = context;
+
+        this.questionPosition = questionPosition;
+        this.selectedPosition = userAnswerPosition;
     }
 
     public void setSelectedPosition(int position) {
@@ -64,8 +68,7 @@ public class AnswerAdapter extends ArrayAdapter<AnswerModel> {
 
             String selectedAnswer = answer.getAnswer();
 
-            SPUtil.saveAnswer(context, selectedAnswer, selectedPosition);
-            Log.d("user setup 2", "position: " + position + " " + SPUtil.getUserSetupJson(context));
+            SPUtil.saveAnswer(context, selectedAnswer, questionPosition, selectedPosition);
 
             notifyDataSetChanged();
         });
