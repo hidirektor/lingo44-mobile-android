@@ -37,6 +37,7 @@
 
     <string name="login_title">Log in and continue working where you left off</string>
     <string name="login_input_title_email">E-Mail</string>
+    <string name="login_input_title_password">Password</string>
     <string name="login_input_title_login_via_phone">Log in with Phone Number</string>
 
     <string name="terms_and_conditions">By joining, I declare that I have read and accept the Terms and Privacy Policy.</string>

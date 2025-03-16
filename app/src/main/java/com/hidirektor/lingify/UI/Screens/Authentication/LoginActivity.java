@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.chaos.view.PinView;
 import com.google.android.material.textfield.TextInputEditText;
 import com.hidirektor.lingify.R;
 import com.hidirektor.lingify.Utility.Preferences.Theme.ThemeUtil;
@@ -19,6 +20,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private TextView loginWithPhoneNumber;
     private TextInputEditText emailInputField;
+    private PinView passwordPinView;
 
     private Button loginButton;
 
@@ -47,6 +49,7 @@ public class LoginActivity extends AppCompatActivity {
 
         loginWithPhoneNumber = findViewById(R.id.loginWithPhoneNumber);
         emailInputField = findViewById(R.id.emailInputField);
+        passwordPinView = findViewById(R.id.passwordPinView);
 
         loginButton = findViewById(R.id.loginButton);
 

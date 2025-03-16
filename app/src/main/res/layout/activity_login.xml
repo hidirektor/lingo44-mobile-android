@@ -132,6 +132,46 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"/>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login_input_title_password"
+                        android:fontFamily="@font/sf_pro_regular"
+                        android:textColor="@color/body_primary"
+                        android:textSize="14sp"
+                        android:layout_gravity="start|center"
+                        android:gravity="start|center"
+                        android:lineSpacingExtra="4sp"
+                        android:maxLines="2"
+                        android:ellipsize="none"
+                        android:scrollHorizontally="false"
+                        android:breakStrategy="simple"/>
+
+                    <com.chaos.view.PinView
+                        android:id="@+id/passwordPinView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:itemCount="6"
+                        app:itemWidth="50dp"
+                        app:itemHeight="60dp"
+                        android:textColor="@color/body_primary"
+                        app:cursorColor="@color/body_primary"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/sf_pro_regular"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginTop="6dp"
+                        app:lineColor="@color/body_border_divider"
+                        android:itemBackground="@color/body_surfaces_first"/>
+                </LinearLayout>
+
                 <Button
                     android:id="@+id/loginButton"
                     android:layout_width="match_parent"
