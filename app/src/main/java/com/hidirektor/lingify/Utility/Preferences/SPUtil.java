@@ -91,6 +91,29 @@ public class SPUtil {
         }
     }
 
+    public static void saveMoreDetail(Context context, String moreDetail) {
+        SharedPreferences sharedPreferences = getSharedPreferences(context);
+        String existingJson = sharedPreferences.getString(SystemDefaults.KEY_USER_SETUP, "{}");
+
+        try {
+            JSONObject rootObject = new JSONObject(existingJson);
+            JSONObject firstSetup = rootObject.optJSONObject("firstSetup");
+
+            if (firstSetup == null) {
+                firstSetup = new JSONObject();
+            }
+
+            firstSetup.put("moreDetail", moreDetail);
+            rootObject.put("firstSetup", firstSetup);
+
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putString(SystemDefaults.KEY_USER_SETUP, rootObject.toString());
+            editor.apply();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static String getUserSetupJson(Context context) {
         SharedPreferences prefs = getSharedPreferences(context);
         return prefs.getString(SystemDefaults.KEY_USER_SETUP, "{}");

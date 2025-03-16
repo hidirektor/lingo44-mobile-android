@@ -76,4 +76,8 @@
     <string name="personal_setup_second_answer_5">Hedefim dil öğretmeni olmak ve bu sınavı geçmek, yeterlilik kazanmak için önemli bir adım.</string>
     <string name="personal_setup_second_answer_more_detail_title">Daha fazla detay ekleyin</string>
     <string name="personal_setup_second_answer_more_detail_placeholder">Sınava girme amacınız hakkında\ndaha fazla bilgi yazabilirsiniz.</string>
+
+    <string name="detect_level_title">Hadi Seviyenizi Belirleyelim</string>
+    <string name="detect_level_manual_button">Seviyenizi Seçin</string>
+    <string name="detect_level_exam_button">Seviye Belirleme Sınavı</string>
 </resources>

@@ -76,7 +76,7 @@
                 android:layout_marginBottom="6dp"/>
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/usernameInputField"
+                android:id="@+id/moreDetailInputField"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:background="@drawable/background_input_email"
@@ -89,6 +89,18 @@
                 android:maxLines="2"
                 android:textColorHint="@color/body_secondary" />
         </LinearLayout>
+
+        <Button
+            android:id="@+id/continueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/continue_button"
+            android:fontFamily="@font/sf_pro_medium"
+            android:textColor="@color/body_on_primary"
+            android:background="@drawable/button_background_get_ready"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:layout_margin="12dp"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

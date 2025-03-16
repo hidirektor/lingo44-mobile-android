@@ -72,4 +72,8 @@
     <string name="personal_setup_second_answer_5">My goal is to become a language teacher, and passing this exam is a key requirement for my qualification.</string>
     <string name="personal_setup_second_answer_more_detail_title">Add more details</string>
     <string name="personal_setup_second_answer_more_detail_placeholder">You can write more details about your\nreason for taking the test here.</string>
+
+    <string name="detect_level_title">Let\'s Determine Your Level</string>
+    <string name="detect_level_manual_button">Choose your Level</string>
+    <string name="detect_level_exam_button">Take a Screening Test</string>
 </resources>

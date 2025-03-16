@@ -1,12 +1,16 @@
 package com.hidirektor.lingify.UI.Screens.Setup;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.textfield.TextInputEditText;
 import com.hidirektor.lingify.R;
+import com.hidirektor.lingify.UI.Screens.Setup.LanguageLevel.DetectSelectionActivity;
 import com.hidirektor.lingify.Utility.Models.PersonalSetup.Adapter.PersonalSetupAdapter;
 import com.hidirektor.lingify.Utility.Models.PersonalSetup.PersonalSetupAnswerModel;
 import com.hidirektor.lingify.Utility.Models.PersonalSetup.PersonalSetupModel;
@@ -19,6 +23,8 @@ import java.util.LinkedList;
 public class PersonalSetupActivity extends AppCompatActivity {
 
     private ImageView themeChangerButton;
+    private Button continueButton;
+    private TextInputEditText moreDetailInputField;
 
     private ListView personalSetupListView;
     private ArrayList<PersonalSetupModel> personalDataList;
@@ -32,15 +38,20 @@ public class PersonalSetupActivity extends AppCompatActivity {
         componentInitialize();
 
         themeChangerButton.setOnClickListener(v -> ThemeUtil.changeTheme(PersonalSetupActivity.this));
-    }
+        continueButton.setOnClickListener(v -> {
+            String moreDetail = moreDetailInputField.getText() != null ? moreDetailInputField.getText().toString() : "";
+            SPUtil.saveMoreDetail(PersonalSetupActivity.this, moreDetail);
 
-    @Override
-    protected void onResume() {
-        super.onResume();
+            Intent languageLevelDetectIntent = new Intent(PersonalSetupActivity.this, DetectSelectionActivity.class);
+            startActivity(languageLevelDetectIntent);
+            finish();
+        });
     }
 
     private void componentInitialize() {
         themeChangerButton = findViewById(R.id.themeChangerButton);
+        continueButton = findViewById(R.id.continueButton);
+        moreDetailInputField = findViewById(R.id.moreDetailInputField);
 
         personalSetupListView = findViewById(R.id.personalSetupListView);
 

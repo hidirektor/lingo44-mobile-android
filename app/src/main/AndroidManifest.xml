@@ -34,6 +34,7 @@
 
         <activity android:name=".UI.Screens.Setup.CourseSelectionActivity" />
         <activity android:name=".UI.Screens.Setup.PersonalSetupActivity" />
+        <activity android:name=".UI.Screens.Setup.LanguageLevel.DetectSelectionActivity" />
     </application>
 
 </manifest>

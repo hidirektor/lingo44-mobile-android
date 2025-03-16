@@ -49,7 +49,6 @@ public class CourseSelectionActivity extends AppCompatActivity {
 
         updateCourseIcons();
 
-        // Seçili kursu geri yükle
         String selectedCourse = SPUtil.getSelectedCourse(this);
         if (selectedCourse != null) {
             setSelectedCourse(selectedCourse);
