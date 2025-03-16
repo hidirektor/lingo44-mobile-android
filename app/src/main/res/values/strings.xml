@@ -80,4 +80,12 @@
     <string name="detect_level_title">Hadi Seviyenizi Belirleyelim</string>
     <string name="detect_level_manual_button">Seviyenizi Seçin</string>
     <string name="detect_level_exam_button">Seviye Belirleme Sınavı</string>
+
+    <string name="detect_level_popup_title">Lütfen Seviyenizi Seçin</string>
+    <string name="detect_level_popup_level_1">A1 - Başlangıç</string>
+    <string name="detect_level_popup_level_2">A2 - Orta Altı</string>
+    <string name="detect_level_popup_level_3">B1 - Orta</string>
+    <string name="detect_level_popup_level_4">B2 - Orta Üstü</string>
+    <string name="detect_level_popup_level_5">C1 - İleri</string>
+    <string name="detect_level_popup_level_6">C2 - Anadil</string>
 </resources>

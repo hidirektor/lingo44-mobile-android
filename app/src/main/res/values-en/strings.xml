@@ -76,4 +76,12 @@
     <string name="detect_level_title">Let\'s Determine Your Level</string>
     <string name="detect_level_manual_button">Choose your Level</string>
     <string name="detect_level_exam_button">Take a Screening Test</string>
+
+    <string name="detect_level_popup_title">Please Choose Your Level</string>
+    <string name="detect_level_popup_level_1">A1 - Beginner</string>
+    <string name="detect_level_popup_level_2">A2 - Pre-Intermediate</string>
+    <string name="detect_level_popup_level_3">B1 - Intermediate</string>
+    <string name="detect_level_popup_level_4">B2 - Upper-Intermediate</string>
+    <string name="detect_level_popup_level_5">C1 - Advanced</string>
+    <string name="detect_level_popup_level_6">C2 - Native</string>
 </resources>
