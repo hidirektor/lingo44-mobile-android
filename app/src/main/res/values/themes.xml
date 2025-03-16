@@ -41,6 +41,7 @@
         <item name="lingifySkillIcon">@drawable/icon_flame_light</item>
         <item name="lingifyPeopleIcon">@drawable/icon_people_light</item>
         <item name="lingifyDetectLevelImage">@drawable/image_detect_level_light</item>
+        <item name="lingifyDividerIcon">@drawable/icon_divider_light</item>
     </style>
 
     <style name="Theme.RemoveSplashScreenTheme" parent="@style/Theme.Lingify">

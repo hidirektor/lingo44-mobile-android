@@ -6,24 +6,49 @@
     android:padding="8dp"
     android:background="@drawable/background_level_selection_popup">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/detect_level_popup_title"
-        android:fontFamily="@font/sf_pro_bold"
-        android:textColor="@color/body_primary"
-        android:textSize="20sp"
-        android:layout_gravity="center"
-        android:gravity="start"
-        android:lineSpacingExtra="4sp"
-        android:maxLines="2"
-        android:ellipsize="none"
-        android:scrollHorizontally="false"
-        android:breakStrategy="simple"
-        android:layout_marginTop="6dp"
-        android:layout_marginBottom="6dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginRight="12dp"/>
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="?attr/lingifyDividerIcon"
+            android:layout_gravity="center"
+            android:layout_marginBottom="6dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/detect_level_popup_title"
+                android:fontFamily="@font/sf_pro_bold"
+                android:textColor="@color/body_primary"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:lineSpacingExtra="4sp"
+                android:maxLines="2"
+                android:ellipsize="none"
+                android:scrollHorizontally="false"
+                android:breakStrategy="simple"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <ImageView
+                android:id="@+id/closeButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="?attr/lingifyCloseIcon"
+                android:layout_marginEnd="12dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

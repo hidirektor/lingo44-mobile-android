@@ -1,5 +1,6 @@
 [versions]
 agp = "8.9.0"
+appcompatVersion = "1.1.0"
 ccp = "2.7.3"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -13,6 +14,7 @@ pinview = "1.4.3"
 pinviewVersion = "1.4.4"
 
 [libraries]
+appcompat-v110 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
 ccp = { module = "com.hbb20:ccp", version.ref = "ccp" }
 chaosleung-pinview = { module = "io.github.chaosleung:pinview", version.ref = "pinviewVersion" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }

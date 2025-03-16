@@ -1,24 +1,18 @@
 package com.hidirektor.lingify.UI.Screens.Setup.LanguageLevel;
 
 import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.PopupWindow;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.hidirektor.lingify.R;
-import com.hidirektor.lingify.Utility.Models.LanguageLevel.Adapter.LanguageLevelAdapter;
 import com.hidirektor.lingify.Utility.Models.LanguageLevel.LanguageLevelModel;
 import com.hidirektor.lingify.Utility.Preferences.Theme.ThemeUtil;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.LinkedList;
 
 public class DetectSelectionActivity extends AppCompatActivity {
 
@@ -29,7 +23,7 @@ public class DetectSelectionActivity extends AppCompatActivity {
     private PopupWindow levelPopupWindow;
 
     //ListView
-    List<LanguageLevelModel> languageLevels;
+    LinkedList<LanguageLevelModel> languageLevels;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +56,7 @@ public class DetectSelectionActivity extends AppCompatActivity {
         String level6 = getString(R.string.detect_level_popup_level_6);
 
         // Dil seviyelerini oluşturma
-        languageLevels = new ArrayList<>();
+        languageLevels = new LinkedList<>();
         languageLevels.add(new LanguageLevelModel(level1, english));
         languageLevels.add(new LanguageLevelModel(level2, english));
         languageLevels.add(new LanguageLevelModel(level3, english));
@@ -72,24 +66,7 @@ public class DetectSelectionActivity extends AppCompatActivity {
     }
 
     private void showLevelSelectionPopup() {
-        LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
-        View popupView = inflater.inflate(R.layout.popup_level_selection, null);
-
-        levelPopupWindow = new PopupWindow(popupView, LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT, true);
-        levelPopupWindow.showAsDropDown(pickLevelButton, 0, 20);
-
-        ListView languageLevelListView = popupView.findViewById(R.id.languageLevelListView);
-        Button continueButton = popupView.findViewById(R.id.continueButton);
-
-        LanguageLevelAdapter adapter = new LanguageLevelAdapter(this, languageLevels);
-        languageLevelListView.setAdapter(adapter);
-
-        continueButton.setOnClickListener(v -> {
-            int selectedPosition = languageLevelListView.getCheckedItemPosition();
-            if (selectedPosition != ListView.INVALID_POSITION) {
-                LanguageLevelModel selectedLevel = (LanguageLevelModel) languageLevelListView.getItemAtPosition(selectedPosition);
-                Log.d("LanguageLevel", "Selected Language Level: " + selectedLevel.getLevelName());
-            }
-        });
+        LanguageLevelBottomSheet bottomSheetDialog = LanguageLevelBottomSheet.newInstance(languageLevels);
+        bottomSheetDialog.show(getSupportFragmentManager(), bottomSheetDialog.getTag());
     }
 }

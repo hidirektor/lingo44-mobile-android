@@ -19,5 +19,6 @@
         <attr name="lingifySkillIcon" format="reference" />
         <attr name="lingifyPeopleIcon" format="reference" />
         <attr name="lingifyDetectLevelImage" format="reference" />
+        <attr name="lingifyDividerIcon" format="reference" />
     </declare-styleable>
 </resources>
