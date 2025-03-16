@@ -8,10 +8,14 @@ import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.core.content.res.ResourcesCompat;
+
 import com.hidirektor.lingify.R;
 import com.hidirektor.lingify.Utility.Models.LanguageLevel.LanguageLevelModel;
 
 import java.util.List;
+
+import io.shubh.superiortoastlibrary.SuperiorToast;
 
 public class LanguageLevelAdapter extends BaseAdapter {
     private Context context;
@@ -68,6 +72,14 @@ public class LanguageLevelAdapter extends BaseAdapter {
         holder.mainItemLayout.setOnClickListener(v -> {
             selectedPosition = (selectedPosition == position) ? -1 : position;
             notifyDataSetChanged();
+
+            if (level.getLevelName().contains("C2")) {
+                SuperiorToast.makeSuperiorToast(context.getApplicationContext(),context.getString(R.string.detect_level_easter_message))
+                        .setToastIcon(ResourcesCompat.getDrawable(context.getResources(), R.drawable.icon_easter_message, null))
+                        .show();
+
+                selectedPosition = -1;
+            }
         });
 
         return convertView;

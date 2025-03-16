@@ -78,6 +78,7 @@
     <string name="detect_level_exam_button">Take a Screening Test</string>
 
     <string name="detect_level_popup_title">Please Choose Your Level</string>
+    <string name="detect_level_easter_message">We\'re not sure there\'s anything we can teach you !</string>
     <string name="detect_level_popup_level_1">A1 - Beginner</string>
     <string name="detect_level_popup_level_2">A2 - Pre-Intermediate</string>
     <string name="detect_level_popup_level_3">B1 - Intermediate</string>
