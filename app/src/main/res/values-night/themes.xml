@@ -40,6 +40,7 @@
         <item name="lingifyWorldIcon">@drawable/icon_world_dark</item>
         <item name="lingifySkillIcon">@drawable/icon_flame_dark</item>
         <item name="lingifyPeopleIcon">@drawable/icon_people_dark</item>
+        <item name="lingifyDetectLevelImage">@drawable/image_detect_level_dark</item>
     </style>
 
     <style name="Theme.RemoveSplashScreenTheme" parent="@style/Theme.Lingify">
