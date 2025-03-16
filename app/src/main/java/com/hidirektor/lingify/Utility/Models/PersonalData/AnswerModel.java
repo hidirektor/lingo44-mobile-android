@@ -1,5 +1,7 @@
 package com.hidirektor.lingify.Utility.Models.PersonalData;
 
+import androidx.appcompat.app.AppCompatDelegate;
+
 public class AnswerModel {
     private String answer;
     private int lightIcon;
@@ -33,5 +35,10 @@ public class AnswerModel {
 
     public void setDarkIcon(int darkIcon) {
         this.darkIcon = darkIcon;
+    }
+
+    public int getIconForCurrentTheme() {
+        int currentMode = AppCompatDelegate.getDefaultNightMode();
+        return (currentMode == AppCompatDelegate.MODE_NIGHT_YES) ? darkIcon : lightIcon;
     }
 }
