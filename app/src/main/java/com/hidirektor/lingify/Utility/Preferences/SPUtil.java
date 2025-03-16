@@ -31,13 +31,19 @@ public class SPUtil {
         editor.apply();
     }
 
-    public static void saveAnswer(Context context, String selectedAnswer) {
+    public static void saveAnswer(Context context, String selectedAnswer, int position) {
         SharedPreferences.Editor editor = getSharedPreferences(context).edit();
         String jsonData = getUserSetupJson(context);
         try {
             JSONObject jsonObject = new JSONObject(jsonData);
             JSONObject firstSetup = jsonObject.getJSONObject("firstSetup");
-            firstSetup.put("selectedAnswer", selectedAnswer);
+
+            if (position == 1) {
+                firstSetup.put("firstAnswer", selectedAnswer);
+            } else if (position == 2) {
+                firstSetup.put("secondAnswer", selectedAnswer);
+            }
+
             editor.putString(SystemDefaults.KEY_USER_SETUP, jsonObject.toString());
             editor.apply();
         } catch (JSONException e) {
@@ -45,7 +51,7 @@ public class SPUtil {
         }
     }
 
-    private static String getUserSetupJson(Context context) {
+    public static String getUserSetupJson(Context context) {
         SharedPreferences prefs = getSharedPreferences(context);
         return prefs.getString(SystemDefaults.KEY_USER_SETUP, "{}");
     }

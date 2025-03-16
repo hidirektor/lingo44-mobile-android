@@ -34,7 +34,6 @@ public class CourseSelectionActivity extends AppCompatActivity {
 
         themeChangerButton.setOnClickListener(v -> {
             ThemeUtil.changeTheme(CourseSelectionActivity.this);
-            //updateCourseIcons();
         });
         backButton.setOnClickListener(v -> {
             Intent intent = new Intent(CourseSelectionActivity.this, WelcomeActivity.class);
@@ -47,7 +46,7 @@ public class CourseSelectionActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        // Tema değiştikten sonra kursları güncelle
+
         updateCourseIcons();
 
         // Seçili kursu geri yükle
@@ -120,7 +119,7 @@ public class CourseSelectionActivity extends AppCompatActivity {
         for (int i = 0; i < courseList.size(); i++) {
             if (courseList.get(i).getName().equals(selectedCourse)) {
                 adapter.setSelectedPosition(i);
-                courseListView.setSelection(i); // İsteğe bağlı olarak seçili kursu listede kaydır
+                courseListView.setSelection(i);
                 break;
             }
         }
