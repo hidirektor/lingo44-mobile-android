@@ -2,6 +2,7 @@ package com.hidirektor.lingify.Utility.Preferences;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.util.Log;
 
 import com.hidirektor.lingify.R;
 import com.hidirektor.lingify.Utility.SystemDefaults;
@@ -25,18 +26,45 @@ public class SPUtil {
             selectedLanguage = context.getString(R.string.language_english);
         }
 
-        SharedPreferences.Editor editor = getSharedPreferences(context).edit();
-        String jsonData = "{ \"firstSetup\": { " +
-                "\"selectedCourse\": \"" + selectedCourse + "\", " +
-                "\"selectedLanguage\": \"" + selectedLanguage + "\", " +
-                "\"firstAnswer\": \"\", " +
-                "\"firstAnswerPosition\": \"-1\", " +
-                "\"secondAnswer\": \"\", " +
-                "\"secondAnswerPosition\": \"-1\", " +
-                "\"moreDetail\": \"\" " +
-                "} }";
-        editor.putString(SystemDefaults.KEY_USER_SETUP, jsonData);
-        editor.apply();
+        SharedPreferences sharedPreferences = getSharedPreferences(context);
+        String existingJson = sharedPreferences.getString(SystemDefaults.KEY_USER_SETUP, "{}");
+
+        try {
+            JSONObject rootObject = new JSONObject(existingJson);
+            JSONObject firstSetup = rootObject.optJSONObject("firstSetup");
+            if (firstSetup == null) {
+                firstSetup = new JSONObject();
+            }
+
+            // Zorunlu alanları güncelle
+            firstSetup.put("selectedCourse", selectedCourse);
+            firstSetup.put("selectedLanguage", selectedLanguage);
+
+            // Eksik alanları kontrol edip varsayılan değerleri ata
+            if (!firstSetup.has("firstAnswer")) {
+                firstSetup.put("firstAnswer", "");
+            }
+            if (!firstSetup.has("firstAnswerPosition")) {
+                firstSetup.put("firstAnswerPosition", "-1");
+            }
+            if (!firstSetup.has("secondAnswer")) {
+                firstSetup.put("secondAnswer", "");
+            }
+            if (!firstSetup.has("secondAnswerPosition")) {
+                firstSetup.put("secondAnswerPosition", "-1");
+            }
+            if (!firstSetup.has("moreDetail")) {
+                firstSetup.put("moreDetail", "");
+            }
+
+            rootObject.put("firstSetup", firstSetup);
+
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putString(SystemDefaults.KEY_USER_SETUP, rootObject.toString());
+            editor.apply();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void saveAnswer(Context context, String selectedAnswer, int questionPosition, int answerPosition) {
@@ -48,14 +76,16 @@ public class SPUtil {
 
             if (questionPosition == 0) {
                 firstSetup.put("firstAnswer", selectedAnswer);
-                firstSetup.put("firstAnswerPosition", answerPosition);
+                firstSetup.put("firstAnswerPosition", String.valueOf(answerPosition));
             } else if (questionPosition == 1) {
                 firstSetup.put("secondAnswer", selectedAnswer);
-                firstSetup.put("secondAnswerPosition", answerPosition);
+                firstSetup.put("secondAnswerPosition", String.valueOf(answerPosition));
             }
 
             editor.putString(SystemDefaults.KEY_USER_SETUP, jsonObject.toString());
             editor.apply();
+
+            Log.d("whole user after save", getUserSetupJson(context));
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -116,13 +146,14 @@ public class SPUtil {
             JSONObject jsonObject = new JSONObject(jsonData);
             JSONObject firstSetup = jsonObject.getJSONObject("firstSetup");
             if (questionPosition == 0) {
-                return firstSetup.getInt("firstAnswerPosition");
+                return Integer.parseInt(firstSetup.getString("firstAnswerPosition"));
             } else if (questionPosition == 1) {
-                return firstSetup.getInt("secondAnswerPosition");
+                return Integer.parseInt(firstSetup.getString("secondAnswerPosition"));
             }
         } catch (JSONException e) {
             e.printStackTrace();
         }
+
         return -1;
     }
 }

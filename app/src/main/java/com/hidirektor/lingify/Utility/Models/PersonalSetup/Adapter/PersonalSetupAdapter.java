@@ -1,7 +1,6 @@
 package com.hidirektor.lingify.Utility.Models.PersonalSetup.Adapter;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +15,6 @@ import com.hidirektor.lingify.Utility.Models.PersonalSetup.PersonalSetupModel;
 import com.hidirektor.lingify.Utility.Preferences.SPUtil;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class PersonalSetupAdapter extends ArrayAdapter<PersonalSetupModel> {
 
@@ -43,12 +41,7 @@ public class PersonalSetupAdapter extends ArrayAdapter<PersonalSetupModel> {
         assert data != null;
         questionTextView.setText(data.getQuestion());
 
-        int selectedAnswerPosition = Objects.requireNonNull(SPUtil.getUserAnswerPos(context, position));
-
-        Log.d("user answer pos", SPUtil.getUserAnswerPos(context, position) + "");
-        Log.d("user answer pos 2", position + "");
-
-        Log.d("whole user answers", SPUtil.getUserSetupJson(context));
+        int selectedAnswerPosition = SPUtil.getUserAnswerPos(context, position);
 
         PersonalSetupAnswerAdapter answerAdapter = new PersonalSetupAnswerAdapter(context, data.getAnswerList(), position);
         answerAdapter.setSelectedPosition(selectedAnswerPosition);
