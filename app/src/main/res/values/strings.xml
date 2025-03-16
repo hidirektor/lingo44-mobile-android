@@ -12,6 +12,10 @@
     <string name="signup_via_google_button">Google ile Kayıt Ol</string>
     <string name="signup_via_apple_button">Apple ile Kayıt Ol</string>
 
+    <string name="language_turkish">Türkçe</string>
+    <string name="language_english">İngilizce</string>
+    <string name="language_german">Almanca</string>
+
     <string name="splash_slogan">Kişisel dil öğrenme eğitmeniniz.</string>
 
     <string name="welcome_title">Günde 30 dakika ile sınav hazırlığınızı hızlandırın.</string>

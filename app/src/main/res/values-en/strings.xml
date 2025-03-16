@@ -9,6 +9,10 @@
     <string name="signup_via_google_button">Sign up with Google</string>
     <string name="signup_via_apple_button">Sign up with Apple</string>
 
+    <string name="language_turkish">Turkish</string>
+    <string name="language_english">English</string>
+    <string name="language_german">German</string>
+
     <string name="splash_slogan">Your personal language learning tutor.</string>
 
     <string name="welcome_title">Speed up your exam preparation with 30 minutes a day.</string>

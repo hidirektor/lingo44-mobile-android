@@ -10,4 +10,7 @@ public class SystemDefaults {
 
     //First Time
     public static final String KEY_FIRST_TIME = "first_time";
+
+    //Personal Setup
+    public static final String KEY_USER_SETUP = "user_setup";
 }

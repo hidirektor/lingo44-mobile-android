@@ -1,7 +1,8 @@
 package com.hidirektor.lingify.Utility.Models.Course.Adapter;
 
 import android.content.Context;
-import android.util.Log;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,7 +12,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.hidirektor.lingify.R;
+import com.hidirektor.lingify.UI.Screens.Setup.PersonalSetupActivity;
 import com.hidirektor.lingify.Utility.Models.Course.CourseModel;
+import com.hidirektor.lingify.Utility.SystemDefaults;
 
 import java.util.List;
 
@@ -77,10 +80,26 @@ public class CourseAdapter extends BaseAdapter {
         });
 
         holder.selectIcon.setOnClickListener(v -> {
-            Log.d("Selected Course", course.getName());
-            /*
-            Seçilen course'u kaydedip bir sonraki ekrana geç
-             */
+            String selectedCourse = course.getName();
+
+            String selectedLanguage;
+            if (selectedCourse.contains("IELTS") || selectedCourse.contains("TOEFL")) {
+                selectedLanguage = context.getString(R.string.language_english);
+            } else if (selectedCourse.contains("Goethe")) {
+                selectedLanguage = context.getString(R.string.language_german);
+            } else {
+                selectedLanguage = context.getString(R.string.language_english);
+            }
+
+            SharedPreferences sharedPreferences = context.getSharedPreferences(SystemDefaults.PREFS_NAME, Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+
+            String jsonData = "{ \"firstSetup\": { \"selectedCourse\": \"" + selectedCourse + "\", \"selectedLanguage\": \"" + selectedLanguage + "\", \"firstAnswer\": \"\", \"secondAnswer\": \"\", \"moreDetail\": \"\" } }";
+            editor.putString(SystemDefaults.KEY_USER_SETUP, jsonData);
+            editor.apply();
+
+            Intent intent = new Intent(context, PersonalSetupActivity.class);
+            context.startActivity(intent);
         });
 
         return convertView;
