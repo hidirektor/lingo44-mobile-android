@@ -19,7 +19,7 @@
     <string name="splash_slogan">Kişisel dil öğrenme eğitmeniniz.</string>
 
     <string name="welcome_title">Günde 30 dakika ile sınav hazırlığınızı hızlandırın.</string>
-    <string name="welcome_button">Sınava Hazırlan</string>
+    <string name="welcome_button">Seviyeni Belirle</string>
     <string name="welcome_login_start">Zaten bir hesabınız mı var?</string>
     <string name="welcome_login_end">\u0020<u>Giriş Yapın</u></string>
 
