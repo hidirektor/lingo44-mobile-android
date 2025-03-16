@@ -54,4 +54,8 @@ public class ExamModel {
         }
         return correctAnswers;
     }
+
+    public List<QuestionModel> getQuestions() {
+        return questions;
+    }
 }

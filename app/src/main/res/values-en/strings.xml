@@ -8,6 +8,7 @@
     <string name="or_button">or</string>
     <string name="signup_via_google_button">Sign up with Google</string>
     <string name="signup_via_apple_button">Sign up with Apple</string>
+    <string name="start_exam_button">Start the Exam</string>
 
     <string name="language_turkish">Turkish</string>
     <string name="language_english">English</string>
@@ -85,4 +86,13 @@
     <string name="detect_level_popup_level_4">B2 - Upper-Intermediate</string>
     <string name="detect_level_popup_level_5">C1 - Advanced</string>
     <string name="detect_level_popup_level_6">C2 - Native</string>
+
+    <string name="detect_level_exam_title">Level Determination Exam</string>
+    <string name="detect_level_exam_description">
+    The Level Determination Exam is designed solely to assess your grammar proficiency.
+    For a more comprehensive evaluation, you can take the Advanced Level Exam available in the app.
+    This exam is structured in accordance with international exam formats such as IELTS and TOEFL.
+    </string>
+    <string name="detect_level_exam_question_count_text">Question</string>
+    <string name="detect_level_exam_time_text">Minutes</string>
 </resources>

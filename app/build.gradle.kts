@@ -40,6 +40,7 @@ dependencies {
     implementation(libs.chaosleung.pinview)
     implementation(libs.appcompat.v110)
     implementation(libs.superior.toasts)
+    implementation(libs.gson)
 
     implementation(libs.appcompat)
     implementation(libs.material)

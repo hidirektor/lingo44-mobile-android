@@ -11,6 +11,7 @@
     <string name="or_button">ya da</string>
     <string name="signup_via_google_button">Google ile Kayıt Ol</string>
     <string name="signup_via_apple_button">Apple ile Kayıt Ol</string>
+    <string name="start_exam_button">Sınava Başla</string>
 
     <string name="language_turkish">Türkçe</string>
     <string name="language_english">İngilizce</string>
@@ -89,4 +90,15 @@
     <string name="detect_level_popup_level_4">B2 - Orta Üstü</string>
     <string name="detect_level_popup_level_5">C1 - İleri</string>
     <string name="detect_level_popup_level_6">C2 - Anadil</string>
+
+    <string name="detect_level_exam_title">Seviye Belirleme Sınavı</string>
+    <string name="detect_level_exam_description">
+    Seviye Belirleme Sınavı, yalnızca dilbilgisi (grammar) seviyenizi ölçmek için tasarlanmıştır.
+    Daha kapsamlı bir değerlendirme için uygulama içindeki Gelişmiş Seviye Sınavı\'nı kullanabilirsiniz.
+    Bu sınav, IELTS ve TOEFL gibi uluslararası sınav formatlarına uygun olarak hazırlanmıştır.
+    </string>
+    <string name="detect_level_exam_question_count" translatable="false">30</string>
+    <string name="detect_level_exam_time" translatable="false">30</string>
+    <string name="detect_level_exam_question_count_text">Soru</string>
+    <string name="detect_level_exam_time_text">Dakika</string>
 </resources>

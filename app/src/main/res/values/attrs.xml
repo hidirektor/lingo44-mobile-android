@@ -20,5 +20,6 @@
         <attr name="lingifyPeopleIcon" format="reference" />
         <attr name="lingifyDetectLevelImage" format="reference" />
         <attr name="lingifyDividerIcon" format="reference" />
+        <attr name="lingifyQuizDashboardImage" format="reference" />
     </declare-styleable>
 </resources>
