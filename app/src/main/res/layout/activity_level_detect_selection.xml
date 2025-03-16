@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <Button
-                android:id="@+id/registerButton"
+                android:id="@+id/pickLevelButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/detect_level_manual_button"
@@ -118,7 +118,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/registerViaGoogleLayout"
+                android:id="@+id/startExamButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
