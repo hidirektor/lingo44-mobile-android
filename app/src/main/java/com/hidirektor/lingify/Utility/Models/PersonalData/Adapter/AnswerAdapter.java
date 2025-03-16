@@ -10,7 +10,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
 import com.hidirektor.lingify.R;
 import com.hidirektor.lingify.Utility.Models.PersonalData.AnswerModel;
@@ -24,7 +23,7 @@ public class AnswerAdapter extends ArrayAdapter<AnswerModel> {
     private int selectedPosition = -1;
     private int questionPosition;
 
-    public AnswerAdapter(Context context, LinkedList<AnswerModel> answers, int questionPosition, @Nullable int userAnswerPosition) {
+    public AnswerAdapter(Context context, LinkedList<AnswerModel> answers, int questionPosition, int userAnswerPosition) {
         super(context, 0, answers);
         this.context = context;
 

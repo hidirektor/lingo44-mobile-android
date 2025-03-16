@@ -81,4 +81,21 @@ public class SPUtil {
         }
         return null;
     }
+
+    public static String getUserAnswer(Context context, int questionPosition) {
+        SharedPreferences prefs = getSharedPreferences(context);
+        String jsonData = prefs.getString(SystemDefaults.KEY_USER_SETUP, "{}");
+        try {
+            JSONObject jsonObject = new JSONObject(jsonData);
+            JSONObject firstSetup = jsonObject.getJSONObject("firstSetup");
+            if (questionPosition == 0) {
+                return firstSetup.getString("firstAnswer");
+            } else if (questionPosition == 1) {
+                return firstSetup.getString("secondAnswer");
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }
