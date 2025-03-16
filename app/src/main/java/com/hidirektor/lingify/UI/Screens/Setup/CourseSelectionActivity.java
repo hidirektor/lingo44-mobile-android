@@ -11,6 +11,7 @@ import com.hidirektor.lingify.R;
 import com.hidirektor.lingify.UI.Screens.Welcome.WelcomeActivity;
 import com.hidirektor.lingify.Utility.Models.Course.Adapter.CourseAdapter;
 import com.hidirektor.lingify.Utility.Models.Course.CourseModel;
+import com.hidirektor.lingify.Utility.Preferences.SPUtil;
 import com.hidirektor.lingify.Utility.Preferences.Theme.ThemeUtil;
 
 import java.util.ArrayList;
@@ -33,7 +34,7 @@ public class CourseSelectionActivity extends AppCompatActivity {
 
         themeChangerButton.setOnClickListener(v -> {
             ThemeUtil.changeTheme(CourseSelectionActivity.this);
-            updateCourseIcons();
+            //updateCourseIcons();
         });
         backButton.setOnClickListener(v -> {
             Intent intent = new Intent(CourseSelectionActivity.this, WelcomeActivity.class);
@@ -41,6 +42,19 @@ public class CourseSelectionActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // Tema değiştikten sonra kursları güncelle
+        updateCourseIcons();
+
+        // Seçili kursu geri yükle
+        String selectedCourse = SPUtil.getSelectedCourse(this);
+        if (selectedCourse != null) {
+            setSelectedCourse(selectedCourse);
+        }
     }
 
     private void componentInitialize() {
@@ -100,6 +114,16 @@ public class CourseSelectionActivity extends AppCompatActivity {
 
         adapter = new CourseAdapter(this, courseList);
         courseListView.setAdapter(adapter);
+    }
+
+    private void setSelectedCourse(String selectedCourse) {
+        for (int i = 0; i < courseList.size(); i++) {
+            if (courseList.get(i).getName().equals(selectedCourse)) {
+                adapter.setSelectedPosition(i);
+                courseListView.setSelection(i); // İsteğe bağlı olarak seçili kursu listede kaydır
+                break;
+            }
+        }
     }
 
     private void updateCourseIcons() {
