@@ -55,4 +55,17 @@
     <string name="register_phonenumber_placeholder">542-345-23-00</string>
     <string name="register_password_title">Password</string>
     <string name="register_password_repeat_title">Confirm Password</string>
+
+    <string name="personal_setup_title">Welcome to Lingify</string>
+    <string name="personal_setup_first_question">Could you tell us a little about yourself?</string>
+    <string name="personal_setup_first_answer_1">I dont know any %selected_language%</string>
+    <string name="personal_setup_first_answer_2">I have studied %selected_language% before.</string>
+    <string name="personal_setup_second_question">Why do you want to take the %selected_course% test?</string>
+    <string name="personal_setup_second_answer_1">I need this certification to apply for university programs that require a language proficiency test.</string>
+    <string name="personal_setup_second_answer_2">I want to improve my career opportunities by demonstrating my language skills to employers.</string>
+    <string name="personal_setup_second_answer_3">I’m planning to move abroad, and this test is necessary for my visa or residency application.</string>
+    <string name="personal_setup_second_answer_4">I enjoy learning languages, and taking this test is a great way to measure my progress.</string>
+    <string name="personal_setup_second_answer_5">My goal is to become a language teacher, and passing this exam is a key requirement for my qualification.</string>
+    <string name="personal_setup_second_answer_more_detail_title">Add more details</string>
+    <string name="personal_setup_second_answer_more_detail_placeholder">You can write more details about your\nreason for taking the test here.</string>
 </resources>

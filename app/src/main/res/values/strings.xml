@@ -59,4 +59,17 @@
     <string name="register_phonenumber_placeholder">542-345-23-00</string>
     <string name="register_password_title">Şifre</string>
     <string name="register_password_repeat_title">Tekrar Şifre</string>
+
+    <string name="personal_setup_title">Lingify\'a Hoşgeldiniz</string>
+    <string name="personal_setup_first_question">Bize biraz kendinizden bahseder misiniz?</string>
+    <string name="personal_setup_first_answer_1">%selected_language% hiç bilmiyorum</string>
+    <string name="personal_setup_first_answer_2">Daha önce %selected_language% çalıştım</string>
+    <string name="personal_setup_second_question">Neden %selected_course% sınavına girmek istiyorsunuz?</string>
+    <string name="personal_setup_second_answer_1">Bu sertifikaya, dil yeterliliği gerektiren üniversite programlarına başvurabilmek için ihtiyacım var.</string>
+    <string name="personal_setup_second_answer_2">Dil becerilerimi işverenlere göstermek ve kariyer fırsatlarımı artırmak istiyorum.</string>
+    <string name="personal_setup_second_answer_3">Yurtdışına taşınmayı planlıyorum ve bu test vize veya oturma izni başvurusu için gerekli.</string>
+    <string name="personal_setup_second_answer_4">Dil öğrenmeyi seviyorum ve bu testi almak ilerlememi ölçmek için harika bir yol.</string>
+    <string name="personal_setup_second_answer_5">Hedefim dil öğretmeni olmak ve bu sınavı geçmek, yeterlilik kazanmak için önemli bir adım.</string>
+    <string name="personal_setup_second_answer_more_detail_title">Daha fazla detay ekleyin</string>
+    <string name="personal_setup_second_answer_more_detail_placeholder">Sınava girme amacınız hakkında\ndaha fazla bilgi yazabilirsiniz.</string>
 </resources>

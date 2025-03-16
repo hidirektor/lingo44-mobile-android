@@ -33,6 +33,13 @@
         <item name="lingifyShowPasswordIcon">@drawable/icon_show_password_light</item>
         <item name="lingifyHidePasswordIcon">@drawable/icon_hide_password_light</item>
         <item name="lingifyCloseIcon">@drawable/icon_close_light</item>
+        <item name="lingifyFlagIcon">@drawable/icon_flag_light</item>
+        <item name="lingifyBookIcon">@drawable/icon_book_light</item>
+        <item name="lingifyStudyIcon">@drawable/icon_study_light</item>
+        <item name="lingifyWorkIcon">@drawable/icon_work_light</item>
+        <item name="lingifyWorldIcon">@drawable/icon_world_light</item>
+        <item name="lingifySkillIcon">@drawable/icon_flame_light</item>
+        <item name="lingifyPeopleIcon">@drawable/icon_people_light</item>
     </style>
 
     <style name="Theme.RemoveSplashScreenTheme" parent="@style/Theme.Lingify">

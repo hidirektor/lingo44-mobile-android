@@ -11,5 +11,12 @@
         <attr name="lingifyShowPasswordIcon" format="reference" />
         <attr name="lingifyHidePasswordIcon" format="reference" />
         <attr name="lingifyCloseIcon" format="reference" />
+        <attr name="lingifyFlagIcon" format="reference" />
+        <attr name="lingifyBookIcon" format="reference" />
+        <attr name="lingifyStudyIcon" format="reference" />
+        <attr name="lingifyWorkIcon" format="reference" />
+        <attr name="lingifyWorldIcon" format="reference" />
+        <attr name="lingifySkillIcon" format="reference" />
+        <attr name="lingifyPeopleIcon" format="reference" />
     </declare-styleable>
 </resources>
