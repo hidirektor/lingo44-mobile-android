@@ -1,4 +1,4 @@
-package com.hidirektor.lingify.Utility.Models.PersonalData.Adapter;
+package com.hidirektor.lingify.Utility.Models.PersonalSetup.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,23 +12,22 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 
 import com.hidirektor.lingify.R;
-import com.hidirektor.lingify.Utility.Models.PersonalData.AnswerModel;
+import com.hidirektor.lingify.Utility.Models.PersonalSetup.PersonalSetupAnswerModel;
 import com.hidirektor.lingify.Utility.Preferences.SPUtil;
 
 import java.util.LinkedList;
 
-public class AnswerAdapter extends ArrayAdapter<AnswerModel> {
+public class PersonalSetupAnswerAdapter extends ArrayAdapter<PersonalSetupAnswerModel> {
 
     private Context context;
-    private int selectedPosition = -1;
+    private int selectedPosition;
     private int questionPosition;
 
-    public AnswerAdapter(Context context, LinkedList<AnswerModel> answers, int questionPosition, int userAnswerPosition) {
+    public PersonalSetupAnswerAdapter(Context context, LinkedList<PersonalSetupAnswerModel> answers, int questionPosition) {
         super(context, 0, answers);
         this.context = context;
 
         this.questionPosition = questionPosition;
-        this.selectedPosition = userAnswerPosition;
     }
 
     public void setSelectedPosition(int position) {
@@ -43,7 +42,7 @@ public class AnswerAdapter extends ArrayAdapter<AnswerModel> {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item_personal_setup_answer, parent, false);
         }
 
-        AnswerModel answer = getItem(position);
+        PersonalSetupAnswerModel answer = getItem(position);
 
         LinearLayout mainItemLayout = convertView.findViewById(R.id.mainItemLayout);
         ImageView answerIcon = convertView.findViewById(R.id.answerIcon);

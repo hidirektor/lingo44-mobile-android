@@ -1,13 +1,13 @@
-package com.hidirektor.lingify.Utility.Models.PersonalData;
+package com.hidirektor.lingify.Utility.Models.PersonalSetup;
 
 import androidx.appcompat.app.AppCompatDelegate;
 
-public class AnswerModel {
+public class PersonalSetupAnswerModel {
     private String answer;
     private int lightIcon;
     private int darkIcon;
 
-    public AnswerModel(String answer, int lightIcon, int darkIcon) {
+    public PersonalSetupAnswerModel(String answer, int lightIcon, int darkIcon) {
         this.answer = answer;
         this.lightIcon = lightIcon;
         this.darkIcon = darkIcon;

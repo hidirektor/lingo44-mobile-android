@@ -1,6 +1,7 @@
-package com.hidirektor.lingify.Utility.Models.PersonalData.Adapter;
+package com.hidirektor.lingify.Utility.Models.PersonalSetup.Adapter;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,14 +12,20 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 
 import com.hidirektor.lingify.R;
-import com.hidirektor.lingify.Utility.Models.PersonalData.PersonalDataModel;
+import com.hidirektor.lingify.Utility.Models.PersonalSetup.PersonalSetupModel;
+import com.hidirektor.lingify.Utility.Preferences.SPUtil;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
-public class PersonalSetupAdapter extends ArrayAdapter<PersonalDataModel> {
+public class PersonalSetupAdapter extends ArrayAdapter<PersonalSetupModel> {
 
-    public PersonalSetupAdapter(Context context, ArrayList<PersonalDataModel> dataList) {
+    private Context context;
+
+    public PersonalSetupAdapter(Context context, ArrayList<PersonalSetupModel> dataList) {
         super(context, 0, dataList);
+
+        this.context = context;
     }
 
     @NonNull
@@ -28,16 +35,23 @@ public class PersonalSetupAdapter extends ArrayAdapter<PersonalDataModel> {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item_personal_setup_question, parent, false);
         }
 
-        PersonalDataModel data = getItem(position);
+        PersonalSetupModel data = getItem(position);
 
         TextView questionTextView = convertView.findViewById(R.id.questionTextView);
         ListView answerListView = convertView.findViewById(R.id.answerListView);
 
+        assert data != null;
         questionTextView.setText(data.getQuestion());
 
-        int selectedAnswerPosition = 0;
+        int selectedAnswerPosition = Objects.requireNonNull(SPUtil.getUserAnswerPos(context, position));
 
-        AnswerAdapter answerAdapter = new AnswerAdapter(getContext(), data.getAnswerList(), position, selectedAnswerPosition);
+        Log.d("user answer pos", SPUtil.getUserAnswerPos(context, position) + "");
+        Log.d("user answer pos 2", position + "");
+
+        Log.d("whole user answers", SPUtil.getUserSetupJson(context));
+
+        PersonalSetupAnswerAdapter answerAdapter = new PersonalSetupAnswerAdapter(context, data.getAnswerList(), position);
+        answerAdapter.setSelectedPosition(selectedAnswerPosition);
         answerListView.setAdapter(answerAdapter);
 
         setListViewHeightBasedOnChildren(answerListView);

@@ -84,6 +84,12 @@ public class CourseAdapter extends BaseAdapter {
         });
 
         holder.selectIcon.setOnClickListener(v -> {
+            if (selectedPosition == position) {
+                selectedPosition = -1;
+            } else {
+                selectedPosition = position;
+            }
+
             String selectedCourse = course.getName();
 
             SPUtil.saveUserSetup(context, selectedCourse);

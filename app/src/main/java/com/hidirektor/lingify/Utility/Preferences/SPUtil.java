@@ -26,7 +26,15 @@ public class SPUtil {
         }
 
         SharedPreferences.Editor editor = getSharedPreferences(context).edit();
-        String jsonData = "{ \"firstSetup\": { \"selectedCourse\": \"" + selectedCourse + "\", \"selectedLanguage\": \"" + selectedLanguage + "\", \"firstAnswer\": \"\", \"secondAnswer\": \"\", \"moreDetail\": \"\" } }";
+        String jsonData = "{ \"firstSetup\": { " +
+                "\"selectedCourse\": \"" + selectedCourse + "\", " +
+                "\"selectedLanguage\": \"" + selectedLanguage + "\", " +
+                "\"firstAnswer\": \"\", " +
+                "\"firstAnswerPosition\": \"-1\", " +
+                "\"secondAnswer\": \"\", " +
+                "\"secondAnswerPosition\": \"-1\", " +
+                "\"moreDetail\": \"\" " +
+                "} }";
         editor.putString(SystemDefaults.KEY_USER_SETUP, jsonData);
         editor.apply();
     }
@@ -40,8 +48,10 @@ public class SPUtil {
 
             if (questionPosition == 0) {
                 firstSetup.put("firstAnswer", selectedAnswer);
+                firstSetup.put("firstAnswerPosition", answerPosition);
             } else if (questionPosition == 1) {
                 firstSetup.put("secondAnswer", selectedAnswer);
+                firstSetup.put("secondAnswerPosition", answerPosition);
             }
 
             editor.putString(SystemDefaults.KEY_USER_SETUP, jsonObject.toString());
@@ -97,5 +107,22 @@ public class SPUtil {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public static int getUserAnswerPos(Context context, int questionPosition) {
+        SharedPreferences prefs = getSharedPreferences(context);
+        String jsonData = prefs.getString(SystemDefaults.KEY_USER_SETUP, "{}");
+        try {
+            JSONObject jsonObject = new JSONObject(jsonData);
+            JSONObject firstSetup = jsonObject.getJSONObject("firstSetup");
+            if (questionPosition == 0) {
+                return firstSetup.getInt("firstAnswerPosition");
+            } else if (questionPosition == 1) {
+                return firstSetup.getInt("secondAnswerPosition");
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return -1;
     }
 }
