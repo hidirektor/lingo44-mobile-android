@@ -16,6 +16,7 @@ import com.hidirektor.lingify.Utility.Models.PersonalData.PersonalDataModel;
 import java.util.ArrayList;
 
 public class PersonalSetupAdapter extends ArrayAdapter<PersonalDataModel> {
+
     public PersonalSetupAdapter(Context context, ArrayList<PersonalDataModel> dataList) {
         super(context, 0, dataList);
     }

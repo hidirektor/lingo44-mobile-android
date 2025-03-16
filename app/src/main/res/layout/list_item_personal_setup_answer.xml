@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sf_pro_medium"
                 android:textColor="@color/body_primary"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:layout_gravity="center"
                 android:gravity="center" />
         </LinearLayout>
