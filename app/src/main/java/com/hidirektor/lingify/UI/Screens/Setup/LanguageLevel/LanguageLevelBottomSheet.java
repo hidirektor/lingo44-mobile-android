@@ -32,6 +32,13 @@ public class LanguageLevelBottomSheet extends BottomSheetDialogFragment {
     }
 
     @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        setStyle(STYLE_NORMAL, R.style.CustomBottomSheetDialog);
+    }
+
+    @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.popup_level_selection, container, false);
 
