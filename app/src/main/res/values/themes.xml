@@ -23,7 +23,8 @@
         <item name="colorError">@color/error_color</item>
         <item name="colorOnError">@color/body_on_primary</item>
 
-        <item name="lingifyLogo">@drawable/logo_kusadasi_dil_white</item>
+        <!-- <item name="lingifyLogo">@drawable/logo_kusadasi_dil_light</item> -->
+        <item name="lingifyLogo">@drawable/logo_dinamik_beyin_light</item>
         <item name="lingifyOnboardImage">@drawable/image_welcome_white</item>
         <item name="lingifyThemeChangerImage">@drawable/icon_moon</item>
         <item name="lingifyBackIcon">@drawable/icon_back_light</item>

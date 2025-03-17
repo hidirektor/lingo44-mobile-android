@@ -24,6 +24,9 @@ public class LevelExamActivity extends AppCompatActivity {
 
         backButton.setOnClickListener(v -> finish());
         themeChangerButton.setOnClickListener(v -> ThemeUtil.changeTheme(this));
+        startExamButton.setOnClickListener(v -> {
+
+        });
     }
 
     private void componentInitialize() {
