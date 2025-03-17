@@ -84,7 +84,8 @@
                 android:fontFamily="@font/sf_pro_medium"
                 android:textColor="@color/body_primary"
                 android:hint="@string/personal_setup_second_answer_more_detail_placeholder"
-                android:inputType="textEmailAddress"
+                android:inputType="textMultiLine"
+                android:breakStrategy="high_quality"
                 android:padding="8dp"
                 android:maxLines="2"
                 android:textColorHint="@color/body_secondary" />

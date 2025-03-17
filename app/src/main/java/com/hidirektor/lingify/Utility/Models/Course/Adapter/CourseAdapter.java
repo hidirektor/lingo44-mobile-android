@@ -91,11 +91,14 @@ public class CourseAdapter extends BaseAdapter {
             }
 
             String selectedCourse = course.getName();
-
             SPUtil.saveUserSetup(context, selectedCourse);
 
-            Intent intent = new Intent(context, PersonalSetupActivity.class);
-            context.startActivity(intent);
+            notifyDataSetChanged();
+
+            v.postDelayed(() -> {
+                Intent intent = new Intent(context, PersonalSetupActivity.class);
+                context.startActivity(intent);
+            }, 100);
         });
 
         return convertView;
