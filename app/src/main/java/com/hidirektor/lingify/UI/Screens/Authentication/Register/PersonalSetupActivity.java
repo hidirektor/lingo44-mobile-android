@@ -1,4 +1,4 @@
-package com.hidirektor.lingify.UI.Screens.Setup;
+package com.hidirektor.lingify.UI.Screens.Authentication.Register;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.hidirektor.lingify.R;
-import com.hidirektor.lingify.UI.Screens.Setup.LanguageLevel.DetectSelectionActivity;
+import com.hidirektor.lingify.UI.Screens.Setup.CourseSelectionActivity;
 import com.hidirektor.lingify.Utility.Models.PersonalSetup.Adapter.PersonalSetupAdapter;
 import com.hidirektor.lingify.Utility.Models.PersonalSetup.PersonalSetupAnswerModel;
 import com.hidirektor.lingify.Utility.Models.PersonalSetup.PersonalSetupModel;
@@ -23,7 +23,7 @@ import java.util.LinkedList;
 public class PersonalSetupActivity extends AppCompatActivity {
 
     private ImageView themeChangerButton;
-    private Button continueButton;
+    private Button registerButton;
     private TextInputEditText moreDetailInputField;
 
     private ListView personalSetupListView;
@@ -38,19 +38,19 @@ public class PersonalSetupActivity extends AppCompatActivity {
         componentInitialize();
 
         themeChangerButton.setOnClickListener(v -> ThemeUtil.changeTheme(PersonalSetupActivity.this));
-        continueButton.setOnClickListener(v -> {
+        registerButton.setOnClickListener(v -> {
             String moreDetail = moreDetailInputField.getText() != null ? moreDetailInputField.getText().toString() : "";
             SPUtil.saveMoreDetail(PersonalSetupActivity.this, moreDetail);
 
-            Intent languageLevelDetectIntent = new Intent(PersonalSetupActivity.this, DetectSelectionActivity.class);
-            startActivity(languageLevelDetectIntent);
+            Intent courseSelectionIntent = new Intent(PersonalSetupActivity.this, CourseSelectionActivity.class);
+            startActivity(courseSelectionIntent);
             finish();
         });
     }
 
     private void componentInitialize() {
         themeChangerButton = findViewById(R.id.themeChangerButton);
-        continueButton = findViewById(R.id.continueButton);
+        registerButton = findViewById(R.id.registerButton);
         moreDetailInputField = findViewById(R.id.moreDetailInputField);
 
         personalSetupListView = findViewById(R.id.personalSetupListView);

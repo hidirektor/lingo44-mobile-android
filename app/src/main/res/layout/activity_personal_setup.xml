@@ -92,10 +92,10 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/continueButton"
+            android:id="@+id/registerButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/continue_button"
+            android:text="@string/register_button"
             android:fontFamily="@font/sf_pro_medium"
             android:textColor="@color/body_on_primary"
             android:background="@drawable/button_background_get_ready"

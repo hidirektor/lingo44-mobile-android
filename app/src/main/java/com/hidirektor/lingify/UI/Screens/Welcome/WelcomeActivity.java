@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.hidirektor.lingify.R;
 import com.hidirektor.lingify.UI.Screens.Authentication.LoginActivity;
-import com.hidirektor.lingify.UI.Screens.Authentication.RegisterActivity;
+import com.hidirektor.lingify.UI.Screens.Authentication.Register.RegisterActivity;
 import com.hidirektor.lingify.UI.Screens.Setup.CourseSelectionActivity;
 import com.hidirektor.lingify.Utility.Preferences.Theme.ThemeUtil;
 import com.hidirektor.lingify.Utility.SystemDefaults;

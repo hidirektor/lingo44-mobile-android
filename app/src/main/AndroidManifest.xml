@@ -30,10 +30,10 @@
         <activity android:name=".UI.Screens.Loading.LoadingActivity" />
         <activity android:name=".UI.Screens.Welcome.WelcomeActivity" />
         <activity android:name=".UI.Screens.Authentication.LoginActivity" />
-        <activity android:name=".UI.Screens.Authentication.RegisterActivity" />
+        <activity android:name=".UI.Screens.Authentication.Register.RegisterActivity" />
 
         <activity android:name=".UI.Screens.Setup.CourseSelectionActivity" />
-        <activity android:name=".UI.Screens.Setup.PersonalSetupActivity" />
+        <activity android:name=".UI.Screens.Authentication.Register.PersonalSetupActivity" />
         <activity android:name=".UI.Screens.Setup.LanguageLevel.DetectSelectionActivity" />
         <activity android:name=".UI.Screens.Setup.LanguageLevel.Exam.LevelExamActivity" />
 

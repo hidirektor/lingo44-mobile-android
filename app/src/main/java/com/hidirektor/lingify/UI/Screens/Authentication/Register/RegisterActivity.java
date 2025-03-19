@@ -1,4 +1,4 @@
-package com.hidirektor.lingify.UI.Screens.Authentication;
+package com.hidirektor.lingify.UI.Screens.Authentication.Register;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,7 +13,7 @@ import com.chaos.view.PinView;
 import com.google.android.material.textfield.TextInputEditText;
 import com.hbb20.CountryCodePicker;
 import com.hidirektor.lingify.R;
-import com.hidirektor.lingify.UI.Screens.Setup.CourseSelectionActivity;
+import com.hidirektor.lingify.UI.Screens.Authentication.LoginActivity;
 import com.hidirektor.lingify.Utility.Preferences.Theme.ThemeUtil;
 
 public class RegisterActivity extends AppCompatActivity {
@@ -27,7 +27,7 @@ public class RegisterActivity extends AppCompatActivity {
     private CountryCodePicker countryCodePicker;
     private TextInputEditText phoneNumberInputField;
 
-    private Button registerButton;
+    private Button continueButton;
     private LinearLayout registerViaGoogleLayout;
     private LinearLayout registerViaAppleLayout;
 
@@ -51,8 +51,8 @@ public class RegisterActivity extends AppCompatActivity {
             finish();
         });
 
-        registerButton.setOnClickListener(v -> {
-            Intent courseSelectionIntent = new Intent(RegisterActivity.this, CourseSelectionActivity.class);
+        continueButton.setOnClickListener(v -> {
+            Intent courseSelectionIntent = new Intent(RegisterActivity.this, PersonalSetupActivity.class);
             startActivity(courseSelectionIntent);
             finish();
         });
@@ -70,7 +70,7 @@ public class RegisterActivity extends AppCompatActivity {
         passwordPinView = findViewById(R.id.passwordPinView);
         confirmPasswordPinView = findViewById(R.id.confirmPasswordPinView);
 
-        registerButton = findViewById(R.id.registerButton);
+        continueButton = findViewById(R.id.continueButton);
         registerViaGoogleLayout = findViewById(R.id.registerViaGoogleLayout);
         registerViaAppleLayout = findViewById(R.id.registerViaAppleLayout);
         loginText = findViewById(R.id.loginText);

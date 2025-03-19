@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.chaos.view.PinView;
 import com.google.android.material.textfield.TextInputEditText;
 import com.hidirektor.lingify.R;
+import com.hidirektor.lingify.UI.Screens.Authentication.Register.RegisterActivity;
 import com.hidirektor.lingify.UI.Screens.Dashboard.DashboardActivity;
 import com.hidirektor.lingify.Utility.Preferences.Theme.ThemeUtil;
 

@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.hidirektor.lingify.R;
-import com.hidirektor.lingify.UI.Screens.Setup.PersonalSetupActivity;
+import com.hidirektor.lingify.UI.Screens.Setup.LanguageLevel.DetectSelectionActivity;
 import com.hidirektor.lingify.Utility.Models.Course.CourseModel;
 import com.hidirektor.lingify.Utility.Preferences.SPUtil;
 
@@ -96,7 +96,7 @@ public class CourseAdapter extends BaseAdapter {
             notifyDataSetChanged();
 
             v.postDelayed(() -> {
-                Intent intent = new Intent(context, PersonalSetupActivity.class);
+                Intent intent = new Intent(context, DetectSelectionActivity.class);
                 context.startActivity(intent);
             }, 100);
         });
