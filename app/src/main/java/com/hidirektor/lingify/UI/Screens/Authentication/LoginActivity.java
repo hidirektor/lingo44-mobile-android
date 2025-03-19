@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.chaos.view.PinView;
 import com.google.android.material.textfield.TextInputEditText;
 import com.hidirektor.lingify.R;
+import com.hidirektor.lingify.UI.Screens.Dashboard.DashboardActivity;
 import com.hidirektor.lingify.Utility.Preferences.Theme.ThemeUtil;
 
 public class LoginActivity extends AppCompatActivity {
@@ -41,6 +42,12 @@ public class LoginActivity extends AppCompatActivity {
         registerText.setOnClickListener(v -> {
             Intent registerIntent = new Intent(LoginActivity.this, RegisterActivity.class);
             startActivity(registerIntent);
+        });
+
+        loginButton.setOnClickListener(v -> {
+            Intent dashboardIntent = new Intent(LoginActivity.this, DashboardActivity.class);
+            startActivity(dashboardIntent);
+            finish();
         });
     }
 

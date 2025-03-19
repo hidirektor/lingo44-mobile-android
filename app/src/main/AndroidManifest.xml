@@ -36,6 +36,8 @@
         <activity android:name=".UI.Screens.Setup.PersonalSetupActivity" />
         <activity android:name=".UI.Screens.Setup.LanguageLevel.DetectSelectionActivity" />
         <activity android:name=".UI.Screens.Setup.LanguageLevel.Exam.LevelExamActivity" />
+
+        <activity android:name=".UI.Screens.Dashboard.DashboardActivity" />
     </application>
 
 </manifest>
