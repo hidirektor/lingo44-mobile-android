@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:background="@color/body_background"
-    tools:context=".UI.Screens.Setup.LanguageLevel.Exam.LevelExamActivity">
+    android:background="@drawable/background_level_selection_popup"
+    tools:context=".UI.Screens.Setup.LanguageLevel.DetectSelectionActivity">
 
     <LinearLayout
         android:id="@+id/headerSection"
@@ -15,6 +15,14 @@
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="?attr/lingifyDividerIcon"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"/>
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -100,8 +108,8 @@
                         android:scrollHorizontally="false"
                         android:breakStrategy="simple"
                         android:layout_marginBottom="8dp"
-                        android:layout_marginStart="2dp"
-                        android:layout_marginEnd="2dp"/>
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"

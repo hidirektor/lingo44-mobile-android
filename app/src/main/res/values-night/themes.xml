@@ -61,8 +61,9 @@
         <item name="bottomSheetStyle">@style/CustomBottomSheet</item>
     </style>
 
-    <style name="CustomBottomSheet" parent="Widget.MaterialComponents.BottomSheet">
+    <style name="CustomBottomSheet" parent="Widget.MaterialComponents.BottomSheet.Modal">
         <item name="shapeAppearanceOverlay">@style/CustomShapeAppearance</item>
+        <item name="backgroundTint">@android:color/transparent</item>
     </style>
 
     <style name="CustomShapeAppearance">

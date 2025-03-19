@@ -1,6 +1,5 @@
 package com.hidirektor.lingify.UI.Screens.Setup.LanguageLevel;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -9,7 +8,7 @@ import android.widget.LinearLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.hidirektor.lingify.R;
-import com.hidirektor.lingify.UI.Screens.Setup.LanguageLevel.Exam.LevelExamActivity;
+import com.hidirektor.lingify.UI.Screens.Setup.LanguageLevel.Exam.LevelExamWarningBottomSheet;
 import com.hidirektor.lingify.Utility.Models.LanguageLevel.LanguageLevelModel;
 import com.hidirektor.lingify.Utility.Preferences.Theme.ThemeUtil;
 
@@ -38,8 +37,8 @@ public class DetectSelectionActivity extends AppCompatActivity {
         pickLevelButton.setOnClickListener(v -> showLevelSelectionPopup());
 
         startExamButton.setOnClickListener(v -> {
-            Intent examIntent = new Intent(DetectSelectionActivity.this, LevelExamActivity.class);
-            startActivity(examIntent);
+            LevelExamWarningBottomSheet bottomSheetExam = new LevelExamWarningBottomSheet();
+            bottomSheetExam.show(getSupportFragmentManager(), bottomSheetExam.getTag());
         });
     }
 

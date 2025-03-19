@@ -12,6 +12,8 @@ import android.widget.ListView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import com.hidirektor.lingify.R;
 import com.hidirektor.lingify.Utility.Models.LanguageLevel.Adapter.LanguageLevelAdapter;
@@ -36,6 +38,34 @@ public class LanguageLevelBottomSheet extends BottomSheetDialogFragment {
         super.onCreate(savedInstanceState);
 
         setStyle(STYLE_NORMAL, R.style.CustomBottomSheetDialog);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        BottomSheetDialog dialog = (BottomSheetDialog) getDialog();
+        if (dialog != null) {
+            View bottomSheet = dialog.findViewById(com.google.android.material.R.id.design_bottom_sheet);
+            if (bottomSheet != null) {
+                BottomSheetBehavior<View> behavior = BottomSheetBehavior.from(bottomSheet);
+                behavior.setState(BottomSheetBehavior.STATE_HALF_EXPANDED);
+
+                behavior.addBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
+                    @Override
+                    public void onStateChanged(@NonNull View bottomSheet, int newState) {
+                        if (newState == BottomSheetBehavior.STATE_EXPANDED) {
+                            behavior.setShouldRemoveExpandedCorners(true);
+                        }
+                    }
+
+                    @Override
+                    public void onSlide(@NonNull View bottomSheet, float slideOffset) {
+                        // Optional: Adjust UI based on slide offset
+                    }
+                });
+            }
+        }
     }
 
     @Override

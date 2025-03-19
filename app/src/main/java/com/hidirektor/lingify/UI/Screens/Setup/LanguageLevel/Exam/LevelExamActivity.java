@@ -18,7 +18,7 @@ public class LevelExamActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_level_detect_exam);
+        setContentView(R.layout.popup_level_detect_exam_warning);
 
         componentInitialize();
 
