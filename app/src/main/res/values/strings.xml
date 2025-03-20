@@ -101,4 +101,9 @@
     <string name="detect_level_exam_time" translatable="false">30</string>
     <string name="detect_level_exam_question_count_text">Soru</string>
     <string name="detect_level_exam_time_text">Dakika</string>
+
+    <string name="dashboard_bottom_menu_dashboard">Anasayfa</string>
+    <string name="dashboard_bottom_menu_podcasts">Podcast</string>
+    <string name="dashboard_bottom_menu_practices">Deneme</string>
+    <string name="dashboard_bottom_menu_stats">İstatistik</string>
 </resources>

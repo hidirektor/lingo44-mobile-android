@@ -44,6 +44,11 @@
         <item name="lingifyDetectLevelImage">@drawable/image_detect_level_light</item>
         <item name="lingifyDividerIcon">@drawable/icon_divider_light</item>
         <item name="lingifyQuizDashboardImage">@drawable/image_quiz_light</item>
+        <item name="lingifyDashboardBottomBarDashboardIcon">@drawable/icon_home_light</item>
+        <item name="lingifyDashboardBottomBarPodcastIcon">@drawable/icon_podcast_light</item>
+        <item name="lingifyDashboardBottomBarDictionaryIcon">@drawable/icon_dictionary_light</item>
+        <item name="lingifyDashboardBottomBarPracticesIcon">@drawable/icon_practices_light</item>
+        <item name="lingifyDashboardBottomBarStatsIcon">@drawable/icon_stat_light</item>
     </style>
 
     <style name="Theme.RemoveSplashScreenTheme" parent="@style/Theme.Lingify">

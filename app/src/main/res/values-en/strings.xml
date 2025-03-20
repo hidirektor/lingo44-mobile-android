@@ -95,4 +95,9 @@
     </string>
     <string name="detect_level_exam_question_count_text">Question</string>
     <string name="detect_level_exam_time_text">Minutes</string>
+
+    <string name="dashboard_bottom_menu_dashboard">Dashboard</string>
+    <string name="dashboard_bottom_menu_podcasts">Podcast</string>
+    <string name="dashboard_bottom_menu_practices">Exam</string>
+    <string name="dashboard_bottom_menu_stats">Statistics</string>
 </resources>
