@@ -5,13 +5,11 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.hidirektor.lingify.UI.Screens.Loading.LoadingActivity;
 import com.hidirektor.lingify.Utility.Preferences.Language.LanguageUtil;
 import com.hidirektor.lingify.Utility.Preferences.Theme.ThemeUtil;
 
-public class SplashActivity extends AppCompatActivity {
+public class SplashActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

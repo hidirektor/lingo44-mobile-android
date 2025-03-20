@@ -2,11 +2,10 @@ package com.hidirektor.lingify.UI.Screens.Dashboard;
 
 import android.os.Bundle;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import com.hidirektor.lingify.BaseActivity;
 import com.hidirektor.lingify.R;
 
-public class DashboardActivity extends AppCompatActivity {
+public class DashboardActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

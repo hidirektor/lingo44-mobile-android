@@ -12,5 +12,8 @@ public class SystemDefaults {
     public static final String KEY_FIRST_TIME = "first_time";
 
     //Personal Setup
-    public static final String KEY_USER_SETUP = "user_setup";
+    public static final String KEY_USER_SETUP = "auth_user_setup";
+
+    //User Token
+    public static final String KEY_AUTH_TOKEN = "auth_token";
 }

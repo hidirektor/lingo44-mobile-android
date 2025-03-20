@@ -5,14 +5,13 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import com.hidirektor.lingify.BaseActivity;
 import com.hidirektor.lingify.R;
 import com.hidirektor.lingify.UI.Screens.Welcome.WelcomeActivity;
 import com.hidirektor.lingify.Utility.GeneralUtil;
 import com.hidirektor.lingify.Utility.SystemDefaults;
 
-public class LoadingActivity extends AppCompatActivity {
+public class LoadingActivity extends BaseActivity {
 
     private TextView quoteText;
     private TextView quoteOwnerText;

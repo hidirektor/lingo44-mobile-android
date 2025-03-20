@@ -4,12 +4,11 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import com.hidirektor.lingify.BaseActivity;
 import com.hidirektor.lingify.R;
 import com.hidirektor.lingify.Utility.Preferences.Theme.ThemeUtil;
 
-public class LevelExamActivity extends AppCompatActivity {
+public class LevelExamActivity extends BaseActivity {
 
     private ImageView backButton;
     private ImageView themeChangerButton;

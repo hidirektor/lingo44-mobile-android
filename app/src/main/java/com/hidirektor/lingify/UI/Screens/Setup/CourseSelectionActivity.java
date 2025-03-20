@@ -5,8 +5,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.ListView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import com.hidirektor.lingify.BaseActivity;
 import com.hidirektor.lingify.R;
 import com.hidirektor.lingify.UI.Screens.Welcome.WelcomeActivity;
 import com.hidirektor.lingify.Utility.Models.Course.Adapter.CourseAdapter;
@@ -17,7 +16,7 @@ import com.hidirektor.lingify.Utility.Preferences.Theme.ThemeUtil;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CourseSelectionActivity extends AppCompatActivity {
+public class CourseSelectionActivity extends BaseActivity {
 
     private ImageView backButton;
     private ImageView themeChangerButton;

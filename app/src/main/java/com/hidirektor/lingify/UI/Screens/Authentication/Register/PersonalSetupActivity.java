@@ -6,9 +6,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.material.textfield.TextInputEditText;
+import com.hidirektor.lingify.BaseActivity;
 import com.hidirektor.lingify.R;
 import com.hidirektor.lingify.UI.Screens.Setup.CourseSelectionActivity;
 import com.hidirektor.lingify.Utility.Models.PersonalSetup.Adapter.PersonalSetupAdapter;
@@ -20,7 +19,7 @@ import com.hidirektor.lingify.Utility.Preferences.Theme.ThemeUtil;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class PersonalSetupActivity extends AppCompatActivity {
+public class PersonalSetupActivity extends BaseActivity {
 
     private ImageView themeChangerButton;
     private Button registerButton;

@@ -5,8 +5,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import com.hidirektor.lingify.BaseActivity;
 import com.hidirektor.lingify.R;
 import com.hidirektor.lingify.UI.Screens.Setup.LanguageLevel.Exam.LevelExamWarningBottomSheet;
 import com.hidirektor.lingify.Utility.Models.LanguageLevel.LanguageLevelModel;
@@ -14,7 +13,7 @@ import com.hidirektor.lingify.Utility.Preferences.Theme.ThemeUtil;
 
 import java.util.LinkedList;
 
-public class DetectSelectionActivity extends AppCompatActivity {
+public class DetectSelectionActivity extends BaseActivity {
 
     private ImageView themeChangerButton;
     private Button pickLevelButton;

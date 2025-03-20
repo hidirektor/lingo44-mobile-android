@@ -7,16 +7,15 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.chaos.view.PinView;
 import com.google.android.material.textfield.TextInputEditText;
 import com.hbb20.CountryCodePicker;
+import com.hidirektor.lingify.BaseActivity;
 import com.hidirektor.lingify.R;
 import com.hidirektor.lingify.UI.Screens.Authentication.LoginActivity;
 import com.hidirektor.lingify.Utility.Preferences.Theme.ThemeUtil;
 
-public class RegisterActivity extends AppCompatActivity {
+public class RegisterActivity extends BaseActivity {
 
     private ImageView backButton;
     private ImageView themeChangerButton;

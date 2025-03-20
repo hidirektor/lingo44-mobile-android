@@ -7,16 +7,15 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.chaos.view.PinView;
 import com.google.android.material.textfield.TextInputEditText;
+import com.hidirektor.lingify.BaseActivity;
 import com.hidirektor.lingify.R;
 import com.hidirektor.lingify.UI.Screens.Authentication.Register.RegisterActivity;
 import com.hidirektor.lingify.UI.Screens.Dashboard.DashboardActivity;
 import com.hidirektor.lingify.Utility.Preferences.Theme.ThemeUtil;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends BaseActivity {
 
     private ImageView themeChangerButton;
 
