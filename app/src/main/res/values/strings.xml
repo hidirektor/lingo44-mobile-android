@@ -106,4 +106,7 @@
     <string name="dashboard_bottom_menu_podcasts">Podcast</string>
     <string name="dashboard_bottom_menu_practices">Deneme</string>
     <string name="dashboard_bottom_menu_stats">İstatistik</string>
+
+    <string name="dashboard_main_section">Kurs</string>
+    <string name="dashboard_speaking_club_section">Konuşma Kulübü</string>
 </resources>

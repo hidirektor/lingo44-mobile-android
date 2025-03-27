@@ -13,22 +13,19 @@
         <!-- Shape appearance for rounded corners -->
         <item name="shapeAppearanceOverlay">@style/RoundedShapeAppearance</item>
 
-        <!-- Light Mode colors -->
-        <item name="colorPrimary">@color/primary_color</item>
-        <item name="colorPrimaryVariant">@color/primary_color</item>
-        <item name="colorOnPrimary">@color/body_on_primary</item>
-        <item name="colorSurface">@color/body_surfaces_first</item>
-        <item name="colorSecondary">@color/body_secondary</item>
-        <item name="colorOnSurface">@color/body_on_primary</item>
-        <item name="colorError">@color/error_color</item>
-        <item name="colorOnError">@color/body_on_primary</item>
-
+        <!-- Theme Based Images -->
         <item name="lingifyLogo">@drawable/logo_kusadasi_dil_dark</item>
         <!-- <item name="lingifyLogo">@drawable/logo_dinamik_beyin_dark</item> -->
         <item name="lingifyOnboardImage">@drawable/image_welcome_dark</item>
         <item name="lingifyThemeChangerImage">@drawable/icon_sun</item>
         <item name="lingifyBackIcon">@drawable/icon_back_dark</item>
         <item name="lingifyNextIcon">@drawable/icon_next_dark</item>
+        <item name="lingifyUpIcon">@drawable/icon_up_dark</item>
+        <item name="lingifyDownIcon">@drawable/icon_down_dark</item>
+        <item name="lingifyShortBackIcon">@drawable/icon_short_back_dark</item>
+        <item name="lingifyShortNextIcon">@drawable/icon_short_next_dark</item>
+        <item name="lingifyShortUpIcon">@drawable/icon_short_up_dark</item>
+        <item name="lingifyShortDownIcon">@drawable/icon_short_down_dark</item>
         <item name="lingifyGoogleIcon">@drawable/icon_google_dark</item>
         <item name="lingifyAppleIcon">@drawable/icon_apple_dark</item>
         <item name="lingifyShowPasswordIcon">@drawable/icon_show_password_dark</item>
@@ -49,6 +46,7 @@
         <item name="lingifyDashboardBottomBarDictionaryIcon">@drawable/icon_dictionary_dark</item>
         <item name="lingifyDashboardBottomBarPracticesIcon">@drawable/icon_practices_dark</item>
         <item name="lingifyDashboardBottomBarStatsIcon">@drawable/icon_stat_dark</item>
+        <item name="lingifyNotificationIcon">@drawable/icon_notification_dark</item>
     </style>
 
     <style name="Theme.RemoveSplashScreenTheme" parent="@style/Theme.Lingify">
@@ -77,5 +75,9 @@
         <item name="cornerSizeTopLeft">16dp</item>
         <item name="cornerSizeBottomRight">0dp</item>
         <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
     </style>
 </resources>

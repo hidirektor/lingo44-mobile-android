@@ -1,6 +1,8 @@
 [versions]
-agp = "8.9.0"
+agp = "8.9.1"
 appcompatVersion = "1.1.0"
+avatarviewCoil = "1.0.4"
+avvylib = "1.2.0"
 ccp = "2.7.3"
 gson = "2.10.1"
 junit = "4.13.2"
@@ -17,6 +19,8 @@ superiorToasts = "v1.0"
 
 [libraries]
 appcompat-v110 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+avatarview-coil = { module = "io.getstream:avatarview-coil", version.ref = "avatarviewCoil" }
+avvylib = { module = "xyz.schwaab:avvylib", version.ref = "avvylib" }
 ccp = { module = "com.hbb20:ccp", version.ref = "ccp" }
 chaosleung-pinview = { module = "io.github.chaosleung:pinview", version.ref = "pinviewVersion" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }

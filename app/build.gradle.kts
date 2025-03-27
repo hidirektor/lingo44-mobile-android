@@ -41,6 +41,7 @@ dependencies {
     implementation(libs.appcompat.v110)
     implementation(libs.superior.toasts)
     implementation(libs.gson)
+    implementation(libs.avvylib)
 
     implementation(libs.appcompat)
     implementation(libs.material)

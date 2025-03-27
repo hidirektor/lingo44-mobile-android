@@ -6,6 +6,12 @@
         <attr name="lingifyThemeChangerImage" format="reference" />
         <attr name="lingifyBackIcon" format="reference" />
         <attr name="lingifyNextIcon" format="reference" />
+        <attr name="lingifyUpIcon" format="reference" />
+        <attr name="lingifyDownIcon" format="reference" />
+        <attr name="lingifyShortBackIcon" format="reference" />
+        <attr name="lingifyShortNextIcon" format="reference" />
+        <attr name="lingifyShortUpIcon" format="reference" />
+        <attr name="lingifyShortDownIcon" format="reference" />
         <attr name="lingifyGoogleIcon" format="reference" />
         <attr name="lingifyAppleIcon" format="reference" />
         <attr name="lingifyShowPasswordIcon" format="reference" />
@@ -26,5 +32,6 @@
         <attr name="lingifyDashboardBottomBarDictionaryIcon" format="reference" />
         <attr name="lingifyDashboardBottomBarPracticesIcon" format="reference" />
         <attr name="lingifyDashboardBottomBarStatsIcon" format="reference" />
+        <attr name="lingifyNotificationIcon" format="reference" />
     </declare-styleable>
 </resources>
