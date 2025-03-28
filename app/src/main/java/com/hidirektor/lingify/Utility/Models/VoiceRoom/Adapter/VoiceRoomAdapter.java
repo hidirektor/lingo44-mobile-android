@@ -40,6 +40,7 @@ public class VoiceRoomAdapter extends ArrayAdapter<VoiceRoom> {
 
         // UI Elements
         ImageView adminImage = convertView.findViewById(R.id.adminImage);
+        TextView adminName = convertView.findViewById(R.id.adminName);
         TextView roomSubject = convertView.findViewById(R.id.roomSubject);
         TextView participantsCount = convertView.findViewById(R.id.participantsCount);
         Button joinButton = convertView.findViewById(R.id.joinButton);
@@ -48,6 +49,8 @@ public class VoiceRoomAdapter extends ArrayAdapter<VoiceRoom> {
         TextView endDate = convertView.findViewById(R.id.endDate);
         TextView remainTime = convertView.findViewById(R.id.remainTime);
         ImageView topicImage = convertView.findViewById(R.id.topicImage);
+
+        adminName.setText(room.getAdminName());
 
         // Set room details
         SimpleDateFormat displayFormat = new SimpleDateFormat("MMM dd, yyyy HH:mm", Locale.getDefault());

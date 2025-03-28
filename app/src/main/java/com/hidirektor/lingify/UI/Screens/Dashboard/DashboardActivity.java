@@ -94,9 +94,9 @@ public class DashboardActivity extends BaseActivity {
         String endDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).format(calendar.getTime());
 
         // Adding rooms to the list
-        roomList.add(new VoiceRoom("English Beginners", "John Doe", "https://kusadasidil.com/wp-content/uploads/2020/09/kusadasi-dil-logo.png",
+        roomList.add(new VoiceRoom("English Beginners", "J.D. Dil Kursu", "https://cdn-icons-png.flaticon.com/512/0/747.png",
                 startDate, endDate, 15, 120, true, "https://www.fda.gov/files/iStock-157317886.jpg"));
-        roomList.add(new VoiceRoom("IELTS Practice", "Jane Smith", "https://kusadasidil.com/wp-content/uploads/2020/09/kusadasi-dil-logo.png",
+        roomList.add(new VoiceRoom("IELTS Practice", "J.S. Dil Kursu", "https://cdn-icons-png.flaticon.com/512/0/747.png",
                 startDate, endDate, 8, 120, false, "https://www.fda.gov/files/iStock-157317886.jpg"));
 
         VoiceRoomAdapter adapter = new VoiceRoomAdapter(this, roomList);
