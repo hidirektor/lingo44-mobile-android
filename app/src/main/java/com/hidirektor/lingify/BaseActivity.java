@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.hidirektor.lingify.UI.Screens.Authentication.LoginActivity;
 import com.hidirektor.lingify.UI.Screens.Dashboard.DashboardActivity;
 import com.hidirektor.lingify.UI.Screens.Welcome.WelcomeActivity;
+import com.hidirektor.lingify.Utility.Preferences.Language.LanguageUtil;
 import com.hidirektor.lingify.Utility.SystemDefaults;
 
 public class BaseActivity extends AppCompatActivity {
@@ -19,6 +20,8 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        LanguageUtil.setLanguage(getApplicationContext(), "tr");
 
         getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
             @Override
