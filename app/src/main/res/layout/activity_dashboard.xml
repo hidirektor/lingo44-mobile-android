@@ -36,6 +36,7 @@
                 app:avvy_loading_arches_degree_area="90"/>
 
             <ImageView
+                android:id="@+id/profileMenu"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="?attr/lingifyShortDownIcon"
@@ -134,7 +135,7 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="@drawable/shape_stick"
-            android:layout_marginBottom="12dp"/>
+            android:layout_marginBottom="12dp" />
     </LinearLayout>
 
     <FrameLayout

@@ -3,6 +3,7 @@ package com.hidirektor.lingify.UI.Screens.Dashboard;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -21,6 +22,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
+import xyz.schwaab.avvylib.AvatarView;
+
 public class DashboardActivity extends BaseActivity {
 
     private ConstraintLayout homeButton;
@@ -32,6 +35,9 @@ public class DashboardActivity extends BaseActivity {
     private TabLayout tabLayout;
     private FrameLayout selectedScreen;
     private ListView voiceRoomList;
+
+    private AvatarView avatarView;
+    private ImageView profileMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,8 +58,14 @@ public class DashboardActivity extends BaseActivity {
         selectedScreen = findViewById(R.id.selectedScreen);
         voiceRoomList = findViewById(R.id.voiceRoomList);
 
+        avatarView = findViewById(R.id.avatarView);
+        profileMenu = findViewById(R.id.profileMenu);
+
         tabLayout.addTab(tabLayout.newTab().setText(getString(R.string.dashboard_main_section)));
         tabLayout.addTab(tabLayout.newTab().setText(getString(R.string.dashboard_speaking_club_section)));
+
+        avatarView.setAnimating(true);
+        avatarView.setNumberOfArches(5);
 
         setupTabLayoutListener();
         setupVoiceRoomList();
