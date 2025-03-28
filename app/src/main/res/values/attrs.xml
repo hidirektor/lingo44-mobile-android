@@ -33,5 +33,6 @@
         <attr name="lingifyDashboardBottomBarPracticesIcon" format="reference" />
         <attr name="lingifyDashboardBottomBarStatsIcon" format="reference" />
         <attr name="lingifyNotificationIcon" format="reference" />
+        <attr name="lingifyErrorIcon" format="reference" />
     </declare-styleable>
 </resources>

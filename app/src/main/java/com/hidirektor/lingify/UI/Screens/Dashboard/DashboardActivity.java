@@ -90,7 +90,7 @@ public class DashboardActivity extends BaseActivity {
         // 2 hours later
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(currentTimeMillis);
-        calendar.add(Calendar.HOUR, 2);
+        calendar.add(Calendar.MINUTE, 2);
         String endDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).format(calendar.getTime());
 
         // Adding rooms to the list

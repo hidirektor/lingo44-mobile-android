@@ -47,6 +47,7 @@
         <item name="lingifyDashboardBottomBarPracticesIcon">@drawable/icon_practices_light</item>
         <item name="lingifyDashboardBottomBarStatsIcon">@drawable/icon_stat_light</item>
         <item name="lingifyNotificationIcon">@drawable/icon_notification_light</item>
+        <item name="lingifyErrorIcon">@drawable/icon_error_light</item>
     </style>
 
     <style name="Theme.RemoveSplashScreenTheme" parent="@style/Theme.Lingify">
