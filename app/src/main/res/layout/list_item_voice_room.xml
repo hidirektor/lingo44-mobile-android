@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background_item_voice_room_list"
+    android:padding="16dp"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/topicImage"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/template_profile_photo"
+                android:layout_marginEnd="12dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/roomSubject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="need humanitarian support"
+                    android:fontFamily="@font/sf_pro_bold"
+                    android:textColor="@color/body_primary"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/startDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="need humanitarian support"
+                    android:fontFamily="@font/sf_pro_regular"
+                    android:textColor="@color/body_primary"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/endDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="need humanitarian support"
+                    android:fontFamily="@font/sf_pro_regular"
+                    android:textColor="@color/body_primary"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/shape_stick"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/adminImage"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/template_profile_photo"
+                    android:layout_marginEnd="12dp"/>
+                <TextView
+                    android:id="@+id/adminName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kutay Dil Kursu"
+                    android:fontFamily="@font/sf_pro_medium"
+                    android:textColor="@color/body_primary"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/joinButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dashboard_join_speaking_club"
+                    android:fontFamily="@font/sf_pro_medium"
+                    android:textColor="@color/body_on_primary"
+                    android:background="@drawable/button_background_get_ready"
+                    android:textSize="16sp"
+                    android:textAllCaps="false"/>
+                <TextView
+                    android:id="@+id/participantsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0/120 Öğrenci"
+                    android:fontFamily="@font/sf_pro_medium"
+                    android:textColor="@color/body_primary"
+                    android:textAlignment="center"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp">
+            <TextView
+                android:id="@+id/remainTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kalan Süre: 30dk."
+                android:fontFamily="@font/sf_pro_medium"
+                android:textColor="@color/body_primary"
+                android:textAlignment="center"
+                android:textSize="16sp"/>
+            <ProgressBar
+                android:id="@+id/timeRemainingBar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:progress="30"
+                android:max="100"
+                android:layout_marginTop="4dp"
+                android:progressDrawable="@drawable/background_voice_room_progress_bar"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

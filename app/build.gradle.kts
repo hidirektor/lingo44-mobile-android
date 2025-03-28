@@ -42,6 +42,8 @@ dependencies {
     implementation(libs.superior.toasts)
     implementation(libs.gson)
     implementation(libs.avvylib)
+    implementation(libs.glide)
+    annotationProcessor(libs.compiler)
 
     implementation(libs.appcompat)
     implementation(libs.material)

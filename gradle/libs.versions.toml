@@ -4,6 +4,8 @@ appcompatVersion = "1.1.0"
 avatarviewCoil = "1.0.4"
 avvylib = "1.2.0"
 ccp = "2.7.3"
+compiler = "4.13.0"
+glide = "4.16.0"
 gson = "2.10.1"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -23,6 +25,8 @@ avatarview-coil = { module = "io.getstream:avatarview-coil", version.ref = "avat
 avvylib = { module = "xyz.schwaab:avvylib", version.ref = "avvylib" }
 ccp = { module = "com.hbb20:ccp", version.ref = "ccp" }
 chaosleung-pinview = { module = "io.github.chaosleung:pinview", version.ref = "pinviewVersion" }
+compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "compiler" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }

@@ -109,4 +109,9 @@
 
     <string name="dashboard_main_section">Kurs</string>
     <string name="dashboard_speaking_club_section">Konuşma Kulübü</string>
+    <string name="dashboard_join_speaking_club">Katıl</string>
+    <string name="voice_room_start_date">Başlangıç:\u0020</string>
+    <string name="voice_room_end_date">Bitiş:\u0020</string>
+    <string name="voice_room_student">Öğrenci</string>
+    <string name="voice_room_time_remain">Kalan Süre:\u0020</string>
 </resources>

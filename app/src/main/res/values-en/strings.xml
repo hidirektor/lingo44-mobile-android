@@ -103,4 +103,9 @@
 
     <string name="dashboard_main_section">Course</string>
     <string name="dashboard_speaking_club_section">Speaking Club</string>
+    <string name="dashboard_join_speaking_club">Join</string>
+    <string name="voice_room_start_date">Start:\u0020</string>
+    <string name="voice_room_end_date">End:\u0020</string>
+    <string name="voice_room_student">Students</string>
+    <string name="voice_room_time_remain">Remaining:\u0020</string>
 </resources>

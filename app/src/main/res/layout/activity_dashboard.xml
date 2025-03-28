@@ -131,10 +131,19 @@
     </LinearLayout>
 
     <FrameLayout
+        android:id="@+id/selectedScreen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/frame_layout"
-        app:layout_constraintTop_toBottomOf="@id/tabSection"/>
+        app:layout_constraintTop_toBottomOf="@id/tabSection"
+        android:visibility="gone"
+        android:padding="12dp">
+
+        <ListView
+            android:id="@+id/voiceRoomList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="0dp" />
+    </FrameLayout>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/subLayout"
