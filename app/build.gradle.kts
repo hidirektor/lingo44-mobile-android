@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.hidirektor.lingify"
+    namespace = "com.hidirektor.lingo44"
     compileSdk = 35
 
     defaultConfig {
