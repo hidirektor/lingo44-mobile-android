@@ -14,8 +14,8 @@
         <item name="shapeAppearanceOverlay">@style/RoundedShapeAppearance</item>
 
         <!-- Theme Based Images -->
-        <item name="lingifyLogo">@drawable/logo_kusadasi_dil_dark</item>
-        <!-- <item name="lingifyLogo">@drawable/logo_dinamik_beyin_dark</item> -->
+        <item name="lingifyLogo">@drawable/logo_lingo_dark</item>
+
         <item name="lingifyOnboardImage">@drawable/image_welcome_dark</item>
         <item name="lingifyThemeChangerImage">@drawable/icon_sun</item>
         <item name="lingifyBackIcon">@drawable/icon_back_dark</item>

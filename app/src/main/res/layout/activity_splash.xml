@@ -10,8 +10,9 @@
 
     <ImageView
         android:id="@+id/appLogo"
-        android:layout_width="280dp"
+        android:layout_width="220dp"
         android:layout_height="120dp"
+        android:scaleType="fitXY"
         android:src="?attr/lingifyLogo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
