@@ -61,7 +61,7 @@
     <string name="register_password_title">Password</string>
     <string name="register_password_repeat_title">Confirm Password</string>
 
-    <string name="personal_setup_title">Welcome to Lingify</string>
+    <string name="personal_setup_title">Welcome to Lingo44</string>
     <string name="personal_setup_first_question">Could you tell us a little about yourself?</string>
     <string name="personal_setup_first_answer_1">I dont know any %selected_language%</string>
     <string name="personal_setup_first_answer_2">I have studied %selected_language% before.</string>

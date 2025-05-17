@@ -65,7 +65,7 @@
     <string name="register_password_title">Şifre</string>
     <string name="register_password_repeat_title">Tekrar Şifre</string>
 
-    <string name="personal_setup_title">Lingify\'a Hoşgeldiniz</string>
+    <string name="personal_setup_title">Lingo44\'e Hoşgeldiniz</string>
     <string name="personal_setup_first_question">Bize biraz kendinizden bahseder misiniz?</string>
     <string name="personal_setup_first_answer_1">%selected_language% hiç bilmiyorum</string>
     <string name="personal_setup_first_answer_2">Daha önce %selected_language% çalıştım</string>
