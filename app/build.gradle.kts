@@ -7,7 +7,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.hidirektor.lingify"
+        applicationId = "com.hidirektor.lingo44"
         minSdk = 29
         targetSdk = 35
         versionCode = 1
