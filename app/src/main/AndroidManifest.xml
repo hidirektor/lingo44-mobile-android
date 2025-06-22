@@ -40,6 +40,8 @@
         <activity android:name=".UI.Screens.Setup.LanguageLevel.Exam.LevelExamActivity" />
 
         <activity android:name=".UI.Screens.Dashboard.DashboardActivity" />
+
+        <activity android:name=".UI.Screens.Dictionary.DictionaryActivity" />
     </application>
 
 </manifest>
