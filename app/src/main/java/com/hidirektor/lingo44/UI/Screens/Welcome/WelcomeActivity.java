@@ -1,6 +1,5 @@
 package com.hidirektor.lingo44.UI.Screens.Welcome;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.widget.Button;
@@ -9,9 +8,6 @@ import android.widget.TextView;
 
 import com.hidirektor.lingo44.BaseActivity;
 import com.hidirektor.lingo44.R;
-import com.hidirektor.lingo44.UI.Screens.Authentication.LoginActivity;
-import com.hidirektor.lingo44.UI.Screens.Authentication.Register.RegisterActivity;
-import com.hidirektor.lingo44.UI.Screens.Setup.CourseSelectionActivity;
 import com.hidirektor.lingo44.Utility.Preferences.Theme.ThemeUtil;
 import com.hidirektor.lingo44.Utility.SystemDefaults;
 
@@ -41,25 +37,25 @@ public class WelcomeActivity extends BaseActivity {
                 .apply();
 
         themeChangerButton.setOnClickListener(v -> ThemeUtil.changeTheme(WelcomeActivity.this));
-        getReadyButton.setOnClickListener(v -> {
+        /*getReadyButton.setOnClickListener(v -> {
             Intent intent = new Intent(WelcomeActivity.this, CourseSelectionActivity.class);
             startActivity(intent);
-        });
-        registerButton.setOnClickListener(v -> {
+        });*/
+        /*registerButton.setOnClickListener(v -> {
             Intent intent = new Intent(WelcomeActivity.this, RegisterActivity.class);
             startActivity(intent);
-        });
+        });*/
 
-        loginText.setOnClickListener(v -> {
+        /*loginText.setOnClickListener(v -> {
             Intent loginIntent = new Intent(WelcomeActivity.this, LoginActivity.class);
             startActivity(loginIntent);
             finish();
-        });
+        });*/
     }
 
     private void componentInitialize() {
         themeChangerButton = findViewById(R.id.themeChangerButton);
-        getReadyButton = findViewById(R.id.getReadyButton);
+        //getReadyButton = findViewById(R.id.getReadyButton);
         registerButton = findViewById(R.id.registerButton);
         loginText = findViewById(R.id.loginText);
         greetingText = findViewById(R.id.greetingText);

@@ -197,4 +197,9 @@
     <string name="mystery_game_title">Mystery Game</string>
     <string name="mystery_game_coming_soon">Our mystery game is under development. It will be here very soon! Get ready for surprises 🎉</string>
     <string name="forgot_password">Forgot Password / Get Password</string>
+    <string name="bottom_nav_detect_level">Measure Your Level</string>
+    <string name="bottom_nav_ielts_trial">Take IELTS Trial</string>
+    <string name="bottom_nav_dictionary">Dictionary</string>
+    <string name="bottom_nav_minigames">Minigames</string>
+    <string name="bottom_nav_contact_us">Contact Us</string>
 </resources>
