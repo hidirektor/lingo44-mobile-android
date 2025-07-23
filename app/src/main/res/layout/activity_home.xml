@@ -175,6 +175,100 @@
                 </LinearLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
             <!-- Oyun Logoları Satırı Sonu -->
+
+            <!-- 2. Feature Banner Başlangıcı (Daha kısa) -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/featureBannerCard2"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="4dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/statue_of_liberty"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Galata Tower" />
+            </androidx.cardview.widget.CardView>
+            <!-- 2. Feature Banner Sonu -->
+
+            <!-- Sosyal Medya Kutuları Başlangıcı -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <LinearLayout
+                    android:id="@+id/socialMediaRow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <!-- Kutay Dil Okulu Kutu -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/game_box_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/logo_kutay"
+                            android:contentDescription="Kutay Dil Okulu Logo" />
+                    </LinearLayout>
+
+                    <!-- Speaking Cafe Kutu -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/game_box_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/logo_speaking_cafe"
+                            android:contentDescription="Speaking Cafe Logo" />
+                    </LinearLayout>
+
+                    <!-- Kahve Dengi by Kutay Kutu -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/game_box_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/logo_kahvedengi"
+                            android:contentDescription="Kahve Dengi by Kutay Logo" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!-- Sosyal Medya Kutuları Sonu -->
         </LinearLayout>
     </ScrollView>
     <!-- Ana Scroll Sonu -->
