@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.chaos.view.PinView;
@@ -27,8 +26,6 @@ public class RegisterActivity extends BaseActivity {
     private TextInputEditText phoneNumberInputField;
 
     private Button continueButton;
-    private LinearLayout registerViaGoogleLayout;
-    private LinearLayout registerViaAppleLayout;
 
     private PinView passwordPinView;
     private PinView confirmPasswordPinView;
@@ -70,8 +67,6 @@ public class RegisterActivity extends BaseActivity {
         confirmPasswordPinView = findViewById(R.id.confirmPasswordPinView);
 
         continueButton = findViewById(R.id.continueButton);
-        registerViaGoogleLayout = findViewById(R.id.registerViaGoogleLayout);
-        registerViaAppleLayout = findViewById(R.id.registerViaAppleLayout);
         loginText = findViewById(R.id.loginText);
     }
 }

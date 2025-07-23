@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/stained_glass_bg"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/closeButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="end"
+        android:padding="6dp"
+        android:src="?attr/lingifyCloseIcon"
+        android:contentDescription="Kapat" />
+
+    <ImageView
+        android:id="@+id/monumentImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/monumentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/monumentLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#E0E0E0" />
+
+    <TextView
+        android:id="@+id/monumentDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="12dp"
+        android:textColor="#F8F8F8"
+        android:gravity="center_horizontal" />
+
+</LinearLayout> 

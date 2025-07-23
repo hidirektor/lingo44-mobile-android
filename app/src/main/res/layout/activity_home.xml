@@ -39,7 +39,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight="1.0"
-                    android:text="Tekrar hoşgeldiniz,"
+                    android:text="@string/home_header_subtitle"
                     android:gravity="bottom"
                     android:textColor="@color/white"
                     android:textSize="14sp"
@@ -50,9 +50,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight="1.0"
-                    android:text="Halil İbrahim Direktör"
+                    android:text="@string/developer_name"
                     android:textColor="@color/white"
-                    android:textSize="24sp"
+                    android:textSize="22sp"
                     android:fontFamily="@font/sf_pro_bold" />
             </LinearLayout>
 

@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name" translatable="false">Lingo44</string>
-    <string name="developer_name" translatable="false">Halil İbrahim DİREKTÖR</string>
+    <string name="developer_name" translatable="false">Halil İbrahim Direktör</string>
     <string name="developer_email" translatable="false">hidirektor@gmail.com</string>
 
     <string name="continue_button">İlerle</string>
@@ -114,4 +114,21 @@
     <string name="voice_room_end_date">Bitiş:\u0020</string>
     <string name="voice_room_student">Öğrenci</string>
     <string name="voice_room_time_remain">Kalan Süre:\u0020</string>
+    <string name="home_header_subtitle">Tekrar hoşgeldiniz,</string>
+
+    <string name="monument_sagrada_title">Sagrada Família</string>
+    <string name="monument_sagrada_location">Barselona, İspanya</string>
+    <string name="monument_sagrada_desc">Antoni Gaudí tarafından tasarlanan Sagrada Família, dünyaca ünlü bir Katolik bazilikadır. Yapımı 1882’de başlamış ve hâlâ tamamlanmamıştır. Modernist mimarinin başyapıtlarından biri olarak kabul edilir.</string>
+
+    <string name="monument_bigben_title">Big Ben (Elizabeth Tower)</string>
+    <string name="monument_bigben_location">Londra, Birleşik Krallık</string>
+    <string name="monument_bigben_desc">Westminster Sarayı’nın kuzey ucunda yer alan saat kulesi, halk arasında “Big Ben” olarak bilinir. Aslında Big Ben, kulenin içindeki büyük çanın adıdır. İngiltere’nin sembol yapılarından biridir.</string>
+
+    <string name="monument_colosseum_title">Kolezyum (Colosseum)</string>
+    <string name="monument_colosseum_location">Roma, İtalya</string>
+    <string name="monument_colosseum_desc">Antik Roma dönemine ait olan Kolezyum, gladyatör dövüşlerinin ve halk gösterilerinin yapıldığı dev bir amfitiyatrodur. MS 80 yılında açılmış ve hâlen ayakta duran en büyük Roma yapılarındandır.</string>
+
+    <string name="monument_eiffel_title">Eyfel Kulesi (Tour Eiffel)</string>
+    <string name="monument_eiffel_location">Paris, Fransa</string>
+    <string name="monument_eiffel_desc">Gustave Eiffel tarafından 1889 Paris Dünya Fuarı için inşa edilen Eyfel Kulesi, Paris’in en tanınan simgesidir. Demirden yapılmış olan bu yapı, zamanında büyük tartışmalar yaratmış ancak günümüzde Fransız mühendisliğinin ikonik bir örneğidir.</string>
 </resources>

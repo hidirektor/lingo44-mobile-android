@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.chaos.view.PinView;
@@ -12,7 +11,7 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.hidirektor.lingo44.BaseActivity;
 import com.hidirektor.lingo44.R;
 import com.hidirektor.lingo44.UI.Screens.Authentication.Register.RegisterActivity;
-import com.hidirektor.lingo44.UI.Screens.Dashboard.DashboardActivity;
+import com.hidirektor.lingo44.UI.Screens.Home.HomeActivity;
 import com.hidirektor.lingo44.Utility.Preferences.Theme.ThemeUtil;
 
 public class LoginActivity extends BaseActivity {
@@ -24,9 +23,6 @@ public class LoginActivity extends BaseActivity {
     private PinView passwordPinView;
 
     private Button loginButton;
-
-    private LinearLayout loginViaGoogleLayout;
-    private LinearLayout loginViaAppleLayout;
 
     private TextView registerText;
 
@@ -45,8 +41,8 @@ public class LoginActivity extends BaseActivity {
         });
 
         loginButton.setOnClickListener(v -> {
-            Intent dashboardIntent = new Intent(LoginActivity.this, DashboardActivity.class);
-            startActivity(dashboardIntent);
+            Intent homeIntent = new Intent(LoginActivity.this, HomeActivity.class);
+            startActivity(homeIntent);
             finish();
         });
     }
@@ -59,9 +55,6 @@ public class LoginActivity extends BaseActivity {
         passwordPinView = findViewById(R.id.passwordPinView);
 
         loginButton = findViewById(R.id.loginButton);
-
-        loginViaGoogleLayout = findViewById(R.id.loginViaGoogleLayout);
-        loginViaAppleLayout = findViewById(R.id.loginViaAppleLayout);
 
         registerText = findViewById(R.id.registerText);
     }

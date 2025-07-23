@@ -108,4 +108,21 @@
     <string name="voice_room_end_date">End:\u0020</string>
     <string name="voice_room_student">Students</string>
     <string name="voice_room_time_remain">Remaining:\u0020</string>
+    <string name="home_header_subtitle">Welcome back,</string>
+
+    <string name="monument_sagrada_title">Sagrada Família</string>
+    <string name="monument_sagrada_location">Barcelona, Spain</string>
+    <string name="monument_sagrada_desc">Designed by Antoni Gaudí, Sagrada Família is a world-famous Catholic basilica. Construction began in 1882 and is still ongoing. It is considered one of the masterpieces of modernist architecture.</string>
+
+    <string name="monument_bigben_title">Big Ben (Elizabeth Tower)</string>
+    <string name="monument_bigben_location">London, United Kingdom</string>
+    <string name="monument_bigben_desc">Located at the north end of the Palace of Westminster, the clock tower is popularly known as “Big Ben.” In fact, Big Ben is the name of the great bell inside the tower. It is one of England’s iconic landmarks.</string>
+
+    <string name="monument_colosseum_title">Colosseum</string>
+    <string name="monument_colosseum_location">Rome, Italy</string>
+    <string name="monument_colosseum_desc">Dating back to Ancient Rome, the Colosseum is a massive amphitheater where gladiator fights and public spectacles were held. Opened in AD 80, it remains the largest standing Roman structure.</string>
+
+    <string name="monument_eiffel_title">Eiffel Tower (Tour Eiffel)</string>
+    <string name="monument_eiffel_location">Paris, France</string>
+    <string name="monument_eiffel_desc">Built by Gustave Eiffel for the 1889 Paris World’s Fair, the Eiffel Tower is the most recognizable symbol of Paris. Made of iron, it was controversial at the time but is now an iconic example of French engineering.</string>
 </resources>
