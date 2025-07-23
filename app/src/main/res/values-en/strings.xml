@@ -196,4 +196,5 @@
     <string name="bottom_nav_profile">Profile</string>
     <string name="mystery_game_title">Mystery Game</string>
     <string name="mystery_game_coming_soon">Our mystery game is under development. It will be here very soon! Get ready for surprises 🎉</string>
+    <string name="forgot_password">Forgot Password / Get Password</string>
 </resources>
