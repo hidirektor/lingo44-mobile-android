@@ -23,6 +23,7 @@
     <string name="welcome_button">Seviyeni Belirle</string>
     <string name="welcome_login_start">Zaten bir hesabınız mı var?</string>
     <string name="welcome_login_end">\u0020<u>Giriş Yapın</u></string>
+    <string name="welcome_onboard_subtitle">Türkiye\'nin Hedef Odaklı Dil Uygulaması</string>
 
     <string name="setup_course_selection_title">Hangi sınava hazırlanıyorsunuz?</string>
     <!-- Course Titles -->

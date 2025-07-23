@@ -20,6 +20,7 @@
     <string name="welcome_button">Measure your Level</string>
     <string name="welcome_login_start">Already, have an account?</string>
     <string name="welcome_login_end">\u0020<u>Log in</u></string>
+    <string name="welcome_onboard_subtitle">Turkey\'s Goal-Oriented Language App</string>
 
     <string name="setup_course_selection_title">Which exam are you preparing for?</string>
     <!-- Course Titles -->
@@ -189,4 +190,10 @@
     <string name="monument_kremlin_title">Moscow Kremlin</string>
     <string name="monument_kremlin_location">Moscow, Russia</string>
     <string name="monument_kremlin_desc">The political and historical center of Russia, the Kremlin was built in the 15th century. This UNESCO World Heritage Site is a complex of palaces, cathedrals, and fortifications.</string>
+
+    <string name="bottom_nav_home">Home</string>
+    <string name="bottom_nav_learn">Learn</string>
+    <string name="bottom_nav_profile">Profile</string>
+    <string name="mystery_game_title">Mystery Game</string>
+    <string name="mystery_game_coming_soon">Our mystery game is under development. It will be here very soon! Get ready for surprises 🎉</string>
 </resources>

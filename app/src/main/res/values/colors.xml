@@ -20,5 +20,5 @@
 
     <color name="loading_skeleton_start">#FF5900</color>
     <color name="loading_skeleton_end">#BF15BC</color>
-    <color name="background_welcome_overlay">#66131313</color>
+    <color name="background_welcome_overlay">#66FFFFFF</color>
 </resources>
