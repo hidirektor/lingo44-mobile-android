@@ -67,9 +67,9 @@
 
     <string name="personal_setup_title">Lingo44\'e Hoşgeldiniz</string>
     <string name="personal_setup_first_question">Bize biraz kendinizden bahseder misiniz?</string>
-    <string name="personal_setup_first_answer_1">%selected_language% hiç bilmiyorum</string>
-    <string name="personal_setup_first_answer_2">Daha önce %selected_language% çalıştım</string>
-    <string name="personal_setup_second_question">Neden %selected_course% sınavına girmek istiyorsunuz?</string>
+    <string name="personal_setup_first_answer_1">%1$s hiç bilmiyorum</string>
+    <string name="personal_setup_first_answer_2">Daha önce %1$s çalıştım</string>
+    <string name="personal_setup_second_question">Neden %1$s sınavına girmek istiyorsunuz?</string>
     <string name="personal_setup_second_answer_1">Bu sertifikaya, dil yeterliliği gerektiren üniversite programlarına başvurabilmek için ihtiyacım var.</string>
     <string name="personal_setup_second_answer_2">Dil becerilerimi işverenlere göstermek ve kariyer fırsatlarımı artırmak istiyorum.</string>
     <string name="personal_setup_second_answer_3">Yurtdışına taşınmayı planlıyorum ve bu test vize veya oturma izni başvurusu için gerekli.</string>
@@ -94,7 +94,7 @@
     <string name="detect_level_exam_title">Seviye Belirleme Sınavı</string>
     <string name="detect_level_exam_description">
     Seviye Belirleme Sınavı, yalnızca dilbilgisi (grammar) seviyenizi ölçmek için tasarlanmıştır.
-    Daha kapsamlı bir değerlendirme için uygulama içindeki Gelişmiş Seviye Sınavı\\'nı kullanabilirsiniz.
+    Daha kapsamlı bir değerlendirme için uygulama içindeki Gelişmiş Seviye Sınavı\'nı kullanabilirsiniz.
     Bu sınav, IELTS ve TOEFL gibi uluslararası sınav formatlarına uygun olarak hazırlanmıştır.
     </string>
     <string name="detect_level_exam_question_count" translatable="false">30</string>

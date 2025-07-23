@@ -63,9 +63,9 @@
 
     <string name="personal_setup_title">Welcome to Lingo44</string>
     <string name="personal_setup_first_question">Could you tell us a little about yourself?</string>
-    <string name="personal_setup_first_answer_1">I dont know any %selected_language%</string>
-    <string name="personal_setup_first_answer_2">I have studied %selected_language% before.</string>
-    <string name="personal_setup_second_question">Why do you want to take the %selected_course% test?</string>
+    <string name="personal_setup_first_answer_1">I don\'t know any %1$s</string>
+    <string name="personal_setup_first_answer_2">I have studied %1$s before.</string>
+    <string name="personal_setup_second_question">Why do you want to take the %1$s test?</string>
     <string name="personal_setup_second_answer_1">I need this certification to apply for university programs that require a language proficiency test.</string>
     <string name="personal_setup_second_answer_2">I want to improve my career opportunities by demonstrating my language skills to employers.</string>
     <string name="personal_setup_second_answer_3">I’m planning to move abroad, and this test is necessary for my visa or residency application.</string>
@@ -180,7 +180,7 @@
 
     <string name="monument_pisa_tower_title">Leaning Tower of Pisa</string>
     <string name="monument_pisa_tower_location">Pisa, Italy</string>
-    <string name="monument_pisa_tower_desc">Famous for its leaning structure, the Pisa Tower was built between 1173 and 1372. This bell tower, a UNESCO World Heritage Site, is one of Italy&#39;s most visited tourist attractions.</string>
+    <string name="monument_pisa_tower_desc">Famous for its leaning structure, the Pisa Tower was built between 1173 and 1372. This bell tower, a UNESCO World Heritage Site, is one of Italy\'s most visited tourist attractions.</string>
 
     <string name="monument_acropolis_title">Acropolis</string>
     <string name="monument_acropolis_location">Athens, Greece</string>
