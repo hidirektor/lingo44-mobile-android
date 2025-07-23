@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/body_background">
+
+    <!-- Header with rounded bottom corners -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/headerCard"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/background_home_header"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/headerSubtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.0"
+                    android:text="Tekrar hoşgeldiniz,"
+                    android:gravity="bottom"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/sf_pro_regular" />
+
+                <TextView
+                    android:id="@+id/headerTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.0"
+                    android:text="Halil İbrahim Direktör"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/sf_pro_bold" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="start"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/headerDecoration"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/sagrada_familia"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
