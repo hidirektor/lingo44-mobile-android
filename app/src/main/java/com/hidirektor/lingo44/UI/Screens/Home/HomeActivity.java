@@ -19,20 +19,23 @@ public class HomeActivity extends AppCompatActivity {
             R.drawable.colosseum,
             R.drawable.eiffel,
             R.drawable.bigben,
-            R.drawable.sagrada_familia
+            R.drawable.sagrada_familia,
+            R.drawable.statue_of_liberty,
+            R.drawable.taj_mahal,
+            R.drawable.machu_pichu
     };
 
     private static final int[][] MONUMENT_INFO = {
             {R.string.monument_colosseum_title, R.string.monument_colosseum_location, R.string.monument_colosseum_desc},
             {R.string.monument_eiffel_title, R.string.monument_eiffel_location, R.string.monument_eiffel_desc},
             {R.string.monument_bigben_title, R.string.monument_bigben_location, R.string.monument_bigben_desc},
-            {R.string.monument_sagrada_title, R.string.monument_sagrada_location, R.string.monument_sagrada_desc}
+            {R.string.monument_sagrada_title, R.string.monument_sagrada_location, R.string.monument_sagrada_desc},
+            {R.string.monument_statue_of_liberty_title, R.string.monument_statue_of_liberty_location, R.string.monument_statue_of_liberty_desc},
+            {R.string.monument_taj_mahal_title, R.string.monument_taj_mahal_location, R.string.monument_taj_mahal_desc},
+            {R.string.monument_machu_pichu_title, R.string.monument_machu_pichu_location, R.string.monument_machu_pichu_desc}
     };
     private int currentMonumentIndex = 0;
     private ImageView headerDecoration;
-    private TextView monumentTitleView;
-    private TextView monumentLocationView;
-    private TextView monumentDescView;
     private Handler popupHandler = new Handler(Looper.getMainLooper());
     private Runnable popupRunnable;
 
@@ -47,12 +50,6 @@ public class HomeActivity extends AppCompatActivity {
         headerDecoration = findViewById(R.id.headerDecoration);
         currentMonumentIndex = new Random().nextInt(HEADER_IMAGES.length);
         headerDecoration.setImageResource(HEADER_IMAGES[currentMonumentIndex]);
-
-        // Yeni: Metin alanlarını bul
-        monumentTitleView = findViewById(R.id.monumentTitle);
-        monumentLocationView = findViewById(R.id.monumentLocation);
-        monumentDescView = findViewById(R.id.monumentDesc);
-        updateMonumentInfo(currentMonumentIndex);
 
         headerDecoration.setOnClickListener(new View.OnClickListener() {
             private long lastClickTime = 0;
@@ -76,7 +73,6 @@ public class HomeActivity extends AppCompatActivity {
                     }
                     currentMonumentIndex = newIndex;
                     headerDecoration.setImageResource(HEADER_IMAGES[currentMonumentIndex]);
-                    updateMonumentInfo(currentMonumentIndex);
                     clickCount = 0;
                 } else if (clickCount == 1) {
                     // Tek tık: gecikmeli popup aç
@@ -94,13 +90,5 @@ public class HomeActivity extends AppCompatActivity {
                 }
             }
         });
-    }
-
-    private void updateMonumentInfo(int index) {
-        if (monumentTitleView != null)
-            monumentTitleView.setText(getString(MONUMENT_INFO[index][0]));
-        if (monumentLocationView != null)
-            monumentLocationView.setText(getString(MONUMENT_INFO[index][1]));
-        if (monumentDescView != null) monumentDescView.setText(getString(MONUMENT_INFO[index][2]));
     }
 } 

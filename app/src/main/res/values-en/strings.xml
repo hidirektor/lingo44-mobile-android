@@ -125,4 +125,36 @@
     <string name="monument_eiffel_title">Eiffel Tower (Tour Eiffel)</string>
     <string name="monument_eiffel_location">Paris, France</string>
     <string name="monument_eiffel_desc">Built by Gustave Eiffel for the 1889 Paris World’s Fair, the Eiffel Tower is the most recognizable symbol of Paris. Made of iron, it was controversial at the time but is now an iconic example of French engineering.</string>
+
+    <string name="monument_ayasofya_title">Hagia Sophia (Ayasofya)</string>
+    <string name="monument_ayasofya_location">Istanbul, Turkey</string>
+    <string name="monument_ayasofya_desc">Originally built as a church in 537, Hagia Sophia has served as a mosque and a museum. Combining Byzantine and Ottoman architecture, it is one of Istanbul’s most iconic landmarks.</string>
+
+    <string name="monument_stonehenge_title">Stonehenge</string>
+    <string name="monument_stonehenge_location">Wiltshire, England</string>
+    <string name="monument_stonehenge_desc">Believed to have been constructed between 3000 and 2000 BC, Stonehenge is a mysterious monument made of massive stone blocks. Its purpose remains unknown, making it one of the world’s most famous prehistoric sites.</string>
+
+    <string name="monument_angkorwat_title">Angkor Wat</string>
+    <string name="monument_angkorwat_location">Siem Reap, Cambodia</string>
+    <string name="monument_angkorwat_desc">Built in the 12th century by the Khmer Empire, Angkor Wat is the world’s largest temple complex. It is considered sacred in both Hinduism and Buddhism.</string>
+
+    <string name="monument_alhambra_title">Alhambra Palace</string>
+    <string name="monument_alhambra_location">Granada, Spain</string>
+    <string name="monument_alhambra_desc">Constructed during the Nasrid dynasty, the Alhambra Palace is one of the finest examples of Islamic architecture. It is famous for its gardens, courtyards, and intricate decorations.</string>
+
+    <string name="monument_brandenburg_title">Brandenburg Gate</string>
+    <string name="monument_brandenburg_location">Berlin, Germany</string>
+    <string name="monument_brandenburg_desc">Built in the 18th century, the Brandenburg Gate is a symbol of Berlin and German reunification. Its classical architecture makes it one of the city’s most important landmarks.</string>
+
+    <string name="monument_statue_of_liberty_title">Statue of Liberty</string>
+    <string name="monument_statue_of_liberty_location">New York, USA</string>
+    <string name="monument_statue_of_liberty_desc">A symbol of American independence, this statue was gifted to the USA by France in 1886. It represents the ideals of freedom and democracy.</string>
+
+    <string name="monument_taj_mahal_title">Taj Mahal</string>
+    <string name="monument_taj_mahal_location">Agra, India</string>
+    <string name="monument_taj_mahal_desc">Commissioned by Mughal Emperor Shah Jahan for his wife Mumtaz Mahal, this mausoleum is built of white marble and is considered a symbol of love.</string>
+
+    <string name="monument_machu_pichu_title">Machu Picchu</string>
+    <string name="monument_machu_pichu_location">Cusco Region, Peru</string>
+    <string name="monument_machu_pichu_desc">This ancient city from the Inca Empire is located in the Andes Mountains and is one of the New Seven Wonders of the World.</string>
 </resources>
