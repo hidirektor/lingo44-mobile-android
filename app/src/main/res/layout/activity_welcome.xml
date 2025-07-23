@@ -237,6 +237,7 @@
             app:fabCradleRoundedCornerRadius="20dp"
             app:fabCradleVerticalOffset="0dp"
             android:outlineAmbientShadowColor="@color/transparent"
+            app:backgroundTint="@android:color/transparent"
             app:contentInsetLeft="0dp"
             app:contentInsetStart="0dp"
             app:contentInsetRight="0dp"
@@ -246,7 +247,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:background="@color/body_surfaces_first">
+                app:backgroundTint="@android:color/transparent">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/homeButton"
