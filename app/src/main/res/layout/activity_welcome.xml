@@ -146,8 +146,8 @@
                         <ImageView
                             android:layout_width="28dp"
                             android:layout_height="28dp"
-                            android:src="@drawable/icon_show_password_dark"
-                            android:layout_gravity="center" />
+                            android:layout_gravity="center"
+                            android:src="?attr/lingifyForgetPasswordIcon" />
                     </FrameLayout>
                     <TextView
                         android:id="@+id/forgotPasswordText"
@@ -178,19 +178,20 @@
                         <ImageView
                             android:layout_width="28dp"
                             android:layout_height="28dp"
-                            android:src="@drawable/icon_short_next_dark"
+                            android:src="?attr/lingifyNextIcon"
                             android:layout_gravity="center" />
                     </FrameLayout>
+
                     <TextView
                         android:id="@+id/registerText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/register_button"
-                        android:textColor="@color/body_primary"
-                        android:textSize="14sp"
+                        android:layout_marginTop="4dp"
                         android:fontFamily="@font/sf_pro_medium"
                         android:gravity="center"
-                        android:layout_marginTop="4dp" />
+                        android:text="@string/register_button"
+                        android:textColor="@color/body_primary"
+                        android:textSize="14sp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -239,7 +240,7 @@
                         <ImageView
                             android:layout_width="28dp"
                             android:layout_height="28dp"
-                            android:src="@drawable/icon_show_password_dark"
+                            android:src="?attr/lingifyDetectYourLevelIcon"
                             android:layout_gravity="center" />
                     </FrameLayout>
 
@@ -247,12 +248,12 @@
                         android:id="@+id/detectYourLevelText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/body_primary"
-                        android:textSize="12sp"
+                        android:layout_marginTop="4dp"
                         android:fontFamily="@font/sf_pro_medium"
                         android:gravity="center"
-                        android:layout_marginTop="4dp"
-                        android:text="@string/welcome_button" />
+                        android:text="@string/welcome_button"
+                        android:textColor="@color/body_primary"
+                        android:textSize="12sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -271,7 +272,7 @@
                         <ImageView
                             android:layout_width="28dp"
                             android:layout_height="28dp"
-                            android:src="@drawable/icon_show_password_dark"
+                            android:src="?attr/lingifyTakeIELTSIcon"
                             android:layout_gravity="center" />
                     </FrameLayout>
 
@@ -284,7 +285,7 @@
                         android:fontFamily="@font/sf_pro_medium"
                         android:gravity="center"
                         android:layout_marginTop="4dp"
-                        android:text="IELTS Dene" />
+                        android:text="IELTS Deneme" />
                 </LinearLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -325,8 +326,8 @@
                         <ImageView
                             android:layout_width="28dp"
                             android:layout_height="28dp"
-                            android:src="@drawable/icon_show_password_dark"
-                            android:layout_gravity="center" />
+                            android:layout_gravity="center"
+                            android:src="?attr/lingifyArcadeIcon" />
                     </FrameLayout>
 
                     <TextView
@@ -357,7 +358,7 @@
                         <ImageView
                             android:layout_width="28dp"
                             android:layout_height="28dp"
-                            android:src="@drawable/icon_show_password_dark"
+                            android:src="?attr/lingifyPhoneIcon"
                             android:layout_gravity="center" />
                     </FrameLayout>
 
@@ -380,8 +381,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:pointerIcon="wait"
-            android:src="?attr/lingifyDashboardBottomBarDictionaryIcon"
-            app:maxImageSize="32dp"
+            android:src="?attr/lingifyBrainIcon"
+            app:maxImageSize="36dp"
             app:tint="@color/body_background"
             app:layout_anchor="@id/app_bar"
             app:backgroundTint="@color/primary_color" />

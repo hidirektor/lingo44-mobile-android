@@ -49,6 +49,12 @@
         <item name="lingifyDashboardBottomBarStatsIcon">@drawable/icon_stat_light</item>
         <item name="lingifyNotificationIcon">@drawable/icon_notification_light</item>
         <item name="lingifyErrorIcon">@drawable/icon_error_light</item>
+        <item name="lingifyForgetPasswordIcon">@drawable/icon_forget_password_light</item>
+        <item name="lingifyTakeIELTSIcon">@drawable/icon_take_ielts_light</item>
+        <item name="lingifyDetectYourLevelIcon">@drawable/icon_detect_your_level_light</item>
+        <item name="lingifyPhoneIcon">@drawable/icon_phone_light</item>
+        <item name="lingifyArcadeIcon">@drawable/icon_arcade_light</item>
+        <item name="lingifyBrainIcon">@drawable/icon_brain_light</item>
     </style>
 
     <style name="Theme.RemoveSplashScreenTheme" parent="@style/Theme.Lingify">
