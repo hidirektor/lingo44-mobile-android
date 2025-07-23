@@ -21,6 +21,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Lingify"
+rootProject.name = "Lingo44"
 include(":app")
  
