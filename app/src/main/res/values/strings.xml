@@ -205,8 +205,9 @@
     <string name="mystery_game_title">Gizemli Oyun</string>
     <string name="mystery_game_coming_soon">Gizemli oyunumuz yapım aşamasındadır. Çok yakında burada olacak! Sürprizlere hazır olun 🎉</string>
     <string name="bottom_nav_detect_level">Seviyeni Belirle</string>
-    <string name="bottom_nav_ielts_trial">IELTS Denemesi Yap</string>
+    <string name="bottom_nav_ielts_trial">IELTS Deneme</string>
     <string name="bottom_nav_dictionary">Sözlük</string>
     <string name="bottom_nav_minigames">Minigameler</string>
     <string name="bottom_nav_contact_us">Bize Ulaşın</string>
+    <string name="bottom_nav_arcade">Arcade</string>
 </resources>

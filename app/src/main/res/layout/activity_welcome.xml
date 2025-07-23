@@ -285,7 +285,7 @@
                         android:fontFamily="@font/sf_pro_medium"
                         android:gravity="center"
                         android:layout_marginTop="4dp"
-                        android:text="IELTS Deneme" />
+                        android:text="@string/bottom_nav_ielts_trial" />
                 </LinearLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -326,8 +326,8 @@
                         <ImageView
                             android:layout_width="28dp"
                             android:layout_height="28dp"
-                            android:layout_gravity="center"
-                            android:src="?attr/lingifyArcadeIcon" />
+                            android:src="?attr/lingifyArcadeIcon"
+                            android:layout_gravity="center" />
                     </FrameLayout>
 
                     <TextView
@@ -339,7 +339,7 @@
                         android:fontFamily="@font/sf_pro_medium"
                         android:gravity="center"
                         android:layout_marginTop="4dp"
-                        android:text="Arcade" />
+                        android:text="@string/bottom_nav_arcade" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -371,7 +371,7 @@
                         android:fontFamily="@font/sf_pro_medium"
                         android:gravity="center"
                         android:layout_marginTop="4dp"
-                        android:text="Bize Ulaşın" />
+                        android:text="@string/bottom_nav_contact_us" />
                 </LinearLayout>
             </LinearLayout>
         </com.google.android.material.bottomappbar.BottomAppBar>
