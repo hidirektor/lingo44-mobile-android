@@ -72,9 +72,11 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:fillViewport="true"
+        android:padding="12dp"
         android:overScrollMode="ifContentScrolls"
+        android:scrollbars="none"
         app:layout_constraintTop_toBottomOf="@id/headerCard"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toTopOf="@id/homeFooter">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -339,8 +341,8 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/logo_kutay"
-                            android:contentDescription="Kutay Dil Okulu Logo" />
+                            android:contentDescription="Kutay Dil Okulu Logo"
+                            android:src="@drawable/logo_kutay" />
                     </LinearLayout>
                 </LinearLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -350,6 +352,7 @@
     <!-- Ana Scroll Sonu -->
 
     <LinearLayout
+        android:id="@+id/homeFooter"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:orientation="horizontal"
