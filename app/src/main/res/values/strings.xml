@@ -196,4 +196,8 @@
     <string name="monument_kremlin_title">Kremlin Sarayı (Moscow Kremlin)</string>
     <string name="monument_kremlin_location">Moskova, Rusya</string>
     <string name="monument_kremlin_desc">Rusya\'nın siyasi ve tarihi merkezi olan Kremlin Sarayı, 15. yüzyılda inşa edilmiştir. UNESCO Dünya Mirası Listesi\'nde yer alan bu kompleks, saraylar, katedraller ve surlardan oluşur.</string>
+
+    <string name="bottom_nav_home">Anasayfa</string>
+    <string name="bottom_nav_learn">Öğren</string>
+    <string name="bottom_nav_profile">Profil</string>
 </resources>

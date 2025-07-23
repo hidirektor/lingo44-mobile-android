@@ -84,93 +84,17 @@
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Bottom Bar -->
-    <LinearLayout
-        android:id="@+id/bottomBar"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
+
+    <!-- Bottom Navigation Bar -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/background_home_footer"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:paddingStart="24dp"
-        android:paddingEnd="24dp"
+        app:menu="@menu/dashboard_bottom"
+        app:itemIconTint="@drawable/nav_item_color_selector"
+        app:itemTextColor="@drawable/nav_item_color_selector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-
-        <!-- Dashboard (Active) -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <TextView
-                android:id="@+id/bottomBarDashboard"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:text="@string/dashboard_bottom_menu_dashboard"
-                android:textColor="@color/primary_color"
-                android:textSize="16sp"
-                android:fontFamily="@font/sf_pro_bold" />
-
-            <View
-                android:layout_width="24dp"
-                android:layout_height="3dp"
-                android:background="@color/primary_color"
-                android:layout_gravity="center_horizontal" />
-        </LinearLayout>
-
-        <!-- Podcasts (Inactive) -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <TextView
-                android:id="@+id/bottomBarPodcasts"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:text="@string/dashboard_bottom_menu_podcasts"
-                android:textColor="@color/body_secondary"
-                android:textSize="16sp"
-                android:fontFamily="@font/sf_pro_bold" />
-
-            <View
-                android:layout_width="24dp"
-                android:layout_height="3dp"
-                android:background="@android:color/transparent"
-                android:layout_gravity="center_horizontal" />
-        </LinearLayout>
-
-        <!-- Practices (Inactive) -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <TextView
-                android:id="@+id/bottomBarPractices"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:text="@string/dashboard_bottom_menu_practices"
-                android:textColor="@color/body_secondary"
-                android:textSize="16sp"
-                android:fontFamily="@font/sf_pro_bold" />
-
-            <View
-                android:layout_width="24dp"
-                android:layout_height="3dp"
-                android:background="@android:color/transparent"
-                android:layout_gravity="center_horizontal" />
-        </LinearLayout>
-    </LinearLayout>
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
