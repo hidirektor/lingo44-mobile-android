@@ -1,13 +1,21 @@
 package com.hidirektor.lingo44.UI.Screens.Home;
 
+import android.app.Dialog;
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.View;
+import android.view.Window;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 
 import com.hidirektor.lingo44.BaseActivity;
 import com.hidirektor.lingo44.R;
@@ -116,5 +124,105 @@ public class HomeActivity extends BaseActivity {
                 }
             }
         });
+
+        // Sosyal medya kutuları için tıklama işlemleri (yeni sıra ve kutular)
+        LinearLayout socialMediaRow = (LinearLayout) findViewById(R.id.socialMediaRow);
+        LinearLayout speakingCafeBox = (LinearLayout) socialMediaRow.getChildAt(0);
+        LinearLayout kahveDengiBox = (LinearLayout) socialMediaRow.getChildAt(1);
+        LinearLayout culturalExchangeBox = (LinearLayout) socialMediaRow.getChildAt(2);
+
+        if (speakingCafeBox != null) {
+            speakingCafeBox.setOnClickListener(v -> showSocialMediaPopup(
+                    "Speaking Cafe",
+                    "https://www.instagram.com/kutayspeakingcafe/",
+                    "https://www.google.com/maps/place/Kahve+Dengi+by+Kutay/@37.8609034,27.2591352,17z/data=!3m1!4b1!4m6!3m5!1s0x14bea9b4d104aed3:0xb74005e528363292!8m2!3d37.8609034!4d27.2617101!16s%2Fg%2F11y4ygschf?entry=ttu&g_ep=EgoyMDI1MDcyMC4wIKXMDSoASAFQAw%3D%3D",
+                    "https://kutaydil.com/src/speaking-cafe.html"
+            ));
+        }
+        if (kahveDengiBox != null) {
+            kahveDengiBox.setOnClickListener(v -> showSocialMediaPopup(
+                    "Kahve Dengi by Kutay",
+                    "https://www.instagram.com/kahvedengibykutay/",
+                    "https://www.google.com/maps/place/Kahve+Dengi+by+Kutay/@37.8609034,27.2591352,17z/data=!3m1!4b1!4m6!3m5!1s0x14bea9b4d104aed3:0xb74005e528363292!8m2!3d37.8609034!4d27.2617101!16s%2Fg%2F11y4ygschf?entry=ttu&g_ep=EgoyMDI1MDcyMC4wIKXMDSoASAFQAw%3D%3D",
+                    null
+            ));
+        }
+        if (culturalExchangeBox != null) {
+            culturalExchangeBox.setOnClickListener(v -> showSocialMediaPopup(
+                    "Kültür Değişim Programı",
+                    "https://www.instagram.com/kutayspeakingcafe/",
+                    null,
+                    "https://kutaydil.com/src/cultural-exchange.html"
+            ));
+        }
+
+        // Kutay kutusu için popup
+        LinearLayout kutayMediaRow = (LinearLayout) findViewById(R.id.kutayMediaRow);
+        if (kutayMediaRow != null && kutayMediaRow.getChildCount() > 0) {
+            LinearLayout kutayBox = (LinearLayout) kutayMediaRow.getChildAt(0);
+            if (kutayBox != null) {
+                kutayBox.setOnClickListener(v -> showSocialMediaPopup(
+                        "Kutay Yabancı Dil Okulu",
+                        "https://www.instagram.com/kutay_yabancidil_okulu/",
+                        "https://www.google.com/maps/place/Özel+Kutay+Yabancı+Dil+ve+Kişisel+Gelişim+Kursu/@37.8627651,27.2639631,17z/data=!3m1!4b1!4m6!3m5!1s0x14bea9333b804e47:0xa90f697944922c07!8m2!3d37.8627651!4d27.266538!16s%2Fg%2F11j4t6h4__?entry=ttu&g_ep=EgoyMDI1MDcyMC4wIKXMDSoASAFQAw%3D%3D",
+                        "https://kutaydil.com"
+                ));
+            }
+        }
+
+        // Mystery oyun kutusu için popup
+        LinearLayout gameLogoRow = (LinearLayout) findViewById(R.id.gameLogoRow);
+        if (gameLogoRow != null && gameLogoRow.getChildCount() > 3) {
+            LinearLayout mysteryBox = (LinearLayout) gameLogoRow.getChildAt(3);
+            if (mysteryBox != null) {
+                mysteryBox.setOnClickListener(v -> showMysteryGameDialog());
+            }
+        }
+    }
+
+    private void showSocialMediaPopup(String title, String instagramUrl, String mapsUrl, String websiteUrl) {
+        Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.popup_social_media);
+        if (dialog.getWindow() != null) {
+            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        }
+        TextView titleView = dialog.findViewById(R.id.socialMediaTitle);
+        titleView.setText(title);
+        LinearLayout instagramRow = dialog.findViewById(R.id.instagramRow);
+        LinearLayout mapsRow = dialog.findViewById(R.id.mapsRow);
+        LinearLayout websiteRow = dialog.findViewById(R.id.websiteRow);
+        TextView instagramLink = dialog.findViewById(R.id.instagramLink);
+        TextView mapsLink = dialog.findViewById(R.id.mapsLink);
+        TextView websiteLink = dialog.findViewById(R.id.websiteLink);
+        ImageView closeButton = dialog.findViewById(R.id.closeButton);
+
+        instagramRow.setOnClickListener(v -> openUrl(instagramUrl));
+        instagramLink.setOnClickListener(v -> openUrl(instagramUrl));
+        mapsRow.setOnClickListener(v -> openUrl(mapsUrl));
+        mapsLink.setOnClickListener(v -> openUrl(mapsUrl));
+        if (websiteUrl != null) {
+            websiteRow.setVisibility(View.VISIBLE);
+            websiteRow.setOnClickListener(v -> openUrl(websiteUrl));
+            websiteLink.setOnClickListener(v -> openUrl(websiteUrl));
+        } else {
+            websiteRow.setVisibility(View.GONE);
+        }
+        closeButton.setOnClickListener(v -> dialog.dismiss());
+        dialog.show();
+    }
+
+    private void openUrl(String url) {
+        if (url == null) return;
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        startActivity(intent);
+    }
+
+    private void showMysteryGameDialog() {
+        new AlertDialog.Builder(this)
+                .setTitle(R.string.mystery_game_title)
+                .setMessage(R.string.mystery_game_coming_soon)
+                .setPositiveButton(android.R.string.ok, null)
+                .show();
     }
 } 

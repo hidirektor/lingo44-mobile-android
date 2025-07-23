@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/stained_glass_bg"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/closeButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="end"
+        android:padding="6dp"
+        android:src="@drawable/icon_close_light"
+        android:contentDescription="Kapat" />
+
+    <TextView
+        android:id="@+id/socialMediaTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/instagramRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/icon_instagram"
+                android:contentDescription="Instagram" />
+
+            <TextView
+                android:id="@+id/instagramLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F8F8F8"
+                android:textSize="16sp"
+                android:layout_marginStart="12dp"
+                android:text="Instagram" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mapsRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/icon_google_maps"
+                android:contentDescription="Google Maps" />
+
+            <TextView
+                android:id="@+id/mapsLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F8F8F8"
+                android:textSize="16sp"
+                android:layout_marginStart="12dp"
+                android:text="Google Maps" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/websiteRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/icon_website"
+                android:contentDescription="Website" />
+
+            <TextView
+                android:id="@+id/websiteLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F8F8F8"
+                android:textSize="16sp"
+                android:layout_marginStart="12dp"
+                android:text="Websitesi" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout> 

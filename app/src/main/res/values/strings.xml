@@ -200,4 +200,6 @@
     <string name="bottom_nav_home">Anasayfa</string>
     <string name="bottom_nav_learn">Öğren</string>
     <string name="bottom_nav_profile">Profil</string>
+    <string name="mystery_game_title">Gizemli Oyun</string>
+    <string name="mystery_game_coming_soon">Gizemli oyunumuz yapım aşamasındadır. Çok yakında burada olacak! Sürprizlere hazır olun 🎉</string>
 </resources>
