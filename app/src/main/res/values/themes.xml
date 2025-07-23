@@ -2,11 +2,12 @@
     <!-- Base application theme. -->
     <style name="Theme.Lingify" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
         <item name="android:icon">@mipmap/ic_launcher</item>
-        <item name="android:statusBarColor">@color/black</item>
 
         <!-- Customize your theme here. -->
-        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
 
