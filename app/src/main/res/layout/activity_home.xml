@@ -61,17 +61,24 @@
                 android:layout_gravity="start"
                 android:layout_height="match_parent">
 
-                <ImageView
-                    android:id="@+id/headerDecoration"
+                <androidx.cardview.widget.CardView
                     android:layout_width="96dp"
-                    android:layout_height="96dp"
-                    android:src="@drawable/sagrada_familia"
-                    android:scaleType="fitCenter"
-                    android:foreground="@drawable/monument_image_radius"
-                    android:clipToOutline="true"
+                    android:layout_height="86dp"
+                    app:cardCornerRadius="12dp"
+                    android:elevation="0dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/transparent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <ImageView
+                        android:id="@+id/headerDecoration"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/sagrada_familia"
+                        android:scaleType="fitCenter" />
+                </androidx.cardview.widget.CardView>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -163,4 +163,12 @@
     <string name="monument_machu_pichu_title">Machu Picchu</string>
     <string name="monument_machu_pichu_location">Cusco Bölgesi, Peru</string>
     <string name="monument_machu_pichu_desc">İnka İmparatorluğu’ndan kalma bu antik şehir, And Dağları’nda yer alır ve dünyanın yeni yedi harikasından biridir.</string>
+
+    <string name="monument_petra_title">Petra</string>
+    <string name="monument_petra_location">Ürdün</string>
+    <string name="monument_petra_desc">Kızıl kayalara oyulmuş antik bir şehir olan Petra, “Gül Şehri” olarak da bilinir ve UNESCO Dünya Mirası listesindedir.</string>
+
+    <string name="monument_great_wall_title">Çin Seddi (Great Wall of China)</string>
+    <string name="monument_great_wall_location">Çin</string>
+    <string name="monument_great_wall_desc">Dünyanın en uzun savunma duvarı olan Çin Seddi, Çin’in kuzeyini korumak için inşa edilmiştir ve uzaydan görülebilen tek insan yapısı olduğu söylenir.</string>
 </resources>
