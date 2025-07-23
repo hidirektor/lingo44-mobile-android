@@ -22,7 +22,9 @@ public class HomeActivity extends AppCompatActivity {
             R.drawable.sagrada_familia,
             R.drawable.statue_of_liberty,
             R.drawable.taj_mahal,
-            R.drawable.machu_pichu
+            R.drawable.machu_pichu,
+            R.drawable.petra,
+            R.drawable.great_wall
     };
 
     private static final int[][] MONUMENT_INFO = {
@@ -32,7 +34,9 @@ public class HomeActivity extends AppCompatActivity {
             {R.string.monument_sagrada_title, R.string.monument_sagrada_location, R.string.monument_sagrada_desc},
             {R.string.monument_statue_of_liberty_title, R.string.monument_statue_of_liberty_location, R.string.monument_statue_of_liberty_desc},
             {R.string.monument_taj_mahal_title, R.string.monument_taj_mahal_location, R.string.monument_taj_mahal_desc},
-            {R.string.monument_machu_pichu_title, R.string.monument_machu_pichu_location, R.string.monument_machu_pichu_desc}
+            {R.string.monument_machu_pichu_title, R.string.monument_machu_pichu_location, R.string.monument_machu_pichu_desc},
+            {R.string.monument_petra_title, R.string.monument_petra_location, R.string.monument_petra_desc},
+            {R.string.monument_great_wall_title, R.string.monument_great_wall_location, R.string.monument_great_wall_desc}
     };
     private int currentMonumentIndex = 0;
     private ImageView headerDecoration;

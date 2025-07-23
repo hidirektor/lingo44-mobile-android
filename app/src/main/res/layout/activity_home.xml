@@ -67,6 +67,8 @@
                     android:layout_height="96dp"
                     android:src="@drawable/sagrada_familia"
                     android:scaleType="fitCenter"
+                    android:foreground="@drawable/monument_image_radius"
+                    android:clipToOutline="true"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
