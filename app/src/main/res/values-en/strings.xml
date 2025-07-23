@@ -165,4 +165,28 @@
     <string name="monument_great_wall_title">Great Wall of China</string>
     <string name="monument_great_wall_location">China</string>
     <string name="monument_great_wall_desc">The world’s longest defensive wall, the Great Wall of China was built to protect the northern borders and is said to be the only man-made structure visible from space.</string>
+
+    <string name="monument_sydney_opera_title">Sydney Opera House</string>
+    <string name="monument_sydney_opera_location">Sydney, Australia</string>
+    <string name="monument_sydney_opera_desc">Opened in 1973, the Sydney Opera House is a masterpiece of modern architecture with its unique sail-shaped roof. It is a UNESCO World Heritage Site and the most recognizable symbol of Australia.</string>
+
+    <string name="monument_christ_redeemer_title">Christ the Redeemer</string>
+    <string name="monument_christ_redeemer_location">Rio de Janeiro, Brazil</string>
+    <string name="monument_christ_redeemer_desc">Located atop Corcovado Mountain, Christ the Redeemer was completed in 1931. This 30-meter-tall statue is one of the most important symbols of Rio de Janeiro and Brazil.</string>
+
+    <string name="monument_galata_tower_title">Galata Tower</string>
+    <string name="monument_galata_tower_location">Istanbul, Turkey</string>
+    <string name="monument_galata_tower_desc">Built by the Genoese in 1348, Galata Tower is one of the oldest and most iconic structures in Istanbul. It offers panoramic views of the city and has served as a watchtower, fire lookout, and prison throughout its history.</string>
+
+    <string name="monument_pisa_tower_title">Leaning Tower of Pisa</string>
+    <string name="monument_pisa_tower_location">Pisa, Italy</string>
+    <string name="monument_pisa_tower_desc">Famous for its leaning structure, the Pisa Tower was built between 1173 and 1372. This bell tower, a UNESCO World Heritage Site, is one of Italy&#39;s most visited tourist attractions.</string>
+
+    <string name="monument_acropolis_title">Acropolis</string>
+    <string name="monument_acropolis_location">Athens, Greece</string>
+    <string name="monument_acropolis_desc">The Acropolis, one of the most important structures of Ancient Greek civilization, is famous for the Parthenon Temple. Built in the 5th century BC, it is a symbol of Athens and Western civilization.</string>
+
+    <string name="monument_kremlin_title">Moscow Kremlin</string>
+    <string name="monument_kremlin_location">Moscow, Russia</string>
+    <string name="monument_kremlin_desc">The political and historical center of Russia, the Kremlin was built in the 15th century. This UNESCO World Heritage Site is a complex of palaces, cathedrals, and fortifications.</string>
 </resources>

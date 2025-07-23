@@ -94,7 +94,7 @@
     <string name="detect_level_exam_title">Seviye Belirleme Sınavı</string>
     <string name="detect_level_exam_description">
     Seviye Belirleme Sınavı, yalnızca dilbilgisi (grammar) seviyenizi ölçmek için tasarlanmıştır.
-    Daha kapsamlı bir değerlendirme için uygulama içindeki Gelişmiş Seviye Sınavı\'nı kullanabilirsiniz.
+    Daha kapsamlı bir değerlendirme için uygulama içindeki Gelişmiş Seviye Sınavı\\'nı kullanabilirsiniz.
     Bu sınav, IELTS ve TOEFL gibi uluslararası sınav formatlarına uygun olarak hazırlanmıştır.
     </string>
     <string name="detect_level_exam_question_count" translatable="false">30</string>
@@ -171,4 +171,29 @@
     <string name="monument_great_wall_title">Çin Seddi (Great Wall of China)</string>
     <string name="monument_great_wall_location">Çin</string>
     <string name="monument_great_wall_desc">Dünyanın en uzun savunma duvarı olan Çin Seddi, Çin’in kuzeyini korumak için inşa edilmiştir ve uzaydan görülebilen tek insan yapısı olduğu söylenir.</string>
+
+    <!-- Yeni Eklenenler -->
+    <string name="monument_sydney_opera_title">Sydney Opera Binası (Sydney Opera House)</string>
+    <string name="monument_sydney_opera_location">Sidney, Avustralya</string>
+    <string name="monument_sydney_opera_desc">1973 yılında açılan Sydney Opera Binası, eşsiz yelken formundaki çatısıyla modern mimarinin başyapıtlarından biridir. UNESCO Dünya Mirası Listesi\'nde yer alır ve Avustralya\'nın en tanınan simgesidir.</string>
+
+    <string name="monument_christ_redeemer_title">Kurtarıcı İsa Heykeli (Christ the Redeemer)</string>
+    <string name="monument_christ_redeemer_location">Rio de Janeiro, Brezilya</string>
+    <string name="monument_christ_redeemer_desc">Corcovado Dağı üzerinde yer alan Kurtarıcı İsa Heykeli, 1931 yılında tamamlanmıştır. 30 metre yüksekliğindeki bu devasa heykel, Rio de Janeiro\'nun ve Brezilya\'nın en önemli simgelerindendir.</string>
+
+    <string name="monument_galata_tower_title">Galata Kulesi (Galata Tower)</string>
+    <string name="monument_galata_tower_location">İstanbul, Türkiye</string>
+    <string name="monument_galata_tower_desc">1348 yılında Cenevizliler tarafından inşa edilen Galata Kulesi, İstanbul\'un en eski ve en ikonik yapılarından biridir. Şehrin panoramik manzarasını sunar ve tarihi boyunca gözlem kulesi, yangın gözetleme kulesi ve zindan olarak kullanılmıştır.</string>
+
+    <string name="monument_pisa_tower_title">Pisa Kulesi (Leaning Tower of Pisa)</string>
+    <string name="monument_pisa_tower_location">Pisa, İtalya</string>
+    <string name="monument_pisa_tower_desc">Dünyaca ünlü eğik yapısıyla bilinen Pisa Kulesi, 1173-1372 yılları arasında inşa edilmiştir. UNESCO Dünya Mirası Listesi\'nde yer alan bu çan kulesi, İtalya\'nın en çok ziyaret edilen turistik noktalarından biridir.</string>
+
+    <string name="monument_acropolis_title">Akropolis (Acropolis)</string>
+    <string name="monument_acropolis_location">Atina, Yunanistan</string>
+    <string name="monument_acropolis_desc">Antik Yunan uygarlığının en önemli yapılarından biri olan Akropolis, Parthenon Tapınağı ile ünlüdür. MÖ 5. yüzyılda inşa edilen bu tepe, Atina\'nın ve Batı medeniyetinin simgesidir.</string>
+
+    <string name="monument_kremlin_title">Kremlin Sarayı (Moscow Kremlin)</string>
+    <string name="monument_kremlin_location">Moskova, Rusya</string>
+    <string name="monument_kremlin_desc">Rusya\'nın siyasi ve tarihi merkezi olan Kremlin Sarayı, 15. yüzyılda inşa edilmiştir. UNESCO Dünya Mirası Listesi\'nde yer alan bu kompleks, saraylar, katedraller ve surlardan oluşur.</string>
 </resources>

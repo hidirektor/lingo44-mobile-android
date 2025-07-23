@@ -24,7 +24,18 @@ public class HomeActivity extends AppCompatActivity {
             R.drawable.taj_mahal,
             R.drawable.machu_pichu,
             R.drawable.petra,
-            R.drawable.great_wall
+            R.drawable.great_wall,
+            R.drawable.ayasofya,
+            R.drawable.stonehenge,
+            R.drawable.angkor_wat,
+            R.drawable.alhambra,
+            R.drawable.brandenburg,
+            R.drawable.sydney_opera_house,
+            R.drawable.christ_redeemer,
+            R.drawable.pisa_tower,
+            R.drawable.acropolis,
+            R.drawable.kremlin,
+            R.drawable.galata_tower
     };
 
     private static final int[][] MONUMENT_INFO = {
@@ -36,7 +47,18 @@ public class HomeActivity extends AppCompatActivity {
             {R.string.monument_taj_mahal_title, R.string.monument_taj_mahal_location, R.string.monument_taj_mahal_desc},
             {R.string.monument_machu_pichu_title, R.string.monument_machu_pichu_location, R.string.monument_machu_pichu_desc},
             {R.string.monument_petra_title, R.string.monument_petra_location, R.string.monument_petra_desc},
-            {R.string.monument_great_wall_title, R.string.monument_great_wall_location, R.string.monument_great_wall_desc}
+            {R.string.monument_great_wall_title, R.string.monument_great_wall_location, R.string.monument_great_wall_desc},
+            {R.string.monument_ayasofya_title, R.string.monument_ayasofya_location, R.string.monument_ayasofya_desc}, // Ayasofya
+            {R.string.monument_stonehenge_title, R.string.monument_stonehenge_location, R.string.monument_stonehenge_desc}, // Stonehenge
+            {R.string.monument_angkorwat_title, R.string.monument_angkorwat_location, R.string.monument_angkorwat_desc}, // Angkor Wat
+            {R.string.monument_alhambra_title, R.string.monument_alhambra_location, R.string.monument_alhambra_desc}, // Alhambra
+            {R.string.monument_brandenburg_title, R.string.monument_brandenburg_location, R.string.monument_brandenburg_desc}, // Brandenburg Kapısı
+            {R.string.monument_sydney_opera_title, R.string.monument_sydney_opera_location, R.string.monument_sydney_opera_desc},
+            {R.string.monument_christ_redeemer_title, R.string.monument_christ_redeemer_location, R.string.monument_christ_redeemer_desc},
+            {R.string.monument_pisa_tower_title, R.string.monument_pisa_tower_location, R.string.monument_pisa_tower_desc},
+            {R.string.monument_acropolis_title, R.string.monument_acropolis_location, R.string.monument_acropolis_desc},
+            {R.string.monument_kremlin_title, R.string.monument_kremlin_location, R.string.monument_kremlin_desc},
+            {R.string.monument_galata_tower_title, R.string.monument_galata_tower_location, R.string.monument_galata_tower_desc}
     };
     private int currentMonumentIndex = 0;
     private ImageView headerDecoration;
