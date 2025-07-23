@@ -203,4 +203,8 @@
     <string name="bottom_nav_minigames">Minigames</string>
     <string name="bottom_nav_contact_us">Contact Us</string>
     <string name="bottom_nav_arcade">Arcade</string>
+    <string name="good_morning">Good morning,</string>
+    <string name="good_afternoon">Good afternoon,</string>
+    <string name="good_evening">Good evening,</string>
+    <string name="good_night">Good night,</string>
 </resources>

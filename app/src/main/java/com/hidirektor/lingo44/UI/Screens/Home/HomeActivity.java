@@ -2,9 +2,12 @@ package com.hidirektor.lingo44.UI.Screens.Home;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.RippleDrawable;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -13,9 +16,11 @@ import android.view.Window;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.hidirektor.lingo44.BaseActivity;
 import com.hidirektor.lingo44.R;
@@ -177,6 +182,45 @@ public class HomeActivity extends BaseActivity {
             if (mysteryBox != null) {
                 mysteryBox.setOnClickListener(v -> showMysteryGameDialog());
             }
+        }
+
+        // Bottom bar buttons
+        ConstraintLayout homeButton = findViewById(R.id.homeButton);
+        ConstraintLayout learnButton = findViewById(R.id.learnButton);
+        ConstraintLayout profileButton = findViewById(R.id.profileButton);
+
+        View[] bottomButtons = {homeButton, learnButton, profileButton};
+        for (View btn : bottomButtons) {
+            if (btn != null) {
+                // Add ripple effect if not already present
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    int rippleColor = getResources().getColor(R.color.body_secondary, null);
+                    RippleDrawable rippleDrawable = new RippleDrawable(
+                            ColorStateList.valueOf(rippleColor),
+                            btn.getBackground(),
+                            null
+                    );
+                    btn.setBackground(rippleDrawable);
+                }
+                btn.setClickable(true);
+                btn.setFocusable(true);
+            }
+        }
+
+        if (homeButton != null) {
+            homeButton.setOnClickListener(v ->
+                    Toast.makeText(this, getString(R.string.bottom_nav_home), Toast.LENGTH_SHORT).show()
+            );
+        }
+        if (learnButton != null) {
+            learnButton.setOnClickListener(v ->
+                    Toast.makeText(this, getString(R.string.bottom_nav_learn), Toast.LENGTH_SHORT).show()
+            );
+        }
+        if (profileButton != null) {
+            profileButton.setOnClickListener(v ->
+                    Toast.makeText(this, getString(R.string.bottom_nav_profile), Toast.LENGTH_SHORT).show()
+            );
         }
     }
 

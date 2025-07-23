@@ -210,4 +210,8 @@
     <string name="bottom_nav_minigames">Minigameler</string>
     <string name="bottom_nav_contact_us">Bize Ulaşın</string>
     <string name="bottom_nav_arcade">Arcade</string>
+    <string name="good_morning">Günaydın,</string>
+    <string name="good_afternoon">İyi Günler,</string>
+    <string name="good_evening">İyi Akşamlar,</string>
+    <string name="good_night">İyi Geceler,</string>
 </resources>

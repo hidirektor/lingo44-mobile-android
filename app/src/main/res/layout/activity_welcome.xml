@@ -117,7 +117,7 @@
                 android:text="@string/login_button"
                 android:fontFamily="@font/sf_pro_medium"
                 android:textColor="@color/body_on_primary"
-                android:background="@drawable/button_background_get_ready"
+                android:background="@drawable/button_background_get_ready_ripple"
                 android:textSize="16sp"
                 android:textAllCaps="false"
                 android:layout_marginBottom="14dp"
@@ -131,11 +131,15 @@
 
                 <!-- Forgot Password Button -->
                 <LinearLayout
+                    android:id="@+id/forgetPasswordLayout"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true">
 
                     <FrameLayout
                         android:layout_width="48dp"
@@ -163,11 +167,15 @@
 
                 <!-- Register Button -->
                 <LinearLayout
+                    android:id="@+id/registerLayout"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true">
 
                     <FrameLayout
                         android:layout_width="48dp"
@@ -223,6 +231,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
+                    android:id="@+id/detectLevelButton"
                     android:layout_width="0dp"
                     android:layout_weight="0.2"
                     android:layout_height="match_parent"
@@ -256,6 +265,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/ieltsButton"
                     android:layout_width="0dp"
                     android:layout_weight="0.2"
                     android:layout_height="match_parent"
@@ -291,7 +301,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="0.2"
                     android:layout_height="match_parent"
-                    android:visibility="invisible">
+                    android:visibility="visible">
 
                     <TextView
                         android:id="@+id/dictionaryText"
@@ -310,6 +320,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <LinearLayout
+                    android:id="@+id/arcadeButton"
                     android:layout_width="0dp"
                     android:layout_weight="0.2"
                     android:layout_height="match_parent"
@@ -342,6 +353,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/contactUsButton"
                     android:layout_width="0dp"
                     android:layout_weight="0.2"
                     android:layout_height="match_parent"
