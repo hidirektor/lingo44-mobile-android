@@ -8,13 +8,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 
+import com.hidirektor.lingo44.BaseActivity;
 import com.hidirektor.lingo44.R;
 
 import java.util.Random;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends BaseActivity {
     private static final int[] HEADER_IMAGES = {
             R.drawable.colosseum,
             R.drawable.eiffel,
@@ -69,16 +69,6 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
-        // Status bar ve navigation bar'ı gizle (immersive mode)
-        View decorView = getWindow().getDecorView();
-        decorView.setSystemUiVisibility(
-                View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
-                        | View.SYSTEM_UI_FLAG_FULLSCREEN
-                        | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                        | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
 
         TextView headerSubtitle = findViewById(R.id.headerSubtitle);
         headerSubtitle.setText(getString(R.string.home_header_subtitle));
