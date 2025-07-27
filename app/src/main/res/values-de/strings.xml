@@ -1,9 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="continue_button">Weiter</string>
+    <string name="login_button">Anmelden</string>
+    <string name="register_button">Registrieren</string>
+    <string name="login_via_google_button">Mit Google anmelden</string>
+    <string name="login_via_apple_button">Mit Apple anmelden</string>
+    <string name="or_button">oder</string>
+    <string name="signup_via_google_button">Mit Google registrieren</string>
+    <string name="signup_via_apple_button">Mit Apple registrieren</string>
+    <string name="start_exam_button">Prüfung starten</string>
+    <string name="forgot_password">Passwort vergessen / Passwort erhalten</string>
+
+    <string name="language_turkish">Türkisch</string>
+    <string name="language_english">Englisch</string>
+    <string name="language_german">Deutsch</string>
+
+    <string name="splash_slogan">Ihr persönlicher Sprachlern-Tutor.</string>
+
+    <string name="welcome_title">Beschleunigen Sie Ihre Prüfungsvorbereitung mit 30 Minuten pro Tag.</string>
+    <string name="welcome_button">Ihr Niveau bestimmen</string>
+    <string name="welcome_login_start">Haben Sie bereits ein Konto?</string>
+    <string name="welcome_login_end">\u0020<u>Anmelden</u></string>
+    <string name="welcome_onboard_subtitle">Türkiyes zielorientierte Sprach-App</string>
+
+    <string name="setup_course_selection_title">Für welche Prüfung bereiten Sie sich vor?</string>
+    <!-- Course Titles -->
+    <string name="course_ielts_general">IELTS - Allgemein</string>
+    <string name="course_ielts_academic">IELTS - Akademisch</string>
+    <string name="course_toefl">TOEFL</string>
+    <string name="course_goethe">Goethe-Institut</string>
+    <string name="course_goethe_family">Goethe-Institut - Familienzusammenführung</string>
+    <string name="course_yds">YDS</string>
+    <string name="course_yks_dil">YKS-Dil</string>
+
+    <!-- Course Descriptions -->
+    <string name="desc_ielts_general">Bereiten Sie sich auf alltäglichen Englischgebrauch und Einwanderung vor.</string>
+    <string name="desc_ielts_academic">Verbessern Sie Ihr akademisches Englisch für die Universitätsaufnahme.</string>
+    <string name="desc_toefl">Stärken Sie Ihre Englischkenntnisse für das Studium im Ausland.</string>
+    <string name="desc_goethe">Lernen Sie Deutsch für Arbeit und Alltagsleben.</string>
+    <string name="desc_goethe_family">Meistern Sie Deutsch für die Familienzusammenführung.</string>
+    <string name="desc_yds">Verbessern Sie Ihr Englisch für akademische und staatliche Prüfungen.</string>
+    <string name="desc_yks_dil">Bereiten Sie sich auf die türkische Universitäts-Sprachprüfung vor.</string>
+
+    <string name="login_title">Melden Sie sich an und arbeiten Sie dort weiter, wo Sie aufgehört haben</string>
+    <string name="login_input_title_email">E-Mail</string>
+    <string name="login_input_title_password">Passwort</string>
+    <string name="login_input_title_login_via_phone">Mit Telefonnummer anmelden</string>
+
+    <string name="terms_and_conditions">Durch die Teilnahme erkläre ich, dass ich die Bedingungen und Datenschutzrichtlinie gelesen und akzeptiert habe.</string>
+    <string name="dont_have_account_start">Haben Sie noch kein Konto?</string>
+    <string name="dont_have_account_end">\u0020<u>Registrieren</u></string>
+
+    <string name="register_title">Registrieren Sie sich und greifen Sie auf sorgfältig vorbereitete Prüfungsressourcen zu.</string>
+    <string name="register_username_title">Benutzername</string>
+    <string name="register_username_placeholder">hidirektor</string>
+    <string name="register_namesurname_title">Vor- und Nachname</string>
+    <string name="register_namesurname_placeholder">Halil İbrahim Direktör</string>
+    <string name="register_email_title">E-Mail-Adresse</string>
+    <string name="register_email_placeholder">hidirektor@gmail.com</string>
+    <string name="register_phonenumber_title">Telefonnummer</string>
+    <string name="register_phonenumber_placeholder">542-345-23-00</string>
+    <string name="register_password_title">Passwort</string>
+    <string name="register_password_repeat_title">Passwort bestätigen</string>
+
+    <string name="personal_setup_title">Willkommen bei Lingo44</string>
+    <string name="personal_setup_first_question">Können Sie uns ein wenig über sich erzählen?</string>
+    <string name="personal_setup_first_answer_1">Ich kenne kein %1$s</string>
+    <string name="personal_setup_first_answer_2">Ich habe bereits %1$s studiert.</string>
+    <string name="personal_setup_second_question">Warum möchten Sie die %1$s-Prüfung ablegen?</string>
+    <string name="personal_setup_second_answer_1">Ich benötige diese Zertifizierung, um mich für Universitätsprogramme zu bewerben, die einen Sprachnachweis erfordern.</string>
+    <string name="personal_setup_second_answer_2">Ich möchte meine Karrieremöglichkeiten verbessern, indem ich Arbeitgebern meine Sprachkenntnisse zeige.</string>
+    <string name="personal_setup_second_answer_3">Ich plane, ins Ausland zu ziehen, und dieser Test ist für meinen Visum- oder Aufenthaltsantrag erforderlich.</string>
+    <string name="personal_setup_second_answer_4">Ich liebe es, Sprachen zu lernen, und diesen Test zu machen ist eine großartige Möglichkeit, meinen Fortschritt zu messen.</string>
+    <string name="personal_setup_second_answer_5">Mein Ziel ist es, Sprachlehrer zu werden, und das Bestehen dieser Prüfung ist eine wichtige Voraussetzung für meine Qualifikation.</string>
+    <string name="personal_setup_second_answer_more_detail_title">Weitere Details hinzufügen</string>
+    <string name="personal_setup_second_answer_more_detail_placeholder">Sie können hier weitere Details über Ihren\nGrund für die Prüfung schreiben.</string>
+
+    <string name="detect_level_title">Lassen Sie uns Ihr Niveau bestimmen</string>
+    <string name="detect_level_manual_button">Wählen Sie Ihr Niveau</string>
+    <string name="detect_level_exam_button">Einstufungstest machen</string>
+
+    <string name="detect_level_popup_title">Bitte wählen Sie Ihr Niveau</string>
+    <string name="detect_level_easter_message">Wir sind uns nicht sicher, ob wir Ihnen etwas beibringen können!</string>
+    <string name="detect_level_popup_level_1">A1 - Anfänger</string>
+    <string name="detect_level_popup_level_2">A2 - Grundlegende Kenntnisse</string>
+    <string name="detect_level_popup_level_3">B1 - Mittelstufe</string>
+    <string name="detect_level_popup_level_4">B2 - Selbständige Sprachverwendung</string>
+    <string name="detect_level_popup_level_5">C1 - Fachkundige Sprachkenntnisse</string>
+    <string name="detect_level_popup_level_6">C2 - Muttersprachliche Kenntnisse</string>
+
+    <string name="detect_level_exam_title">Niveaubestimmungsprüfung</string>
+    <string name="detect_level_exam_description">
+    Die Niveaubestimmungsprüfung ist ausschließlich zur Bewertung Ihrer Grammatikkenntnisse konzipiert.
+    Für eine umfassendere Bewertung können Sie die erweiterte Niveauprüfung in der App nutzen.
+    Diese Prüfung ist entsprechend internationaler Prüfungsformate wie IELTS und TOEFL strukturiert.
+    </string>
+
     <string name="search_word">Wort suchen...</string>
 
     <!-- Dictionary related strings -->
-    <string name="dictionary_title">Wörterbuch</string>
     <string name="back">Zurück</string>
     <string name="star">Favorit</string>
     <string name="share">Teilen</string>
@@ -28,4 +123,118 @@
     <string name="share_functionality">Teilen-Funktion</string>
     <string name="menu_options">Menü-Optionen</string>
     <string name="playing_pronunciation">Spiele Aussprache ab</string>
+    <string name="detect_level_exam_question_count" translatable="false">30</string>
+    <string name="detect_level_exam_time" translatable="false">30</string>
+    <string name="detect_level_exam_question_count_text">Frage</string>
+    <string name="detect_level_exam_time_text">Minuten</string>
+
+    <string name="dashboard_bottom_menu_dashboard">Dashboard</string>
+    <string name="dashboard_bottom_menu_podcasts">Podcast</string>
+    <string name="dashboard_bottom_menu_practices">Prüfung</string>
+    <string name="dashboard_bottom_menu_stats">Statistiken</string>
+
+    <string name="dashboard_main_section">Kurs</string>
+    <string name="dashboard_speaking_club_section">Sprechclub</string>
+    <string name="dashboard_join_speaking_club">Beitreten</string>
+    <string name="voice_room_start_date">Start:\u0020</string>
+    <string name="voice_room_end_date">Ende:\u0020</string>
+    <string name="voice_room_student">Studenten</string>
+    <string name="voice_room_time_remain">Verbleibend:\u0020</string>
+    <string name="home_header_subtitle">Willkommen zurück,</string>
+
+    <string name="monument_sagrada_title">Sagrada Família</string>
+    <string name="monument_sagrada_location">Barcelona, Spanien</string>
+    <string name="monument_sagrada_desc">Entworfen von Antoni Gaudí, ist die Sagrada Família eine weltberühmte katholische Basilika. Der Bau begann 1882 und dauert noch an. Sie gilt als eines der Meisterwerke der modernistischen Architektur.</string>
+
+    <string name="monument_bigben_title">Big Ben (Elizabeth Tower)</string>
+    <string name="monument_bigben_location">London, Vereinigtes Königreich</string>
+    <string name="monument_bigben_desc">Am nördlichen Ende des Palace of Westminster gelegen, ist der Uhrturm als "Big Ben" bekannt. Tatsächlich ist Big Ben der Name der großen Glocke im Turm. Es ist eines der ikonischen Wahrzeichen Englands.</string>
+
+    <string name="monument_colosseum_title">Kolosseum</string>
+    <string name="monument_colosseum_location">Rom, Italien</string>
+    <string name="monument_colosseum_desc">Das Kolosseum aus der Zeit des antiken Roms ist ein riesiges Amphitheater, in dem Gladiatorenkämpfe und öffentliche Spektakel stattfanden. 80 n. Chr. eröffnet, ist es das größte noch stehende römische Bauwerk.</string>
+
+    <string name="monument_eiffel_title">Eiffelturm (Tour Eiffel)</string>
+    <string name="monument_eiffel_location">Paris, Frankreich</string>
+    <string name="monument_eiffel_desc">Von Gustave Eiffel für die Pariser Weltausstellung 1889 erbaut, ist der Eiffelturm das bekannteste Symbol von Paris. Aus Eisen gefertigt, war er zu seiner Zeit umstritten, ist aber heute ein ikonisches Beispiel französischer Ingenieurskunst.</string>
+
+    <string name="monument_ayasofya_title">Hagia Sophia (Ayasofya)</string>
+    <string name="monument_ayasofya_location">Istanbul, Türkei</string>
+    <string name="monument_ayasofya_desc">Ursprünglich 537 als Kirche erbaut, diente die Hagia Sophia als Moschee und Museum. Sie vereint byzantinische und osmanische Architektur und ist eines der ikonischsten Wahrzeichen Istanbuls.</string>
+
+    <string name="monument_stonehenge_title">Stonehenge</string>
+    <string name="monument_stonehenge_location">Wiltshire, England</string>
+    <string name="monument_stonehenge_desc">Stonehenge, ein mysteriöses Monument aus massiven Steinblöcken, soll zwischen 3000 und 2000 v. Chr. erbaut worden sein. Sein Zweck ist noch unbekannt, was es zu einer der berühmtesten prähistorischen Stätten der Welt macht.</string>
+
+    <string name="monument_angkorwat_title">Angkor Wat</string>
+    <string name="monument_angkorwat_location">Siem Reap, Kambodscha</string>
+    <string name="monument_angkorwat_desc">Im 12. Jahrhundert vom Khmer-Reich erbaut, ist Angkor Wat der größte Tempelkomplex der Welt. Er gilt sowohl im Hinduismus als auch im Buddhismus als heilig.</string>
+
+    <string name="monument_alhambra_title">Alhambra-Palast</string>
+    <string name="monument_alhambra_location">Granada, Spanien</string>
+    <string name="monument_alhambra_desc">Während der Nasriden-Dynastie erbaut, ist der Alhambra-Palast eines der schönsten Beispiele islamischer Architektur. Er ist berühmt für seine Gärten, Höfe und kunstvollen Verzierungen.</string>
+
+    <string name="monument_brandenburg_title">Brandenburger Tor</string>
+    <string name="monument_brandenburg_location">Berlin, Deutschland</string>
+    <string name="monument_brandenburg_desc">Im 18. Jahrhundert erbaut, ist das Brandenburger Tor ein Symbol für Berlin und die deutsche Wiedervereinigung. Seine klassische Architektur macht es zu einem der wichtigsten Wahrzeichen der Stadt.</string>
+
+    <string name="monument_statue_of_liberty_title">Freiheitsstatue</string>
+    <string name="monument_statue_of_liberty_location">New York, USA</string>
+    <string name="monument_statue_of_liberty_desc">Ein Symbol der amerikanischen Unabhängigkeit, diese Statue wurde 1886 von Frankreich an die USA geschenkt. Sie repräsentiert die Ideale von Freiheit und Demokratie.</string>
+
+    <string name="monument_taj_mahal_title">Taj Mahal</string>
+    <string name="monument_taj_mahal_location">Agra, Indien</string>
+    <string name="monument_taj_mahal_desc">Vom Mogulkaiser Shah Jahan für seine Frau Mumtaz Mahal in Auftrag gegeben, ist dieses Mausoleum aus weißem Marmor erbaut und gilt als Symbol der Liebe.</string>
+
+    <string name="monument_machu_pichu_title">Machu Picchu</string>
+    <string name="monument_machu_pichu_location">Cusco-Region, Peru</string>
+    <string name="monument_machu_pichu_desc">Diese antike Stadt aus dem Inkareich liegt in den Anden und ist eines der neuen sieben Weltwunder.</string>
+
+    <string name="monument_petra_title">Petra</string>
+    <string name="monument_petra_location">Jordanien</string>
+    <string name="monument_petra_desc">Eine antike Stadt, die in roten Fels gehauen wurde, Petra ist auch als "Rosenstadt" bekannt und eine UNESCO-Welterbestätte.</string>
+
+    <string name="monument_great_wall_title">Chinesische Mauer</string>
+    <string name="monument_great_wall_location">China</string>
+    <string name="monument_great_wall_desc">Die längste Verteidigungsmauer der Welt, die Chinesische Mauer wurde zum Schutz der nördlichen Grenzen erbaut und soll das einzige vom Weltraum aus sichtbare von Menschen geschaffene Bauwerk sein.</string>
+
+    <string name="monument_sydney_opera_title">Sydney Opera House</string>
+    <string name="monument_sydney_opera_location">Sydney, Australien</string>
+    <string name="monument_sydney_opera_desc">1973 eröffnet, ist das Sydney Opera House ein Meisterwerk moderner Architektur mit seinem einzigartigen segelförmigen Dach. Es ist eine UNESCO-Welterbestätte und das bekannteste Symbol Australiens.</string>
+
+    <string name="monument_christ_redeemer_title">Christus der Erlöser</string>
+    <string name="monument_christ_redeemer_location">Rio de Janeiro, Brasilien</string>
+    <string name="monument_christ_redeemer_desc">Auf dem Corcovado-Berg gelegen, wurde Christus der Erlöser 1931 fertiggestellt. Diese 30 Meter hohe Statue ist eines der wichtigsten Symbole von Rio de Janeiro und Brasilien.</string>
+
+    <string name="monument_galata_tower_title">Galata-Turm</string>
+    <string name="monument_galata_tower_location">Istanbul, Türkei</string>
+    <string name="monument_galata_tower_desc">1348 von den Genuesen erbaut, ist der Galata-Turm eines der ältesten und ikonischsten Bauwerke Istanbuls. Er bietet Panoramablick auf die Stadt und diente im Laufe seiner Geschichte als Wachturm, Feuerwache und Gefängnis.</string>
+
+    <string name="monument_pisa_tower_title">Schiefer Turm von Pisa</string>
+    <string name="monument_pisa_tower_location">Pisa, Italien</string>
+    <string name="monument_pisa_tower_desc">Berühmt für seine schiefe Struktur, wurde der Pisa-Turm zwischen 1173 und 1372 erbaut. Dieser Glockenturm, eine UNESCO-Welterbestätte, ist eine der meistbesuchten Touristenattraktionen Italiens.</string>
+
+    <string name="monument_acropolis_title">Akropolis</string>
+    <string name="monument_acropolis_location">Athen, Griechenland</string>
+    <string name="monument_acropolis_desc">Die Akropolis, eines der wichtigsten Bauwerke der antiken griechischen Zivilisation, ist berühmt für den Parthenon-Tempel. Im 5. Jahrhundert v. Chr. erbaut, ist sie ein Symbol für Athen und die westliche Zivilisation.</string>
+
+    <string name="monument_kremlin_title">Moskauer Kreml</string>
+    <string name="monument_kremlin_location">Moskau, Russland</string>
+    <string name="monument_kremlin_desc">Das politische und historische Zentrum Russlands, der Kreml wurde im 15. Jahrhundert erbaut. Diese UNESCO-Welterbestätte ist ein Komplex aus Palästen, Kathedralen und Befestigungsanlagen.</string>
+
+    <string name="bottom_nav_home">Startseite</string>
+    <string name="bottom_nav_learn">Lernen</string>
+    <string name="bottom_nav_profile">Profil</string>
+    <string name="mystery_game_title">Mysteriöses Spiel</string>
+    <string name="mystery_game_coming_soon">Unser mysteriöses Spiel ist in der Entwicklung. Es wird sehr bald hier sein! Machen Sie sich bereit für Überraschungen 🎉</string>
+    <string name="bottom_nav_detect_level">Ihr Niveau bestimmen</string>
+    <string name="bottom_nav_ielts_trial">IELTS</string>
+    <string name="bottom_nav_dictionary">Wörterbuch</string>
+    <string name="bottom_nav_minigames">Minispiele</string>
+    <string name="bottom_nav_contact_us">Kontaktieren Sie uns</string>
+    <string name="bottom_nav_arcade">Arcade</string>
+    <string name="good_morning">Guten Morgen,</string>
+    <string name="good_afternoon">Guten Tag,</string>
+    <string name="good_evening">Guten Abend,</string>
+    <string name="good_night">Gute Nacht,</string>
 </resources> 

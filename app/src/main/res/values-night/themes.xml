@@ -57,6 +57,9 @@
         <item name="lingifyBrainIcon">@drawable/icon_brain_dark</item>
         <item name="lingifySpeakerIcon">@drawable/icon_speaker_dark</item>
         <item name="lingifySearchIcon">@drawable/icon_search_dark</item>
+        <item name="lingifyExchangeIcon">@drawable/icon_exchange_dark</item>
+        <item name="lingifyFlagTurkey">@drawable/icon_turkey_flag</item>
+        <item name="lingifyFlagEnglish">@drawable/icon_uk_flag</item>
     </style>
 
     <style name="Theme.RemoveSplashScreenTheme" parent="@style/Theme.Lingify">

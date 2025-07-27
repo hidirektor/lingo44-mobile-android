@@ -11,14 +11,17 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.hidirektor.lingo44.R;
+import com.hidirektor.lingo44.Utility.Preferences.Theme.ThemeUtil;
 
 public class DictionaryActivity extends AppCompatActivity {
 
     // UI Components
     private LinearLayout backButton;
-    private ImageView starButton, shareButton, menuButton, pronunciationButton, clearSearchButton;
+    private ImageView starButton, shareButton, menuButton, pronunciationButton, clearSearchButton, themeChangerButton;
     private EditText searchEditText;
     private TextView wordText, pronunciationText;
+    private LinearLayout languageSelectionContainer;
+    private ImageView firstFlag, secondFlag;
     private TextView nounTab, verbTab, adjectiveTab, adverbialPhrasesTab, interjectionTab;
 
     @Override
@@ -53,15 +56,25 @@ public class DictionaryActivity extends AppCompatActivity {
         // Search components
         searchEditText = findViewById(R.id.searchEditText);
         clearSearchButton = findViewById(R.id.clearSearchButton);
+
+        // Language selection components
+        languageSelectionContainer = findViewById(R.id.languageSelectionContainer);
+        firstFlag = findViewById(R.id.firstFlag);
+        secondFlag = findViewById(R.id.secondFlag);
+
+        // Theme changer
+        themeChangerButton = findViewById(R.id.themeChangerButton);
     }
 
     private void setClickListeners() {
         // TODO: Set up click listeners for all interactive elements
 
         backButton.setOnClickListener(v -> {
-            // TODO: Handle back navigation
+            // Handle back navigation - go back to previous activity
             finish();
         });
+
+        themeChangerButton.setOnClickListener(v -> ThemeUtil.changeTheme(DictionaryActivity.this));
 
         starButton.setOnClickListener(v -> {
             // TODO: Implement favorite/star functionality
@@ -96,6 +109,9 @@ public class DictionaryActivity extends AppCompatActivity {
 
         // Search functionality
         setupSearchFunctionality();
+
+        // Language selection functionality
+        setupLanguageSelection();
     }
 
     private void selectPartOfSpeechTab(TextView selectedTab) {
@@ -215,6 +231,31 @@ public class DictionaryActivity extends AppCompatActivity {
         //         showSearchError(error);
         //     }
         // });
+    }
+
+    private void setupLanguageSelection() {
+        languageSelectionContainer.setOnClickListener(v -> {
+            // TODO: Swap between Turkish-English and English-Turkish
+            // TODO: Update API calls with new language direction
+            // TODO: Refresh current word definition with new language direction
+
+            swapLanguages();
+        });
+    }
+
+    private void swapLanguages() {
+        // TODO: Implement proper language direction swapping
+        // TODO: Update API calls with new language direction (TR-EN or EN-TR)
+        // TODO: Refresh current word definition with new language direction
+
+        // For demo purposes, show which direction is selected
+        Toast.makeText(this, "Language direction swapped", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onBackPressed() {
+        // Handle back navigation - go back to previous activity
+        super.onBackPressed();
     }
 
     // TODO: Create DictionaryAPI class for API integration

@@ -42,5 +42,8 @@
         <attr name="lingifyBrainIcon" format="reference" />
         <attr name="lingifySpeakerIcon" format="reference" />
         <attr name="lingifySearchIcon" format="reference" />
+        <attr name="lingifyExchangeIcon" format="reference" />
+        <attr name="lingifyFlagTurkey" format="reference" />
+        <attr name="lingifyFlagEnglish" format="reference" />
     </declare-styleable>
 </resources>

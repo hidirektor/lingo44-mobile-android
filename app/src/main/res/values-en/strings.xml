@@ -235,4 +235,8 @@
     <string name="good_afternoon">Good afternoon,</string>
     <string name="good_evening">Good evening,</string>
     <string name="good_night">Good night,</string>
+
+    <!-- Missing strings from Turkish -->
+    <string name="detect_level_exam_question_count" translatable="false">30</string>
+    <string name="detect_level_exam_time" translatable="false">30</string>
 </resources>

@@ -61,15 +61,56 @@
             android:orientation="horizontal"
             android:gravity="center_vertical">
 
+            <!-- Star Button -->
+            <ImageView
+                android:id="@+id/starButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="?attr/lingifyStarIcon"
+                android:contentDescription="@string/star"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="4dp"
+                android:layout_marginEnd="16dp" />
+
+            <!-- Share Button -->
+            <ImageView
+                android:id="@+id/shareButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="?attr/lingifyShareIcon"
+                android:contentDescription="@string/share"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="4dp"
+                android:layout_marginEnd="16dp" />
+
+            <!-- Menu Button -->
+            <ImageView
+                android:id="@+id/menuButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="?attr/lingifyMenuIcon"
+                android:contentDescription="@string/menu"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="4dp"
+                android:layout_marginEnd="16dp" />
+
+            <!-- Theme Changer Button -->
             <ImageView
                 android:id="@+id/themeChangerButton"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:layout_gravity="top|end"
-                android:layout_margin="12dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:background="@drawable/button_background_theme_changer"
+                android:padding="4dp"
                 android:src="?attr/lingifyThemeChangerImage"
-                android:padding="8dp" />
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Change Theme" />
         </LinearLayout>
     </LinearLayout>
 
@@ -115,10 +156,51 @@
                 android:textColorHint="@color/primary_color"
                 android:textSize="18sp" />
 
+            <!-- Language Selection -->
+            <LinearLayout
+                android:id="@+id/languageSelectionContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="4dp">
+
+                <!-- Source Language Flag -->
+                <ImageView
+                    android:id="@+id/firstFlag"
+                    android:layout_width="20dp"
+                    android:layout_height="14dp"
+                    android:src="?attr/lingifyFlagTurkey"
+                    android:contentDescription="Source Language Flag" />
+
+                <!-- Exchange Icon -->
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:src="?attr/lingifyExchangeIcon"
+                    android:contentDescription="Swap Language Direction" />
+
+                <!-- Target Language Flag -->
+                <ImageView
+                    android:id="@+id/secondFlag"
+                    android:layout_width="20dp"
+                    android:layout_height="14dp"
+                    android:src="?attr/lingifyFlagEnglish"
+                    android:contentDescription="Target Language Flag" />
+
+            </LinearLayout>
+
             <ImageView
                 android:id="@+id/clearSearchButton"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
+                android:layout_marginStart="8dp"
                 android:src="?attr/lingifyCloseIcon"
                 android:contentDescription="@string/clear_search"
                 android:clickable="true"
@@ -315,7 +397,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/definitions"
                     android:textColor="@color/gray"
-                    android:textSize="12sp"
+                    android:textSize="18sp"
                     android:fontFamily="@font/sf_pro_bold"
                     android:layout_marginBottom="16dp" />
 
