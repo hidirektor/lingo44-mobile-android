@@ -301,17 +301,17 @@
                     android:layout_width="0dp"
                     android:layout_weight="0.2"
                     android:layout_height="match_parent"
-                    android:visibility="visible">
+                    android:visibility="visible"
+                    android:layout_gravity="center">
 
                     <TextView
                         android:id="@+id/dictionaryText"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:textColor="@color/body_primary"
                         android:textSize="18sp"
                         android:fontFamily="@font/sf_pro_bold"
-                        android:gravity="center"
-                        android:layout_marginTop="4dp"
+                        android:gravity="bottom"
                         android:text="@string/bottom_nav_dictionary"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -394,6 +394,7 @@
             android:pointerIcon="wait"
             android:src="?attr/lingifyBrainIcon"
             app:maxImageSize="36dp"
+            android:outlineSpotShadowColor="@color/transparent"
             app:tint="@color/body_background"
             app:layout_anchor="@id/app_bar"
             app:backgroundTint="@color/primary_color" />
