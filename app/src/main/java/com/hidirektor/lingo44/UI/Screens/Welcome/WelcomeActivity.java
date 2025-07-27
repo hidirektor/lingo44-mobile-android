@@ -62,6 +62,11 @@ public class WelcomeActivity extends BaseActivity {
             startActivity(registerIntent);
         });
 
+        dictionaryButton.setOnClickListener(v -> {
+            Intent dictionaryIntent = new Intent(WelcomeActivity.this, com.hidirektor.lingo44.UI.Screens.Dictionary.DictionaryActivity.class);
+            startActivity(dictionaryIntent);
+        });
+
         // Bottom bar button logic
         FrameLayout detectLevelButton = findFrameLayoutForTextView(R.id.detectYourLevelText);
         FrameLayout ieltsButton = findFrameLayoutForTextView(R.id.startIELTSExamText);

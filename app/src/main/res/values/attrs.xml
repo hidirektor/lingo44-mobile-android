@@ -40,5 +40,7 @@
         <attr name="lingifyPhoneIcon" format="reference" />
         <attr name="lingifyArcadeIcon" format="reference" />
         <attr name="lingifyBrainIcon" format="reference" />
+        <attr name="lingifySpeakerIcon" format="reference" />
+        <attr name="lingifySearchIcon" format="reference" />
     </declare-styleable>
 </resources>

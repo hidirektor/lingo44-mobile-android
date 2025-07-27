@@ -1,6 +1,431 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/body_background"
+    tools:context=".UI.Screens.Dictionary.DictionaryActivity">
 
+    <!-- Navigation Header -->
+    <LinearLayout
+        android:id="@+id/navigationHeader"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@color/body_background"
+        android:elevation="2dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Back Button -->
+        <LinearLayout
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="?attr/lingifyBackIcon"
+                android:contentDescription="Back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textColor="@color/primary_color"
+                android:textSize="16sp"
+                android:fontFamily="@font/sf_pro_medium"
+                android:layout_marginStart="4dp" />
+        </LinearLayout>
+
+        <!-- Spacer -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <!-- Action Icons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/themeChangerButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="top|end"
+                android:layout_margin="12dp"
+                android:background="@drawable/button_background_theme_changer"
+                android:src="?attr/lingifyThemeChangerImage"
+                android:padding="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Search Bar -->
+    <LinearLayout
+        android:id="@+id/searchContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/body_background"
+        android:elevation="2dp"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/navigationHeader">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/background_input_email"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="12dp"
+                android:contentDescription="@string/search_word"
+                android:src="?attr/lingifySearchIcon" />
+
+            <EditText
+                android:id="@+id/searchEditText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:fontFamily="@font/sf_pro_regular"
+                android:hint="@string/search_word"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/primary_color"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/clearSearchButton"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="?attr/lingifyCloseIcon"
+                android:contentDescription="@string/clear_search"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="4dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Main Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/searchContainer"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Word and Pronunciation Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="24dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!-- Word -->
+                    <TextView
+                        android:id="@+id/wordText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="life"
+                        android:textColor="@color/black"
+                        android:textSize="32sp"
+                        android:fontFamily="@font/sf_pro_bold"
+                        android:layout_marginBottom="4dp" />
+
+                    <!-- Pronunciation -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/pronunciationText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/laɪf/"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/sf_pro_regular" />
+
+                        <ImageView
+                            android:id="@+id/pronunciationButton"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="?attr/lingifySpeakerIcon"
+                            android:contentDescription="@string/pronounce"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:padding="4dp"
+                            android:layout_marginStart="8dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Part of Speech Tabs -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_marginBottom="24dp">
+
+                <LinearLayout
+                    android:id="@+id/partOfSpeechTabs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Noun Tab (Selected) -->
+                    <TextView
+                        android:id="@+id/nounTab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/noun"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/sf_pro_medium"
+                        android:background="@drawable/background_tab_selected"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                    <!-- Verb Tab -->
+                    <TextView
+                        android:id="@+id/verbTab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/verb"
+                        android:textColor="@color/primary_color"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/sf_pro_medium"
+                        android:background="@drawable/background_tab_unselected"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                    <!-- Adjective Tab -->
+                    <TextView
+                        android:id="@+id/adjectiveTab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/adjective"
+                        android:textColor="@color/primary_color"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/sf_pro_medium"
+                        android:background="@drawable/background_tab_unselected"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                    <!-- Adverbial Phrases Tab -->
+                    <TextView
+                        android:id="@+id/adverbialPhrasesTab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/adverbial_phrases"
+                        android:textColor="@color/primary_color"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/sf_pro_medium"
+                        android:background="@drawable/background_tab_unselected"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                    <!-- Interjection Tab -->
+                    <TextView
+                        android:id="@+id/interjectionTab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/interjection"
+                        android:textColor="@color/primary_color"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/sf_pro_medium"
+                        android:background="@drawable/background_tab_unselected"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:clickable="true"
+                        android:focusable="true" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Definitions Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Definitions Header -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/definitions"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/sf_pro_bold"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Definition 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1."
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/sf_pro_bold"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The condition that distinguishes animals and plants from inorganic matter, including the capacity for growth, reproduction, functional activity, and continual change preceding death."
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/sf_pro_regular"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ex.: The origins of life."
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/sf_pro_regular"
+                        android:lineSpacingExtra="2dp" />
+                </LinearLayout>
+
+                <!-- Definition 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2."
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/sf_pro_bold"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The existence of an individual human being or animal."
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/sf_pro_regular"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ex.: A disaster that claimed the lives of 266 people."
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/sf_pro_regular"
+                        android:lineSpacingExtra="2dp" />
+                </LinearLayout>
+
+                <!-- Definition 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3."
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/sf_pro_bold"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The period during which something inanimate continues to exist, function, or remain valid."
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/sf_pro_regular"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ex.: The useful life of a washing machine."
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/sf_pro_regular"
+                        android:lineSpacingExtra="2dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

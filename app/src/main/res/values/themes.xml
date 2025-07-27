@@ -55,6 +55,8 @@
         <item name="lingifyPhoneIcon">@drawable/icon_phone_light</item>
         <item name="lingifyArcadeIcon">@drawable/icon_arcade_light</item>
         <item name="lingifyBrainIcon">@drawable/icon_brain_light</item>
+        <item name="lingifySpeakerIcon">@drawable/icon_speaker_light</item>
+        <item name="lingifySearchIcon">@drawable/icon_search_light</item>
     </style>
 
     <style name="Theme.RemoveSplashScreenTheme" parent="@style/Theme.Lingify">

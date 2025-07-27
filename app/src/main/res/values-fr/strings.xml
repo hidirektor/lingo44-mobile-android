@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search_word">Rechercher un mot...</string>
+
+    <!-- Dictionary related strings -->
+    <string name="dictionary_title">Dictionnaire</string>
+    <string name="back">Retour</string>
+    <string name="star">Favori</string>
+    <string name="share">Partager</string>
+    <string name="menu">Menu</string>
+    <string name="pronounce">Prononcer</string>
+    <string name="clear_search">Effacer la recherche</string>
+
+    <!-- Part of speech -->
+    <string name="noun">Nom</string>
+    <string name="verb">Verbe</string>
+    <string name="adjective">Adjectif</string>
+    <string name="adverbial_phrases">Locutions adverbiales</string>
+    <string name="interjection">Interjection</string>
+
+    <!-- Definitions -->
+    <string name="definitions">DÉFINITIONS</string>
+    <string name="example">Exemple:</string>
+
+    <!-- Common actions -->
+    <string name="searching_for">Recherche de:</string>
+    <string name="added_to_favorites">Ajouté aux favoris</string>
+    <string name="share_functionality">Fonction de partage</string>
+    <string name="menu_options">Options du menu</string>
+    <string name="playing_pronunciation">Lecture de la prononciation</string>
+</resources> 

@@ -99,6 +99,34 @@
     Daha kapsamlı bir değerlendirme için uygulama içindeki Gelişmiş Seviye Sınavı\'nı kullanabilirsiniz.
     Bu sınav, IELTS ve TOEFL gibi uluslararası sınav formatlarına uygun olarak hazırlanmıştır.
     </string>
+
+    <string name="search_word">Kelime ara...</string>
+
+    <!-- Dictionary related strings -->
+    <string name="back">Geri</string>
+    <string name="star">Yıldız</string>
+    <string name="share">Paylaş</string>
+    <string name="menu">Menü</string>
+    <string name="pronounce">Telaffuz Et</string>
+    <string name="clear_search">Aramayı Temizle</string>
+
+    <!-- Part of speech -->
+    <string name="noun">isim</string>
+    <string name="verb">fiil</string>
+    <string name="adjective">sıfat</string>
+    <string name="adverbial_phrases">zarf tümleci</string>
+    <string name="interjection">ünlem</string>
+
+    <!-- Definitions -->
+    <string name="definitions">TANIMLAR</string>
+    <string name="example">Örnek:</string>
+
+    <!-- Common actions -->
+    <string name="searching_for">Aranıyor:</string>
+    <string name="added_to_favorites">Favorilere eklendi</string>
+    <string name="share_functionality">Paylaş fonksiyonu</string>
+    <string name="menu_options">Menü seçenekleri</string>
+    <string name="playing_pronunciation">Telaffuz çalınıyor</string>
     <string name="detect_level_exam_question_count" translatable="false">30</string>
     <string name="detect_level_exam_time" translatable="false">30</string>
     <string name="detect_level_exam_question_count_text">Soru</string>
